@@ -41,6 +41,8 @@ If you can't answer one of these, the number isn't ready yet. "The AI said so" i
 | 8:10–9:15 | Guided build in breakouts |
 | 9:15–9:30 | "The one check I'll run before I submit" |
 
+**Mini-seminars (weeks 4–7, 9 and 10).** Once during the term, you run a 15-minute seminar on a topic you propose and the instructor approves: you bring a view on healthcare data, defend it, and lead the discussion. On those nights, show and explain is shorter (three students) and two seminars follow it, before the concept. Week 9 is mostly seminars. See the [mini-seminar guide](templates/mini_seminar.md): you choose your week in week 1 and propose your topic before the week 3 class.
+
 **Between classes:** one small required deliverable, about 3 hours of work. Each week's brief is sized at half of what seems doable, on purpose. Everything marked **power-up** is optional.
 
 **With each deliverable**, submit your AI transcript (see [transcript guide](templates/transcript_guide.md)) and a three-line [human sign-off](templates/human_signoff.md).
@@ -49,7 +51,7 @@ If you can't answer one of these, the number isn't ready yet. "The AI said so" i
 
 | Part | Weight |
 |---|---|
-| Weekly deliverables (12 count, lowest dropped) | 40% |
+| Weekly deliverables (12 count, lowest dropped; your mini-seminar counts as the deliverable for its week) | 40% |
 | AI transcripts: three are graded, chosen after you submit, on whether you directed and checked the tool | 15% |
 | Midterm app and explanation (week 8) | 15% |
 | Final app, showcase and reflection (week 14) | 20% |

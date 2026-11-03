@@ -16,6 +16,8 @@ Your **aggregator** is one table at one **grain**, built by joining your sources
 - Concept: grain, keys, the four outcomes of a join (matched, unmatched left, unmatched right, duplicated).
 - Breakouts: build the layer together, step by step, in the notebook.
 
+**Running a mini-seminar in week 4?** Post your one-page handout in the class channel by Sunday (see the [mini-seminar guide](../templates/mini_seminar.md)).
+
 ## Your one required deliverable
 
 A joined table at **one grain** (one row per hospital), built from your 2–3 sources, with a clear **key for every join** (the Facility ID, or the crosswalk from hospital to county), plus the **join ledger**: for each join, the row count, the rows matched, and one sentence explaining any gap. Submit the layer CSV and the join ledger CSV from the notebook's Export section.

@@ -18,6 +18,8 @@ Before you use a source, write down its **provenance**: who published it, what o
 - Concept: provenance, grain, data period vs. release date, relevance to your question.
 - Breakouts: fill in a provenance record together for one source.
 
+**Also before the week 3 class:** send the instructor your one-paragraph [mini-seminar proposal](../templates/mini_seminar.md#step-1-propose-a-topic-due-before-the-week-3-class) (about 15 minutes; it isn't graded).
+
 ## Your one required deliverable
 
 Choose **2–3 sources** that could answer your week 1 question, and complete one [provenance record](../templates/provenance_record.md) for each. The form at the bottom of the notebook produces one record per source.

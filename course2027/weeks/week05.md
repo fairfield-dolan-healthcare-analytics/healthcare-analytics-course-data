@@ -17,11 +17,14 @@ Every rate has four parts you must be able to name:
 
 ## In class
 
-- Show and explain: four or five of you show a traced number and the planted error you found hardest to spot.
+- Show and explain: three of you show a traced number and the planted error you found hardest to spot.
+- Mini-seminars: two classmates each run a 15-minute seminar on a topic they proposed, and lead the discussion. Read their handouts before class.
 - Concept: anatomy of a rate; suppression; why two "readmission rates" for the same hospital can differ.
 - Breakouts: take one HRRP rate apart together.
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
 A one-page [defend-a-number](../templates/defend_a_number.md) walkthrough of **one rate** from your layer: what kind of number it is, its numerator and denominator (or why the file doesn't give them), suppression and footnotes, reporting period, how it compares, and what it does not tell you. The notebook assembles a draft page you can use. You may draft it with AI help, but you must be able to explain every line in class without the AI open.
 

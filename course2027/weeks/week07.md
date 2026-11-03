@@ -16,11 +16,14 @@ The CMS HRRP file prints "Too Few to Report" instead of a count when a hospital 
 
 ## In class
 
-- Show and explain: four or five of you show your data card and app sketch.
+- Show and explain: three of you show your data card and app sketch.
+- Mini-seminars: two classmates each run a 15-minute seminar on a topic they proposed, and lead the discussion. Read their handouts before class.
 - Concept: PHI vs. public aggregate data; why suppression exists; what you may paste into an AI tool.
 - Breakouts: run the checklist on one classmate's layer, then on your own.
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
 Pass the [compliance checklist](../templates/compliance_checklist.md) on your layer, with one line of evidence for each item: a row count, a cell output, or a sentence.
 

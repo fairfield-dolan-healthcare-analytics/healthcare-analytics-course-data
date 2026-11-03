@@ -14,11 +14,14 @@ You'll also see how a marimo notebook becomes an **app**: the same notebook, wit
 
 ## In class
 
-- Show and explain: four or five of you defend your rate. The two classmates named last week ask first.
+- Show and explain: three of you defend your rate. The two classmates named last week ask first.
+- Mini-seminars: two classmates each run a 15-minute seminar on a topic they proposed, and lead the discussion. Read their handouts before class.
 - Concept: verification vs. validation; data cards; how a marimo notebook runs as an app and how it gets shared.
 - Breakouts: sketch app screens in pairs. Who is the reader, and what decision do they make?
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
 1. Your [data card](../templates/data_card.md).
 2. A **one-screen sketch** of the app you'll build in week 8: hand-drawn and photographed, or boxes in a slide. Label the reader, the one question it answers, and where provenance appears.

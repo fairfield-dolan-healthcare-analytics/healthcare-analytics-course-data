@@ -18,11 +18,14 @@ This is the simplest thing that works, and it needs no API key: any free AI chat
 
 ## In class
 
-- Show and explain: four or five of you present your week 9 position. Which steps did people refuse to automate?
+- Show and explain: three of you present your week 9 position. Which steps did people refuse to automate?
+- Mini-seminars: two classmates each run a 15-minute seminar on a topic they proposed, and lead the discussion. Read their handouts before class.
 - Concept: tools, instructions, and why an agent needs to cite sources.
 - Breakouts: build your agent brief, paste it into a chat, and try five questions.
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)).
 
 An agent, in the [week 10 notebook](../notebooks/week10_agent.py), that answers questions from your layer and **says which source it used**. Submit the agent brief you used, your AI chat transcript, and **three questions**, each with the query, the answer, and the source and period the notebook showed. One of the three should be a question it correctly refused.
 

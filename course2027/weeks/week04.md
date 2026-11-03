@@ -15,11 +15,14 @@ Suppose your layer says a Connecticut county has an adult diabetes estimate of s
 
 ## In class
 
-- Show and explain: four or five of you show a join ledger. What disappeared, and why?
+- Show and explain: three of you show a join ledger. What disappeared, and why?
+- Mini-seminars: two classmates each run a 15-minute seminar on a topic they proposed, and lead the discussion. Read their handouts before class.
 - Concept: tracing a number; common file defects; why "Not Available" is not zero.
 - Breakouts: hunt for planted errors in a practice file together.
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
 1. **Trace three numbers** from your layer back to the source file: file, line, column, raw text, and reporting period.
 2. **Find the planted errors** in the provided practice file (`lab03_hospitals.csv`, loaded in the notebook). For each kind of error: what is wrong, how many rows, how you found it, and what it would break.

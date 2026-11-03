@@ -15,6 +15,7 @@ Public healthcare data is plentiful, but every file has a grain (what one row is
 - Tour of the public sources the course uses (CMS hospital files, CDC county files) and the data rule: public, aggregate data only, and no PHI.
 - Open the week 1 notebook in molab and run it top to bottom together.
 - Breakouts: make a first chart and share the link with your group.
+- Before you leave: choose your week for a **mini-seminar**, a 15-minute session you'll run on a topic you propose (see the [mini-seminar guide](../templates/mini_seminar.md)). Sign up in the class channel; slots are first come, first served. If you take a week 4 slot, your topic proposal is due before the week 2 class.
 
 ## Your one required deliverable
 

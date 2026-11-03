@@ -12,8 +12,8 @@ Next week you'll let an AI agent answer questions from your data. Before you do,
 
 ## In class (seminar, no build)
 
-- Show and explain: two or three midterm apps revisited. What would you change now?
-- Discussion in three rounds. Come with a short written answer to each prompt.
+- Four mini-seminars: four classmates each bring a view on the human role in healthcare data (15 minutes each, including the discussion they lead). Read their handouts before class.
+- Then two rounds of discussion on the prompts below: prompts 1 and 2 in breakouts, prompts 3–5 as a whole class. Come with a short written answer to each prompt.
 
 **Discussion prompts**
 
@@ -24,6 +24,8 @@ Next week you'll let an AI agent answer questions from your data. Before you do,
 5. **The PHI line.** Your course data is public and aggregate. If your project moved to real patient data at work, which steps would change hands, and who would have to approve them?
 
 ## Your one required deliverable
+
+*Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)).
 
 **One page** using the [human sign-off template](../templates/human_signoff.md), position section:
 
