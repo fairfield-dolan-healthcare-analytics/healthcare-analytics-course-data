@@ -1,6 +1,6 @@
 # Week 5: Defend one number
 
-**Notebook:** [week05_defend_a_number.py](../notebooks/week05_defend_a_number.py) · [Course home](../README.md)
+**Notebook:** [week05_defend_a_number.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week05_defend_a_number.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -30,7 +30,7 @@ A one-page [defend-a-number](../templates/defend_a_number.md) walkthrough of **o
 
 ## Steps
 
-1. Run the [week 5 notebook](../notebooks/week05_defend_a_number.py). Choose the **Source file** (Unplanned Hospital Visits or HRRP), **State**, **Hospital** and **Measure**, ideally a number that's in your layer.
+1. Run the [week 5 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week05_defend_a_number.py). Choose the **Source file** (Unplanned Hospital Visits or HRRP), **State**, **Hospital** and **Measure**, ideally a number that's in your layer.
 2. Read the **"Which columns hold numbers"** table before you claim a numerator or denominator. A column that exists isn't always filled in.
 3. Read the facts the notebook gathers from the file (what it is, numerator and denominator, period, suppression and footnotes, how it compares, what it doesn't tell you) and the chart showing where your hospital sits.
 4. Find the measure's definition and CMS's footnote list on the source page (linked in "Where these numbers came from"). Confirm the unit and the patient population yourself.

@@ -1,6 +1,6 @@
 # Week 4: Verify the sourcing
 
-**Notebook:** [week04_verify_sourcing.py](../notebooks/week04_verify_sourcing.py) · [Course home](../README.md)
+**Notebook:** [week04_verify_sourcing.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week04_verify_sourcing.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -29,7 +29,7 @@ Suppose your layer says a Connecticut county has an adult diabetes estimate of s
 
 ## Steps
 
-1. Run the [week 4 notebook](../notebooks/week04_verify_sourcing.py).
+1. Run the [week 4 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week04_verify_sourcing.py).
 2. **Part A, trace.** Choose the **Source file** (Unplanned Hospital Visits or HRRP), **State**, **Hospital**, **Measure** and **Column**. The notebook shows the number as it sits in your layer next to the source row (file, line in the file, raw text, period, footnote), plus a state average and every row behind it. Copy the trace block it gives you. Do this three times, using hospitals and measures from your layer.
 3. For a number Part A doesn't cover (a PLACES or ACS value, for example), use the **Ask your AI** box under Part A, then open the file yourself at that line.
 4. **Part B, planted errors.** Use the five tools: **1** row counts, **2** Facility IDs that appear more than once, **3** format check (pick a column), **4** value distribution side by side (pick a column), **5** compare one hospital to the clean file (type a Facility ID exactly as it appears). The tools find things; you decide what each one means.

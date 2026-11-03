@@ -1,6 +1,6 @@
 # Week 2: Where data comes from: relevance and recency
 
-**Notebook:** [week02_sources.py](../notebooks/week02_sources.py) · [Course home](../README.md)
+**Notebook:** [week02_sources.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -26,7 +26,7 @@ Choose **2–3 sources** that could answer your week 1 question, and complete on
 
 ## Steps
 
-1. Run the [week 2 notebook](../notebooks/week02_sources.py). The **Source cards** tabs give each course source's publisher, grain, join key, row count, source page, and a reporting period computed from the data itself.
+1. Run the [week 2 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py). The **Source cards** tabs give each course source's publisher, grain, join key, row count, source page, and a reporting period computed from the data itself.
 2. Read the four lessons: one file with five different periods (Unplanned Hospital Visits); HRRP vs. Unplanned Visits readmissions covering different years; release year vs. data year (PLACES and ACS); and Connecticut's planning regions.
 3. Choose your sources. Ask your AI tool to help you think, but you make the decision:
    > I want to answer: "[your question]". My options are CMS Hospital General Information, CMS Unplanned Hospital Visits, CMS HRRP, CDC PLACES county data, and CDC ACS county measures. For each, tell me what one row represents and what it could and could not tell me about my question. Don't recommend one yet.

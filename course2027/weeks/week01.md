@@ -1,6 +1,6 @@
 # Week 1: Healthcare data, and what the human is for
 
-**Notebook:** [week01_first_chart.py](../notebooks/week01_first_chart.py) · [Course home](../README.md)
+**Notebook:** [week01_first_chart.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -26,14 +26,14 @@ That's all. Don't build more.
 
 ## Steps
 
-1. Open the [week 1 notebook](../notebooks/week01_first_chart.py) in molab and run it. Read the "Where these numbers came from" table at the bottom.
+1. Open the [week 1 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) in molab and run it. Read the "Where these numbers came from" table at the bottom.
 2. Make your chart with the two dropdowns: **State** (it starts on CT; "All states" is an option) and **Count hospitals by** (overall star rating, hospital type, or ownership). "Not Available" always shows as its own grey bar, and the line under the chart gives the rows behind it.
 3. Optional: to go beyond the dropdowns, use the notebook's **Ask your AI** box (it charts ratings for hospitals with and without emergency services), or paste this into your AI tool along with the chart cell:
    > Here is a marimo cell that charts CMS Hospital General Information with altair. Change it to show [your column] by [state / hospital type]. Do not convert "Not Available" to zero. Show how many hospitals are in the chart and how many were left out, and say why they were left out.
 
    Then ask it to explain what it did:
    > Explain this code line by line in plain English for someone who doesn't code. Which rows does it drop or change?
-4. Follow the notebook's **Publish it as a link** steps: set the dropdowns to the view you want, use molab's share option, and open the link in a private browser window (or ask a classmate) to make sure it works for someone else.
+4. Make the link (see [Working in molab](../README.md#working-in-molab)): click **Save a copy** so the notebook is in your own workspace, set the dropdowns to the view you want, then **Share → Copy App URL**. Open the link in a private browser window (or ask a classmate) to make sure it works for someone else. If it opens with different dropdown settings from yours, add a line to your submission naming the settings to pick.
 5. Type your one-sentence question into the **"The one question I want my aggregator to answer"** box, and copy it into your submission.
 
 ## The check to run before you submit

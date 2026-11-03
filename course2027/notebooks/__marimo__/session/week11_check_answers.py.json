@@ -1,0 +1,230 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": "a911a4a3762c80f3977a24401149ddb7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "d083bca0257600f8e1db90cedec174e2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "57be039a3815fc43192ba143ca3cc085",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"week-11-check-the-ais-answers\">Week 11: check the AI's answers</h1>\n<span class=\"paragraph\"><strong>Deliverable:</strong> ten test questions with known answers; where your agent is wrong, and why.</span>\n<span class=\"paragraph\">Last week your agent answered questions. This week you find out <strong>how often it is right</strong>. The method\nis old and simple: ask questions you already know the answer to.</span>\n<ol>\n<li>The notebook computes the true answer to ten questions <strong>from the layer itself</strong> (nothing typed in by hand).</li>\n<li>You ask your week-10 agent the same ten questions and record what it said.</li>\n<li>The notebook scores each answer and sorts the mistakes by kind: wrong number, wrong period,\n   treated a suppressed value as zero, answered a question the data can't answer.</li>\n<li>You read every verdict and overrule the scorer where it is wrong. That is the human's job.</li>\n</ol>\n<span class=\"paragraph\">The questions are about the <strong>course default layer</strong> (the same one week 10 uses by default).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "0decfc65e8e146cc7a6e79aa03524ce0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c5102962bda69c109f011406fe3fc5f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "a67664512640d2833da2668b366f957b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "c6ee0e7c3ba8e15322c1d25b93f3cd07",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "e696b07681e3543c71466c6d709d5afc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-ask-your-agent\">1. Ask your agent</h2>\n<span class=\"paragraph\">Use the same brief and the same AI tool as week 10. Ask each question <strong>in a fresh chat</strong> (paste the brief first), so one answer doesn't steer the next. Run each SQL the AI writes in week 10's query box and record the final answer it gives you, plus whether it named the source and period.</span></span><span class=\"markdown prose dark:prose-invert contents\"><div class=\"language-text codehilite\"><pre><span></span><code>1. How many hospitals have a row for Heart failure (HF) 30-Day Readmission Rate but no numeric score?\n\n2. What is the Heart failure (HF) 30-Day Readmission Rate score for ST FRANCIS HOSPITAL &amp; MEDICAL CENTER (facility_id 070002)?\n\n3. Among the 50 states and DC, counting only states with at least 10 hospitals that have a numeric score, which state has the highest median Heart failure (HF) 30-Day Readmission Rate score?\n\n4. What is the county diabetes estimate (CDC PLACES, age-adjusted) for the county where SOUTHEAST HEALTH MEDICAL CENTER (facility_id 010001) is located?\n\n5. How many Connecticut hospitals in the layer have a county diabetes estimate?\n\n6. What is the Heart failure (HF) 30-Day Readmission Rate score for THE CONNECTICUT HOSPICE INC. (facility_id 070038)?\n\n7. What is the average Heart failure (HF) 30-Day Readmission Rate score across hospitals in North Dakota (ND)?\n\n8. What was the Heart failure (HF) 30-Day Readmission Rate score for ST FRANCIS HOSPITAL &amp; MEDICAL CENTER in calendar year 2024 alone?\n\n9. Which year do the county diabetes estimates describe?\n\n10. How much does a heart failure admission cost at ST FRANCIS HOSPITAL &amp; MEDICAL CENTER?\n</code></pre></div></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a07b5e497d5b99d62fe74f88f0185ae5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-record-the-agents-answers\">2. Record the agent's answers</h2></span><marimo-ui-element object-id='SFPL-42' random-id='8946e0ce-89d7-9544-11f4-eab5cacbe3c9'><marimo-switch data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eShow me how scoring works with example (made-up) agent answers&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-switch></marimo-ui-element><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>1. How many hospitals have a row for Heart failure (HF) 30-Day Readmission Rate but no numeric score?</strong></span></span><marimo-ui-element object-id='SFPL-10' random-id='7f4a7a9e-ea1c-d2ea-7173-a7fe926fd88f'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-31' random-id='87110a26-0877-54b2-d944-42f67e39182f'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>2. What is the Heart failure (HF) 30-Day Readmission Rate score for ST FRANCIS HOSPITAL &amp; MEDICAL CENTER (facility_id 070002)?</strong></span></span><marimo-ui-element object-id='SFPL-11' random-id='9b38334a-b6a9-4b2f-6428-26266faa9576'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-32' random-id='67868648-c3a7-b28d-f68b-a4b05b173480'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>3. Among the 50 states and DC, counting only states with at least 10 hospitals that have a numeric score, which state has the highest median Heart failure (HF) 30-Day Readmission Rate score?</strong></span></span><marimo-ui-element object-id='SFPL-12' random-id='efd2ce7c-8ca9-6a57-697f-c8bc2da7deef'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-33' random-id='84e72fc6-2316-111b-9c0c-adc878285615'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>4. What is the county diabetes estimate (CDC PLACES, age-adjusted) for the county where SOUTHEAST HEALTH MEDICAL CENTER (facility_id 010001) is located?</strong></span></span><marimo-ui-element object-id='SFPL-13' random-id='0df94691-b60d-1ff7-6bb0-6d64178cb589'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-34' random-id='04bd98c6-ed2a-4d38-c627-1f30662df72c'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>5. How many Connecticut hospitals in the layer have a county diabetes estimate?</strong></span></span><marimo-ui-element object-id='SFPL-14' random-id='eb7d4656-a3e9-298f-038b-57249ab25d4b'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-35' random-id='3bfd7658-3b2a-c9fc-1d8c-de4a63716a95'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>6. What is the Heart failure (HF) 30-Day Readmission Rate score for THE CONNECTICUT HOSPICE INC. (facility_id 070038)?</strong></span></span><marimo-ui-element object-id='SFPL-15' random-id='f5b539fc-3d5c-3c6c-2e0d-c9ab2d4a5af3'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-36' random-id='d7517a42-1380-6e16-b8ee-a5e9d4c5552a'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>7. What is the average Heart failure (HF) 30-Day Readmission Rate score across hospitals in North Dakota (ND)?</strong></span></span><marimo-ui-element object-id='SFPL-16' random-id='c6393d47-3b1e-5f59-4c37-f1b850f2805b'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-37' random-id='b97aa59e-6bb3-6a8b-c1bb-4c1798c2728e'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>8. What was the Heart failure (HF) 30-Day Readmission Rate score for ST FRANCIS HOSPITAL &amp; MEDICAL CENTER in calendar year 2024 alone?</strong></span></span><marimo-ui-element object-id='SFPL-17' random-id='231fdbb5-e8a5-ce85-2925-badd46171402'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-38' random-id='703b0399-cdc8-bc79-688b-b0d5212df964'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>9. Which year do the county diabetes estimates describe?</strong></span></span><marimo-ui-element object-id='SFPL-18' random-id='da16efd4-3373-249a-fd6e-8cb5e8e1dae7'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-39' random-id='858bd878-9ca3-4686-53e1-ebbbea5781a4'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>10. How much does a heart failure admission cost at ST FRANCIS HOSPITAL &amp; MEDICAL CENTER?</strong></span></span><marimo-ui-element object-id='SFPL-19' random-id='b111904e-2e10-b611-a239-e65cc66c6fc7'><marimo-text-area data-initial-value='&quot;&quot;' data-label='null' data-placeholder='&quot;The agent&#x27;s answer, as it gave it&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='SFPL-40' random-id='03d47f3d-66de-6c19-0a42-4a78891faa4e'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003enamed the source and period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "d9334efd32b9d46c1b596a574c3b4e3c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "0dc4ef3f25928e57d055a79ba5eb315b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "0aefc3ad696ed3be3457f7fbdc280cd3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='b83dc748-1aae-0808-a7a5-73effe10d8b4'><marimo-switch data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eShow the known answers (record your agent&#x27;s answers first)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-switch></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "5ab8223d7ff4de552e443e77d0a7796e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-the-scorecard\">3. The scorecard</h2></span><marimo-ui-element object-id='emfo-0' random-id='6115c01a-f7bc-5929-7adb-bbbae09a02f3'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;#&#92;&quot;:1,&#92;&quot;kind&#92;&quot;:&#92;&quot;easy lookup&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:2,&#92;&quot;kind&#92;&quot;:&#92;&quot;easy lookup&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:3,&#92;&quot;kind&#92;&quot;:&#92;&quot;aggregation&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:4,&#92;&quot;kind&#92;&quot;:&#92;&quot;join&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:5,&#92;&quot;kind&#92;&quot;:&#92;&quot;join (trap)&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:6,&#92;&quot;kind&#92;&quot;:&#92;&quot;suppressed (trap)&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:7,&#92;&quot;kind&#92;&quot;:&#92;&quot;suppressed (trap)&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:8,&#92;&quot;kind&#92;&quot;:&#92;&quot;period mismatch (trap)&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:9,&#92;&quot;kind&#92;&quot;:&#92;&quot;period&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;},{&#92;&quot;#&#92;&quot;:10,&#92;&quot;kind&#92;&quot;:&#92;&quot;unanswerable&#92;&quot;,&#92;&quot;agent said&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;auto verdict&#92;&quot;:&#92;&quot;no answer recorded&#92;&quot;,&#92;&quot;why&#92;&quot;:&#92;&quot;&#92;&quot;,&#92;&quot;named source + period&#92;&quot;:&#92;&quot;no&#92;&quot;,&#92;&quot;known answer&#92;&quot;:&#92;&quot;(hidden)&#92;&quot;}]&quot;' data-total-rows='10' data-total-columns='7' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;#&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;kind&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;agent said&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;auto verdict&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;why&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;named source + period&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;known answer&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>0 of 0 recorded answers scored correct.</strong> Where the mistakes are:</span></span><marimo-ui-element object-id='emfo-1' random-id='a41609fc-7692-b9a2-4030-7c5b99dfbe3b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[]&quot;' data-total-rows='0' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;verdict&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;questions&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "0ce9a1e68fe2ccc595bc3cacd6825906",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-your-verdict\">4. Your verdict</h2>\n<span class=\"paragraph\">The scorer matches numbers and key words. It can be fooled: an answer that mentions the right number\nby accident scores \"correct\". <strong>Read every answer yourself</strong> and overrule the scorer where it is wrong.</span></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: wrap;gap: 0.5rem'><marimo-ui-element object-id='Hstk-10' random-id='7326ea5a-339f-49d2-2626-1e83e9882c7d'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ1&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-11' random-id='34515a76-b187-1a52-b88b-3055d45724db'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ2&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-12' random-id='a9bf3217-eb1e-e568-c779-2322b1b813ac'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ3&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-13' random-id='d879c79f-6e8e-01cc-34de-911f42b4af13'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ4&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-14' random-id='e914bf1d-9237-7d91-ac27-d020129e94f5'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ5&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-15' random-id='4fb7549f-1c40-d0c0-bec6-a6d58423cdef'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ6&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-16' random-id='4def1d20-43a8-eb6d-95d7-95219fddfee1'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ7&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-17' random-id='093240c4-8f4b-7cc8-923e-f9faa6e3d4da'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ8&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-18' random-id='5aa96680-f740-3017-e99e-fd4eaefbfa8d'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ9&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Hstk-19' random-id='410b967b-4944-ef06-6832-92b890b11ae3'><marimo-dropdown data-initial-value='[&quot;(agree with auto verdict)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eQ10&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;(agree with auto verdict)&quot;,&quot;correct&quot;,&quot;wrong number&quot;,&quot;wrong period&quot;,&quot;treated suppressed as zero&quot;,&quot;answered the unanswerable&quot;,&quot;refused an answerable question&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "48544c7520715f15c5ba0616fbccbd10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Final: 0 of 10 correct.</strong> Overruled: 0.</span></span><marimo-ui-element object-id='nWHF-0' random-id='a793f436-9bf2-1b7c-9b0a-02bb6a08b203'><marimo-download data-initial-value='null' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eDownload the scorecard (CSV)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-data='&quot;data:application/vnd.ms-excel;base64,IyxraW5kLGFnZW50IHNhaWQsYXV0byB2ZXJkaWN0LHdoeSxuYW1lZCBzb3VyY2UgKyBwZXJpb2QsbXkgdmVyZGljdA0KMSxlYXN5IGxvb2t1cCwsbm8gYW5zd2VyIHJlY29yZGVkLCxubyxubyBhbnN3ZXIgcmVjb3JkZWQNCjIsZWFzeSBsb29rdXAsLG5vIGFuc3dlciByZWNvcmRlZCwsbm8sbm8gYW5zd2VyIHJlY29yZGVkDQozLGFnZ3JlZ2F0aW9uLCxubyBhbnN3ZXIgcmVjb3JkZWQsLG5vLG5vIGFuc3dlciByZWNvcmRlZA0KNCxqb2luLCxubyBhbnN3ZXIgcmVjb3JkZWQsLG5vLG5vIGFuc3dlciByZWNvcmRlZA0KNSxqb2luICh0cmFwKSwsbm8gYW5zd2VyIHJlY29yZGVkLCxubyxubyBhbnN3ZXIgcmVjb3JkZWQNCjYsc3VwcHJlc3NlZCAodHJhcCksLG5vIGFuc3dlciByZWNvcmRlZCwsbm8sbm8gYW5zd2VyIHJlY29yZGVkDQo3LHN1cHByZXNzZWQgKHRyYXApLCxubyBhbnN3ZXIgcmVjb3JkZWQsLG5vLG5vIGFuc3dlciByZWNvcmRlZA0KOCxwZXJpb2QgbWlzbWF0Y2ggKHRyYXApLCxubyBhbnN3ZXIgcmVjb3JkZWQsLG5vLG5vIGFuc3dlciByZWNvcmRlZA0KOSxwZXJpb2QsLG5vIGFuc3dlciByZWNvcmRlZCwsbm8sbm8gYW5zd2VyIHJlY29yZGVkDQoxMCx1bmFuc3dlcmFibGUsLG5vIGFuc3dlciByZWNvcmRlZCwsbm8sbm8gYW5zd2VyIHJlY29yZGVkDQo=&quot;' data-filename='&quot;week11_scorecard.csv&quot;' data-disabled='false' data-lazy='false'></marimo-download></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "cbcedf08dbc4f6e1dfd97285b64406e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-why-it-was-wrong\">5. Why it was wrong</h2>\n<span class=\"paragraph\">For each wrong answer, the fix usually lives in one of three places:</span>\n<ul>\n<li><strong>The brief.</strong> Was the rule there? (e.g. \"missing is never zero\", \"say when a period isn't covered\".)</li>\n<li><strong>The layer.</strong> Did a column name or meaning mislead it? (e.g. a column called <code>score</code> with no period.)</li>\n<li><strong>The question.</strong> Was it ambiguous? Would a person have asked \"which year?\" first?</li>\n</ul>\n<blockquote>\n<span class=\"paragraph\"><strong>Ask your AI:</strong> <em>\"My agent got this question wrong: [question]. Its SQL was [paste]. The known\nanswer is [answer]. In plain words, what did the query do differently, and what one line should I\nadd to the agent brief so it doesn't happen again?\"</em> Then rerun the question and record whether the\nfix worked.</span>\n<span class=\"paragraph\"><strong>Ask your AI:</strong> <em>\"Write five more test questions about this table [paste the column list] whose answer\nI can check myself, including one about a suppressed value and one about a reporting period.\"</em></span>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "46f68cdbf4c0fc4b9273a1eada266cfc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"before-you-submit\">Before you submit</h2>\n<span class=\"paragraph\"><strong>Deliverable:</strong> the downloaded scorecard (ten questions, your agent's answers, your verdicts) and a\nshort paragraph: where your agent is wrong, and why (AI can help you draft it; you should be able to explain every point live, without the AI open).</span>\n<span class=\"paragraph\"><strong>The one check:</strong> pick one question the scorer marked correct and confirm it yourself in the layer.\nA scorer can be wrong too.</span>\n<span class=\"paragraph\"><strong>Human sign-off</strong> (three lines in the cell below). AI can help you draft this; make sure every claim is one you can explain live, without the AI open.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "e84f38e626be8bc459146d6fad9b2b64",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ul>\n<li>What I checked myself:</li>\n<li>What I'm trusting the AI on:</li>\n<li>What I won't sign:</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

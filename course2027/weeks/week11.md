@@ -1,6 +1,6 @@
 # Week 11: Check the AI's answers
 
-**Notebook:** [week11_check_answers.py](../notebooks/week11_check_answers.py) · [Course home](../README.md)
+**Notebook:** [week11_check_answers.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week11_check_answers.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -10,7 +10,7 @@ Your agent answered three questions well last week. Would you let it answer a ho
 
 A **test set** is a list of questions with **known answers**. Run the agent on every question, compare, and sort its mistakes: wrong number, wrong period, treated a suppressed value as zero, answered a question the data can't answer, or refused one it could. The point is not a score. The point is knowing *where* and *why* it fails.
 
-The [week 11 notebook](../notebooks/week11_check_answers.py) gives you ten questions about the **course default layer** (the one week 10 uses by default) and computes the true answer to each from the layer itself. They include easy lookups, an aggregation, a join, and traps: Connecticut, suppressed values, a period mismatch, release year vs. data year, and one question the data can't answer.
+The [week 11 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week11_check_answers.py) gives you ten questions about the **course default layer** (the one week 10 uses by default) and computes the true answer to each from the layer itself. They include easy lookups, an aggregation, a join, and traps: Connecticut, suppressed values, a period mismatch, release year vs. data year, and one question the data can't answer.
 
 ## In class
 

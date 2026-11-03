@@ -66,6 +66,19 @@ There are no exams. You may use AI to help draft written work, including defense
 - **Any AI assistant** (ChatGPT, Muse, Claude, or another) to write and explain code. Each brief includes ready-to-paste prompts.
 - **Claude Code** is optional (paid). Some power-ups use it, but nothing required does.
 
+## Working in molab
+
+Every notebook link in this course opens the notebook in molab.
+
+1. **Open** the link. You see a read-only preview with the results already shown, so you can read ahead without running anything.
+2. **Run it** with your own choices: click **Run it now**, then **Run on server**. This runs on a temporary server and saves nothing. The banner at the top says so.
+3. **Keep your work**: click **Fork** (on the preview) or **Save a copy** (while it runs). The copy goes into your own molab workspace, and that's the version you submit or share. You need a free molab account for this.
+4. **Share**: in your copy, click **Share**, then **Copy Notebook URL** (classmates see your notebook and can run it) or **Copy App URL** (the same notebook as an app, with the code hidden). Anyone who has the link can open it, but it isn't listed anywhere. Always test a link in a private browser window before you submit it.
+
+Good to know:
+- An idle notebook shuts down after about 90 minutes. Your code and anything you uploaded through molab's file browser are kept. Files uploaded through a notebook's upload button are not, so keep your exported CSVs on your own computer and upload them again when a brief asks.
+- Because shared links are open to anyone who has them, the data rule below applies to everything in your notebook, not just what you paste into an AI tool.
+
 ## The data rule (from day one)
 
 Only **public, aggregate data** goes into any AI tool. The course data is published facility-level (hospital) or county-level data from CMS and CDC. **No PHI** (protected health information, meaning individually identifiable health information), no row-level patient data, and no passwords or credentials, ever. If you aren't sure whether something counts, don't paste it. Ask first.
@@ -74,18 +87,18 @@ Only **public, aggregate data** goes into any AI tool. The course data is publis
 
 | Wk | Theme | Brief | Notebook |
 |---|---|---|---|
-| 1 | Healthcare data, and what the human is for | [week01](weeks/week01.md) | [week01_first_chart.py](notebooks/week01_first_chart.py) |
-| 2 | Where data comes from: relevance and recency | [week02](weeks/week02.md) | [week02_sources.py](notebooks/week02_sources.py) |
-| 3 | Build the aggregator (guided, in class) | [week03](weeks/week03.md) | [week03_build_aggregator.py](notebooks/week03_build_aggregator.py) |
-| 4 | Verify the sourcing | [week04](weeks/week04.md) | [week04_verify_sourcing.py](notebooks/week04_verify_sourcing.py) |
-| 5 | Defend one number | [week05](weeks/week05.md) | [week05_defend_a_number.py](notebooks/week05_defend_a_number.py) |
-| 6 | Validate the use; how an app is built and published | [week06](weeks/week06.md) | [week06_validate_use.py](notebooks/week06_validate_use.py) |
-| 7 | Compliance: public aggregate data vs. PHI | [week07](weeks/week07.md) | [week07_compliance.py](notebooks/week07_compliance.py) |
-| 8 | Midterm: app v1 on your aggregator | [week08](weeks/week08.md) | [week08_app_starter.py](notebooks/week08_app_starter.py) |
+| 1 | Healthcare data, and what the human is for | [week01](weeks/week01.md) | [week01_first_chart.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) |
+| 2 | Where data comes from: relevance and recency | [week02](weeks/week02.md) | [week02_sources.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py) |
+| 3 | Build the aggregator (guided, in class) | [week03](weeks/week03.md) | [week03_build_aggregator.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week03_build_aggregator.py) |
+| 4 | Verify the sourcing | [week04](weeks/week04.md) | [week04_verify_sourcing.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week04_verify_sourcing.py) |
+| 5 | Defend one number | [week05](weeks/week05.md) | [week05_defend_a_number.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week05_defend_a_number.py) |
+| 6 | Validate the use; how an app is built and published | [week06](weeks/week06.md) | [week06_validate_use.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week06_validate_use.py) |
+| 7 | Compliance: public aggregate data vs. PHI | [week07](weeks/week07.md) | [week07_compliance.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py) |
+| 8 | Midterm: app v1 on your aggregator | [week08](weeks/week08.md) | [week08_app_starter.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week08_app_starter.py) |
 | 9 | The human role (seminar) | [week09](weeks/week09.md) | none (reading and discussion) |
-| 10 | Let an agent query your aggregator | [week10](weeks/week10.md) | [week10_agent.py](notebooks/week10_agent.py) |
-| 11 | Check the AI's answers | [week11](weeks/week11.md) | [week11_check_answers.py](notebooks/week11_check_answers.py) |
-| 12 | Recency in practice | [week12](weeks/week12.md) | [week12_refresh.py](notebooks/week12_refresh.py) |
+| 10 | Let an agent query your aggregator | [week10](weeks/week10.md) | [week10_agent.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py) |
+| 11 | Check the AI's answers | [week11](weeks/week11.md) | [week11_check_answers.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week11_check_answers.py) |
+| 12 | Recency in practice | [week12](weeks/week12.md) | [week12_refresh.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week12_refresh.py) |
 | 13 | Peer review | [week13](weeks/week13.md) | none ([peer review template](templates/peer_review.md)) |
 | 14 | Showcase and reflection | [week14](weeks/week14.md) | none |
 

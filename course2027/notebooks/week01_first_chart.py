@@ -256,11 +256,13 @@ def _(mo):
     Your deliverable is a link a classmate can open and see your chart — without installing anything.
 
     1. Open this notebook in **molab** (marimo's free hosted notebooks) if you aren't already there.
-    2. Set the dropdowns to the view you want to show.
-    3. Use molab's **share / publish** option to get a link. If you are unsure which setting makes it
-       viewable by others, ask in the class channel or check molab's own help page.
-    4. **Test the link** in a private/incognito browser window, or send it to a classmate and ask what they see.
-       If they can't open it, it isn't published yet.
+    2. Click **Save a copy** (or **Fork** on the preview page) so the notebook is in your own workspace.
+       A notebook you only ran with **Run it now** isn't saved, so it can't be shared.
+    3. In your copy, set the dropdowns to the view you want to show.
+    4. Click **Share**, then **Copy App URL**. That's the notebook as an app, with the code hidden.
+    5. **Test the link** in a private/incognito browser window, or send it to a classmate and ask what they see.
+       If they can't open it, it isn't shared yet. If it opens with different dropdown settings from yours,
+       add a line to your submission naming the settings to pick.
     """)
     return
 

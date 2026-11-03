@@ -1,6 +1,6 @@
 # Week 10: Let an agent query your aggregator
 
-**Notebook:** [week10_agent.py](../notebooks/week10_agent.py) · [Course home](../README.md)
+**Notebook:** [week10_agent.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -27,11 +27,11 @@ This is the simplest thing that works, and it needs no API key: any free AI chat
 
 *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)).
 
-An agent, in the [week 10 notebook](../notebooks/week10_agent.py), that answers questions from your layer and **says which source it used**. Submit the agent brief you used, your AI chat transcript, and **three questions**, each with the query, the answer, and the source and period the notebook showed. One of the three should be a question it correctly refused.
+An agent, in the [week 10 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py), that answers questions from your layer and **says which source it used**. Submit the agent brief you used, your AI chat transcript, and **three questions**, each with the query, the answer, and the source and period the notebook showed. One of the three should be a question it correctly refused.
 
 ## Steps
 
-1. Run the [week 10 notebook](../notebooks/week10_agent.py). **Section 1:** use the course default layer, or upload your own layer (your week 3 export) and paste your week 6 data card into the box.
+1. Run the [week 10 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py). **Section 1:** use the course default layer, or upload your own layer (your week 3 export) and paste your week 6 data card into the box.
 2. **Section 2, the agent brief.** Read the column list and the brief: anything wrong in it, the agent will repeat. Copy the brief, or use **Download the brief** (`agent_brief.txt`).
 3. Paste the brief into any AI chat (ChatGPT, Muse or another), then type your question under it. The AI replies with a SQL query.
 4. **Section 3.** Type your question into **"The question you asked the AI"** and paste the AI's reply into the query box (just the SQL, or the whole reply). The notebook runs only one read-only query and shows the answer with the source and period of each column it used. Anything else is refused.

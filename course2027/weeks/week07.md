@@ -1,6 +1,6 @@
 # Week 7: Compliance: public aggregate data vs. PHI
 
-**Notebook:** [week07_compliance.py](../notebooks/week07_compliance.py) · [Course home](../README.md)
+**Notebook:** [week07_compliance.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -29,7 +29,7 @@ Pass the [compliance checklist](../templates/compliance_checklist.md) on your la
 
 ## Steps
 
-1. Run the [week 7 notebook](../notebooks/week07_compliance.py). Try it first on the example layer (HRRP joined to hospital information) to see what each check does.
+1. Run the [week 7 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py). Try it first on the example layer (HRRP joined to hospital information) to see what each check does.
 2. Under **"Run the checklist on"**, choose **My exported CSV** and upload your week 3 export (`aggregator_<measure>.csv`).
 3. Read the four checks: **1 Identifiers** (hospital names, addresses and phones are public facts about a facility; anything about a patient fails), **2 Small cells** (counts below the **small-cell threshold** slider), **3 Suppression markers preserved**, and **4 What you may give an AI tool** (a credential scan plus three boxes you tick yourself).
 4. The slider starts at 11 to match what the HRRP file shows. CMS's suppression convention is described in the notebook; confirm the current policy before you cite any number.

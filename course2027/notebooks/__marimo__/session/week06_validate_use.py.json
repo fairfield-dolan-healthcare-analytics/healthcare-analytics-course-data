@@ -1,0 +1,243 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": "90033b7a6e97130237d9f01a95902d87"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a25ae3ea611a000442a3df591de6d757",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "79aea34ee2984d293957d3ab5b0ba229",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"week-6-validate-the-use-how-an-app-is-built\">Week 6 \u2014 Validate the use; how an app is built</h1>\n<span class=\"paragraph\">A number can be correctly sourced (week 4) and correctly defended (week 5) and still be <strong>the wrong number\nfor the question</strong>. This week you ask: <em>fit for what purpose, for whom?</em></span>\n<span class=\"paragraph\"><strong>First half:</strong> whose population does your measure cover, which hospitals are missing and why, and what\nhappens when county data is attached to hospitals. You end with your <strong>data card</strong>.</span>\n<span class=\"paragraph\"><strong>Second half:</strong> how a marimo notebook becomes an app, and a <strong>one-screen sketch</strong> of the app you'll build.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "0dce1b335e897333e2a980e065b184eb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c4b67be5df2bae86b9eaaab95bc07940",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='c3292226-89f3-5c1e-4fb3-93f5b392ae2d'><marimo-dropdown data-initial-value='[&quot;Unplanned Visits \u00b7 READM_30_HF&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe measure at the heart of your layer&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Unplanned Visits \u00b7 EDAC_30_AMI&quot;,&quot;Unplanned Visits \u00b7 EDAC_30_HF&quot;,&quot;Unplanned Visits \u00b7 EDAC_30_PN&quot;,&quot;Unplanned Visits \u00b7 Hybrid_HWR&quot;,&quot;Unplanned Visits \u00b7 OP_32&quot;,&quot;Unplanned Visits \u00b7 OP_35_ADM&quot;,&quot;Unplanned Visits \u00b7 OP_35_ED&quot;,&quot;Unplanned Visits \u00b7 OP_36&quot;,&quot;Unplanned Visits \u00b7 READM_30_AMI&quot;,&quot;Unplanned Visits \u00b7 READM_30_CABG&quot;,&quot;Unplanned Visits \u00b7 READM_30_COPD&quot;,&quot;Unplanned Visits \u00b7 READM_30_HF&quot;,&quot;Unplanned Visits \u00b7 READM_30_HIP_KNEE&quot;,&quot;Unplanned Visits \u00b7 READM_30_PN&quot;,&quot;HRRP \u00b7 READM-30-AMI-HRRP&quot;,&quot;HRRP \u00b7 READM-30-CABG-HRRP&quot;,&quot;HRRP \u00b7 READM-30-COPD-HRRP&quot;,&quot;HRRP \u00b7 READM-30-HF-HRRP&quot;,&quot;HRRP \u00b7 READM-30-HIP-KNEE-HRRP&quot;,&quot;HRRP \u00b7 READM-30-PN-HRRP&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='true' data-disabled='false'></marimo-dropdown></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "6932b43ca376ab4766da765b94ab631c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "d7381d316cb1020f043cf3e01d15b545",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-whose-population-and-which-hospitals-are-missing\">1. Whose population, and which hospitals are missing</h2>\n<span class=\"paragraph\"><strong>Measure:</strong> Heart failure (HF) 30-Day Readmission Rate \u00b7 period 07/01/2023 to 06/30/2025</span>\n<span class=\"paragraph\"><strong>Whose patients?</strong> The file does not say which patients are counted (age, insurance, diagnosis rules).\nThat lives in the measure definition on the CMS source page \u2014 <strong>check the measure definition</strong> and write\nwhat it says on your data card, with the link. Do not let an AI tool fill this in from memory.</span>\n<span class=\"paragraph\"><strong>Which hospitals?</strong> Of 5,419 hospitals in the general file, only <strong>3,253 (60%)</strong> have a number\nfor this measure. </span></span><marimo-ui-element object-id='PKri-0' random-id='e2b477b7-4836-80b3-5c00-f9325c062493'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;step&#92;&quot;:&#92;&quot;Hospitals in CMS Hospital General Information&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:5419},{&#92;&quot;step&#92;&quot;:&#92;&quot;&#92;&#92;u2026with a row for this measure&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:4790},{&#92;&quot;step&#92;&quot;:&#92;&quot;&#92;&#92;u2026with a number for this measure&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:3253}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;step&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 2rem'><div style='flex: 1;display: flex;min-width: 0;min-height: 0'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What the file says instead of a number</strong></span></span><marimo-ui-element object-id='PKri-1' random-id='06dc4b6b-9960-992d-833f-87716e8eb91b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;text in the file&#92;&quot;:&#92;&quot;Not Available&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:1537}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;text in the file&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div></div><div style='flex: 1;display: flex;min-width: 0;min-height: 0'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Footnote codes on those rows</strong> (look each up in CMS's footnote list)</span></span><marimo-ui-element object-id='PKri-2' random-id='0baf9ad8-5974-01de-88a5-c2bff0c30609'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;footnote code&#92;&quot;:&#92;&quot;1&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:1020},{&#92;&quot;footnote code&#92;&quot;:&#92;&quot;5&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:338},{&#92;&quot;footnote code&#92;&quot;:&#92;&quot;19&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:172},{&#92;&quot;footnote code&#92;&quot;:&#92;&quot;7&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:7}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;footnote code&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div></div></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "44479b1cadfa766621d0a67c0ef0cd4c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-coverage-by-hospital-type-and-state\">2. Coverage by hospital type and state</h2>\n<span class=\"paragraph\">A layer that covers acute-care hospitals well may say nothing about critical-access, psychiatric or children's hospitals. Your data card must say which.</span></span><marimo-mime-renderer data-mime='&quot;application/vnd.vegalite.v6+json&quot;' data-data='&quot;{&#92;n  &#92;&quot;&#36;schema&#92;&quot;: &#92;&quot;https://vega.github.io/schema/vega-lite/v6.4.1.json&#92;&quot;,&#92;n  &#92;&quot;config&#92;&quot;: {&#92;n    &#92;&quot;view&#92;&quot;: {&#92;n      &#92;&quot;continuousHeight&#92;&quot;: 300,&#92;n      &#92;&quot;continuousWidth&#92;&quot;: 300&#92;n    }&#92;n  },&#92;n  &#92;&quot;data&#92;&quot;: {&#92;n    &#92;&quot;name&#92;&quot;: &#92;&quot;data-a815f3edb35f5bf94fde24bf6d1c646f&#92;&quot;&#92;n  },&#92;n  &#92;&quot;datasets&#92;&quot;: {&#92;n    &#92;&quot;data-a815f3edb35f5bf94fde24bf6d1c646f&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Acute Care Hospitals&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 2713,&#92;n        &#92;&quot;hospitals&#92;&quot;: 3107,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 394,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.873&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Critical Access Hospitals&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 426,&#92;n        &#92;&quot;hospitals&#92;&quot;: 1382,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 956,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.308&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Psychiatric&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 0,&#92;n        &#92;&quot;hospitals&#92;&quot;: 624,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 0,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 624,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.0&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Acute Care - Veterans Administration&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 114,&#92;n        &#92;&quot;hospitals&#92;&quot;: 132,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 18,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.864&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Childrens&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 0,&#92;n        &#92;&quot;hospitals&#92;&quot;: 94,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 94,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.0&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Rural Emergency Hospital&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 0,&#92;n        &#92;&quot;hospitals&#92;&quot;: 43,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 43,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.0&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Acute Care - Department of Defense&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 0,&#92;n        &#92;&quot;hospitals&#92;&quot;: 32,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 32,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 0,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.0&#92;n      },&#92;n      {&#92;n        &#92;&quot;Hospital Type&#92;&quot;: &#92;&quot;Long-term&#92;&quot;,&#92;n        &#92;&quot;has a number&#92;&quot;: 0,&#92;n        &#92;&quot;hospitals&#92;&quot;: 5,&#92;n        &#92;&quot;in file, no number&#92;&quot;: 0,&#92;n        &#92;&quot;not in the measure file&#92;&quot;: 5,&#92;n        &#92;&quot;share with a number&#92;&quot;: 0.0&#92;n      }&#92;n    ]&#92;n  },&#92;n  &#92;&quot;encoding&#92;&quot;: {&#92;n    &#92;&quot;tooltip&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;Hospital Type&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;share with a number&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      }&#92;n    ],&#92;n    &#92;&quot;x&#92;&quot;: {&#92;n      &#92;&quot;axis&#92;&quot;: {&#92;n        &#92;&quot;format&#92;&quot;: &#92;&quot;%&#92;&quot;&#92;n      },&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;share with a number&#92;&quot;,&#92;n      &#92;&quot;title&#92;&quot;: &#92;&quot;share of hospitals with a number&#92;&quot;,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n    },&#92;n    &#92;&quot;y&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;Hospital Type&#92;&quot;,&#92;n      &#92;&quot;sort&#92;&quot;: &#92;&quot;-x&#92;&quot;,&#92;n      &#92;&quot;title&#92;&quot;: null,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    }&#92;n  },&#92;n  &#92;&quot;height&#92;&quot;: 200,&#92;n  &#92;&quot;mark&#92;&quot;: {&#92;n    &#92;&quot;color&#92;&quot;: &#92;&quot;#5b8db8&#92;&quot;,&#92;n    &#92;&quot;type&#92;&quot;: &#92;&quot;bar&#92;&quot;&#92;n  },&#92;n  &#92;&quot;usermeta&#92;&quot;: {&#92;n    &#92;&quot;embedOptions&#92;&quot;: {}&#92;n  },&#92;n  &#92;&quot;width&#92;&quot;: 480&#92;n}&quot;'></marimo-mime-renderer><marimo-ui-element object-id='Xref-0' random-id='9c5330e9-09e0-1248-59f2-e1872e55a543'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Index0&#92;&quot;:2,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Acute Care Hospitals&#92;&quot;,&#92;&quot;has a number&#92;&quot;:2713,&#92;&quot;in file, no number&#92;&quot;:394,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:3107,&#92;&quot;share with a number&#92;&quot;:0.873},{&#92;&quot;Index0&#92;&quot;:4,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Critical Access Hospitals&#92;&quot;,&#92;&quot;has a number&#92;&quot;:426,&#92;&quot;in file, no number&#92;&quot;:956,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:1382,&#92;&quot;share with a number&#92;&quot;:0.308},{&#92;&quot;Index0&#92;&quot;:6,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Psychiatric&#92;&quot;,&#92;&quot;has a number&#92;&quot;:0,&#92;&quot;in file, no number&#92;&quot;:0,&#92;&quot;not in the measure file&#92;&quot;:624,&#92;&quot;hospitals&#92;&quot;:624,&#92;&quot;share with a number&#92;&quot;:0.0},{&#92;&quot;Index0&#92;&quot;:1,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Acute Care - Veterans Administration&#92;&quot;,&#92;&quot;has a number&#92;&quot;:114,&#92;&quot;in file, no number&#92;&quot;:18,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:132,&#92;&quot;share with a number&#92;&quot;:0.864},{&#92;&quot;Index0&#92;&quot;:3,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Childrens&#92;&quot;,&#92;&quot;has a number&#92;&quot;:0,&#92;&quot;in file, no number&#92;&quot;:94,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:94,&#92;&quot;share with a number&#92;&quot;:0.0},{&#92;&quot;Index0&#92;&quot;:7,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Rural Emergency Hospital&#92;&quot;,&#92;&quot;has a number&#92;&quot;:0,&#92;&quot;in file, no number&#92;&quot;:43,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:43,&#92;&quot;share with a number&#92;&quot;:0.0},{&#92;&quot;Index0&#92;&quot;:0,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Acute Care - Department of Defense&#92;&quot;,&#92;&quot;has a number&#92;&quot;:0,&#92;&quot;in file, no number&#92;&quot;:32,&#92;&quot;not in the measure file&#92;&quot;:0,&#92;&quot;hospitals&#92;&quot;:32,&#92;&quot;share with a number&#92;&quot;:0.0},{&#92;&quot;Index0&#92;&quot;:5,&#92;&quot;Hospital Type&#92;&quot;:&#92;&quot;Long-term&#92;&quot;,&#92;&quot;has a number&#92;&quot;:0,&#92;&quot;in file, no number&#92;&quot;:0,&#92;&quot;not in the measure file&#92;&quot;:5,&#92;&quot;hospitals&#92;&quot;:5,&#92;&quot;share with a number&#92;&quot;:0.0}]&quot;' data-total-rows='8' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;Hospital Type&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;has a number&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;in file, no number&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;not in the measure file&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;share with a number&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[[&quot;Index0&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>By state</strong> (sort by clicking a column header): which states would your app describe poorly?</span></span><marimo-ui-element object-id='Xref-1' random-id='a9e33a65-8db5-7ec2-a474-30a136f583ed'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;State&#92;&quot;:&#92;&quot;AK&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:25,&#92;&quot;share with a number&#92;&quot;:0.36},{&#92;&quot;State&#92;&quot;:&#92;&quot;AL&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:99,&#92;&quot;share with a number&#92;&quot;:0.646},{&#92;&quot;State&#92;&quot;:&#92;&quot;AR&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:90,&#92;&quot;share with a number&#92;&quot;:0.511},{&#92;&quot;State&#92;&quot;:&#92;&quot;AS&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:1,&#92;&quot;share with a number&#92;&quot;:0.0},{&#92;&quot;State&#92;&quot;:&#92;&quot;AZ&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:108,&#92;&quot;share with a number&#92;&quot;:0.519},{&#92;&quot;State&#92;&quot;:&#92;&quot;CA&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:377,&#92;&quot;share with a number&#92;&quot;:0.724},{&#92;&quot;State&#92;&quot;:&#92;&quot;CO&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:96,&#92;&quot;share with a number&#92;&quot;:0.51},{&#92;&quot;State&#92;&quot;:&#92;&quot;CT&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:36,&#92;&quot;share with a number&#92;&quot;:0.722}]&quot;' data-total-rows='56' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='8' data-field-types='[[&quot;State&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;share with a number&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "ee3813fdc4aa85eaefeab27840f398f2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-county-data-attached-to-hospitals-the-ecological-fallacy\">3. County data attached to hospitals: the ecological fallacy</h2>\n<span class=\"paragraph\">If your layer joins a <strong>county</strong> measure (CDC PLACES, ACS) to <strong>hospitals</strong>, every hospital in a county\ngets the <em>same</em> county value. In the course crosswalk, <strong>88 hospitals</strong> sit in\nLos Angeles County, CA (FIPS 06037), and 897 counties have more than one hospital.</span>\n<span class=\"paragraph\">A county value describes <strong>people who live in the county</strong> \u2014 it is a fact about a place, not about any\nhospital's patients. So \"hospitals in high-poverty counties have higher readmissions\" is a statement\nabout counties. It does <strong>not</strong> show that poorer <em>patients</em> are readmitted more, and it can't tell you\nanything about one patient. Saying otherwise is the ecological fallacy. Patients also cross county lines.</span>\n<span class=\"paragraph\"><strong>Coverage gap to put on your data card:</strong> 325 hospitals that have a county FIPS get <strong>no</strong>\nCDC PLACES 2025 value at all, because their county code is not in the PLACES file (by state: PA 186, KY 103, CT 36).\nFind out why before you explain it \u2014 don't guess.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "66f667661dcf994ea53c95381d2b125d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-your-data-card\">4. Your data card</h2>\n<span class=\"paragraph\">Fill in the boxes; the computed facts are added for you. The full template is <a href=\"../templates/data_card.md\"><code>../templates/data_card.md</code></a>.</span></span><marimo-ui-element object-id='BYtC-0' random-id='7f2319b0-99bf-2f52-fd67-83f83ec9468f'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eWhat question can this layer answer? (one sentence)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='BYtC-1' random-id='f12c05da-8446-9b6b-50e0-9840e85fd726'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFor whom? Which patients (from the measure definition \u2014 cite it), which hospitals, which period&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='BYtC-2' random-id='e8a1701b-e665-42d4-0a3c-6d53ca392793'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eWhat can it NOT answer? (at least three things)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='BYtC-3' random-id='4be5182c-0e44-a22e-7cbe-f36dae0c7dfa'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eWho should use it, and for what decision? Who should not?&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='2'></marimo-text-area></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "ce852af8fc8d207e743335f62c7e4dd1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"data-card-draft\">Data card \u2014 DRAFT</h3>\n<span class=\"paragraph\"><strong>Measure:</strong> Heart failure (HF) 30-Day Readmission Rate \u00b7 <strong>Period:</strong> 07/01/2023 to 06/30/2025</span>\n<span class=\"paragraph\"><strong>Question it can answer:</strong> <em>(write this yourself)</em></span>\n<span class=\"paragraph\"><strong>For whom:</strong> <em>(write this yourself)</em></span>\n<span class=\"paragraph\"><strong>Coverage (computed):</strong> 3,253 of 5,419 hospitals have a number (60%). Best covered type: Acute Care Hospitals (87%); least: Psychiatric (0%).</span>\n<span class=\"paragraph\"><strong>What it cannot answer:</strong> <em>(write this yourself)</em></span>\n<span class=\"paragraph\"><strong>Intended use / not for:</strong> <em>(write this yourself)</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "15f5994d44a7da65b224a7672efcb508",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"5-how-an-app-is-built-and-published\">5. How an app is built and published</h2>\n<span class=\"paragraph\">A marimo app is just a notebook with <strong>controls</strong> (<code>mo.ui.\u2026</code>) and <strong>outputs</strong> that depend on them. When a\ncontrol changes, marimo re-runs every cell that uses it \u2014 nothing else. That's the whole idea.</span>\n<span class=\"paragraph\">Below is a complete tiny app in <strong>two cells</strong>. The code is shown because reading it is the lesson:</span>\n<ul>\n<li>Cell 1 makes a control. <code>mo.ui.dropdown(...)</code> builds the menu; the last line (<code>state</code>) displays it.</li>\n<li>Cell 2 uses <code>state.value</code> \u2014 whatever the user picked. Because it mentions <code>state</code>, marimo re-runs it on\n  every change. It filters to that state, counts hospitals by type, and draws a bar chart with altair.\n  The title says how many rows are behind the chart \u2014 always show that.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "6187c2cf8da1f38b8310b1524bc6bf7d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='26029247-3707-15a5-ba46-9416ee2c5283'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "fd08ca7af9c1ebf8be6d5e2e6f4f9426",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/vnd.vegalite.v6+json": "{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v6.4.1.json\",\n  \"config\": {\n    \"view\": {\n      \"continuousHeight\": 300,\n      \"continuousWidth\": 300\n    }\n  },\n  \"data\": {\n    \"name\": \"data-4655c464d3587483aa8a5c7633ac0fc6\"\n  },\n  \"datasets\": {\n    \"data-4655c464d3587483aa8a5c7633ac0fc6\": [\n      {\n        \"hospitals\": 26,\n        \"type\": \"Acute Care Hospitals\"\n      },\n      {\n        \"hospitals\": 8,\n        \"type\": \"Psychiatric\"\n      },\n      {\n        \"hospitals\": 1,\n        \"type\": \"Acute Care - Veterans Administration\"\n      },\n      {\n        \"hospitals\": 1,\n        \"type\": \"Childrens\"\n      }\n    ]\n  },\n  \"encoding\": {\n    \"x\": {\n      \"field\": \"hospitals\",\n      \"type\": \"quantitative\"\n    },\n    \"y\": {\n      \"field\": \"type\",\n      \"sort\": \"-x\",\n      \"title\": null,\n      \"type\": \"nominal\"\n    }\n  },\n  \"mark\": {\n    \"type\": \"bar\"\n  },\n  \"title\": \"Hospitals in CT by type (36 rows)\",\n  \"usermeta\": {\n    \"embedOptions\": {}\n  },\n  \"width\": 420\n}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "db1de17f04aeb02d8e58d64a26f8ed19",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Publishing.</strong> The same file runs as an app with the code hidden: locally, <code>marimo run your_notebook.py</code>\nopens it in the browser in app view. To share it as a link, follow the publishing steps in this week's\nbrief. Before you share: does every chart say how many rows are behind it, and does the app show where its\ndata came from?</span>\n<div class=\"admonition\">\n<span class=\"admonition-title\">Ask your AI \u2014 start your app</span>\n<blockquote>\n<span class=\"paragraph\"><em>\"In a marimo notebook, my data layer is a DataFrame called <code>layer</code> with columns ______. Build a\none-screen app: one <code>mo.ui.dropdown</code> for ______ and one chart (altair) that shows ______. Put the number\nof rows behind the chart in the chart title. Do not convert 'Not Available' to zero. Explain each line.\"</em></span>\n</blockquote>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "3b7a24f5d71c67b30b220927914d3d81",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-your-one-screen-app-sketch\">6. Your one-screen app sketch</h2></span><marimo-ui-element object-id='iLit-0' random-id='c15733f4-bcaf-fa81-4294-9bce153586de'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eWho is the user?&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='iLit-1' random-id='c6b4cbd2-38cc-5dc6-8e55-4fb0b4310aec'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe one question they come with&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='iLit-2' random-id='8365e215-67be-bc10-7f6b-4b0e7669cfb0'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eControls (what they can pick)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='iLit-3' random-id='624549ee-5245-f111-6453-62ccfa9bfaf3'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMain output (chart or table)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='iLit-4' random-id='b60dbfc0-c0ff-84fa-94cc-5bbc29d4857d'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe one number you&#x27;ll defend on screen&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='iLit-5' random-id='e20d2184-b9d4-aa11-cc58-028a15eca065'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe warning the app must show (from your data card)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "c902defa4faae9f01ff5364c25bb2895",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eApp for:&#92;u003c/strong&#92;u003e \u2026 \u00b7 &#92;u003cstrong&#92;u003eQuestion:&#92;u003c/strong&#92;u003e \u2026&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003e[ Controls ]&#92;u003c/strong&#92;u003e \u2026&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003e[ Main output ]&#92;u003c/strong&#92;u003e \u2026&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003e[ Headline number ]&#92;u003c/strong&#92;u003e \u2026&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003e[ Warning line ]&#92;u003c/strong&#92;u003e \u2026&#92;u003c/span&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003e[ Footer ]&#92;u003c/strong&#92;u003e Where these numbers came from (provenance table) \u00b7 link to data card&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;neutral&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "7bc0b5e1eb9499ae0c40b2b9169986db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='ROlb-0' random-id='b335b30b-7e17-806e-ea08-a9c51a47f821'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital General Information&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;xubh-q36u&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID (CMS Certification Number)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/xubh-q36u&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:38},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Unplanned Hospital Visits&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;632h-zaca&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x measure&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure ID&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/632h-zaca&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:67060,&#92;&quot;columns&#92;&quot;:20},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital Readmissions Reduction Program&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;9n3s-kdb3&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x condition&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure Name&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/9n3s-kdb3&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:18330,&#92;&quot;columns&#92;&quot;:12},{&#92;&quot;source&#92;&quot;:&#92;&quot;Course crosswalk: hospital to county FIPS&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;DATA 6900 (built from CMS county names + CDC county list)&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;course&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID -&#92;u003e county_fips&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://github.com/stevenelliottjr/healthcare-analytics-course-data&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-29&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:7},{&#92;&quot;source&#92;&quot;:&#92;&quot;CDC PLACES: County Data, 2025 release&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Disease Control and Prevention&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;swc5-untb&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per county x measure x value type&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;locationid (5-digit county FIPS)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-29&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:59160,&#92;&quot;columns&#92;&quot;:16}]&quot;' data-total-rows='5' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "cf83be530879ac9fb333416211638477",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"before-you-submit\">Before you submit</h2>\n<span class=\"paragraph\"><strong>Deliverable:</strong> (1) your data card (what it can answer, for whom, what it cannot), and (2) a one-screen\nsketch of the app you will build \u2014 this page's box, a photo of a paper sketch, or a slide. Submit your AI\ntranscript with it.</span>\n<span class=\"paragraph\"><strong>The one check to run:</strong> open the measure definition and confirm the patient population you wrote under\n\"For whom\". If you can't confirm it, write \"not confirmed\".</span>\n<span class=\"paragraph\"><strong>Sign-off (write three lines in your submission):</strong></span>\n<ul>\n<li><em>What I checked myself:</em> \u2026</li>\n<li><em>What I'm trusting the AI on:</em> \u2026</li>\n<li><em>What I won't sign:</em> \u2026</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

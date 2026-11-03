@@ -1,6 +1,6 @@
 # Week 3: Build the aggregator (guided, in class)
 
-**Notebook:** [week03_build_aggregator.py](../notebooks/week03_build_aggregator.py) · [Course home](../README.md)
+**Notebook:** [week03_build_aggregator.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week03_build_aggregator.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -24,7 +24,7 @@ A joined table at **one grain** (one row per hospital), built from your 2–3 so
 
 ## Steps
 
-1. Run the [week 3 notebook](../notebooks/week03_build_aggregator.py). Keep it: every later week starts from the layer it builds.
+1. Run the [week 3 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week03_build_aggregator.py). Keep it: every later week starts from the layer it builds.
 2. Make your choices under **Your choices**: the **Unplanned-visits measure**; whether to keep only hospitals with a numeric score (the one step that removes rows); **Join HRRP for the same condition**; the **CDC PLACES county measures** and **PLACES value type** (crude or age-adjusted); and the **ACS county measures**. Clear both county lists for a hospital-only layer.
 3. Read the build code and open **"What each line does"**. This is the one week where reading code is the lesson.
 4. Read the **Join ledger**: rows should stay the same at every join; *rows matched* shows what each source actually supplied.

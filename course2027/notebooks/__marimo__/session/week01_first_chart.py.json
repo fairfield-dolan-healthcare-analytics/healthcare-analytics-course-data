@@ -1,0 +1,191 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": "90033b7a6e97130237d9f01a95902d87"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a25ae3ea611a000442a3df591de6d757",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "4f181276d19c32ec9203d1086e1395f2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"week-1-your-first-chart-and-what-the-human-is-for\">Week 1 \u2014 Your first chart, and what the human is for</h1>\n<span class=\"paragraph\">Tonight you make <strong>one chart from one CMS file</strong>, publish it as a link a classmate can open,\nand write down <strong>the question you want your aggregator to answer</strong> this term.</span>\n<span class=\"paragraph\">You do not need to write code. Pick options with the controls below. When you want something\nthe notebook doesn't do yet, use an <strong>Ask your AI</strong> box: copy the prompt into the AI tool of your\nchoice, paste its code into a new cell, and then check its answer against the numbers on screen.</span>\n<span class=\"paragraph\"><em>Data rule from day one: only public, aggregate data goes into any AI tool. No patient data,\nno passwords.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "6813ba1ea150e8c3fa92d04a3194b15b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "51c31df08938aa348dd6b2f39c75a63b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-file-cms-hospital-general-information\">The file: CMS <em>Hospital General Information</em></h2>\n<span class=\"paragraph\">One row per hospital: <strong>5,419 hospitals</strong> across <strong>56</strong> states and territories.\nEach has a type (acute care, critical access, psychiatric, \u2026), an ownership, and a CMS\n<strong>overall star rating</strong> from 1 to 5.</span>\n<span class=\"paragraph\">One thing to notice before you chart anything: <strong>2,245 of 5,419 hospitals\n(41%) have no star rating</strong> \u2014 the file says \"Not Available\". A chart that quietly\ndrops those hospitals tells a different story from one that shows them. In this course they are\nalways shown as their own category.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "2a0342f073d51dd3117cb80ea995d59a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='lEQa-0' random-id='6befbd0b-aae1-4190-70b4-207b408649c2'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;All states&quot;,&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='lEQa-1' random-id='228e5ac4-2480-0c01-ba92-2ca0254a49a6'><marimo-dropdown data-initial-value='[&quot;Overall star rating&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCount hospitals by&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Overall star rating&quot;,&quot;Hospital type&quot;,&quot;Ownership&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "85133d482f7bd298cf687cf812469d8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-mime-renderer data-mime='&quot;application/vnd.vegalite.v6+json&quot;' data-data='&quot;{&#92;n  &#92;&quot;&#36;schema&#92;&quot;: &#92;&quot;https://vega.github.io/schema/vega-lite/v6.4.1.json&#92;&quot;,&#92;n  &#92;&quot;config&#92;&quot;: {&#92;n    &#92;&quot;view&#92;&quot;: {&#92;n      &#92;&quot;continuousHeight&#92;&quot;: 300,&#92;n      &#92;&quot;continuousWidth&#92;&quot;: 300&#92;n    }&#92;n  },&#92;n  &#92;&quot;data&#92;&quot;: {&#92;n    &#92;&quot;name&#92;&quot;: &#92;&quot;data-c6d6cb0b3e05abfad0bd15d79dcca772&#92;&quot;&#92;n  },&#92;n  &#92;&quot;datasets&#92;&quot;: {&#92;n    &#92;&quot;data-c6d6cb0b3e05abfad0bd15d79dcca772&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;Not Available&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 10,&#92;n        &#92;&quot;missing&#92;&quot;: true,&#92;n        &#92;&quot;share&#92;&quot;: 0.2777777777777778&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 9,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;share&#92;&quot;: 0.25&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 8,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;share&#92;&quot;: 0.2222222222222222&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 5,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;share&#92;&quot;: 0.1388888888888889&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 4,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;share&#92;&quot;: 0.1111111111111111&#92;n      }&#92;n    ]&#92;n  },&#92;n  &#92;&quot;encoding&#92;&quot;: {&#92;n    &#92;&quot;color&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;missing&#92;&quot;,&#92;n      &#92;&quot;legend&#92;&quot;: {&#92;n        &#92;&quot;labelExpr&#92;&quot;: &#92;&quot;datum.value == &#x27;true&#x27; ? &#x27;No (Not Available)&#x27; : &#x27;Yes&#x27;&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Value reported?&#92;&quot;&#92;n      },&#92;n      &#92;&quot;scale&#92;&quot;: {&#92;n        &#92;&quot;domain&#92;&quot;: [&#92;n          false,&#92;n          true&#92;n        ],&#92;n        &#92;&quot;range&#92;&quot;: [&#92;n          &#92;&quot;#2a78d6&#92;&quot;,&#92;n          &#92;&quot;#8f8d87&#92;&quot;&#92;n        ]&#92;n      },&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    },&#92;n    &#92;&quot;tooltip&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Overall star rating&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;share&#92;&quot;,&#92;n        &#92;&quot;format&#92;&quot;: &#92;&quot;.0%&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Share&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      }&#92;n    ],&#92;n    &#92;&quot;x&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n      &#92;&quot;title&#92;&quot;: &#92;&quot;Number of hospitals&#92;&quot;,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n    },&#92;n    &#92;&quot;y&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n      &#92;&quot;sort&#92;&quot;: [&#92;n        &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;Not Available&#92;&quot;&#92;n      ],&#92;n      &#92;&quot;title&#92;&quot;: null,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    }&#92;n  },&#92;n  &#92;&quot;height&#92;&quot;: {&#92;n    &#92;&quot;step&#92;&quot;: 26&#92;n  },&#92;n  &#92;&quot;mark&#92;&quot;: {&#92;n    &#92;&quot;cornerRadiusEnd&#92;&quot;: 4,&#92;n    &#92;&quot;size&#92;&quot;: 18,&#92;n    &#92;&quot;type&#92;&quot;: &#92;&quot;bar&#92;&quot;&#92;n  },&#92;n  &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals in CT by overall star rating (n = 36)&#92;&quot;,&#92;n  &#92;&quot;usermeta&#92;&quot;: {&#92;n    &#92;&quot;embedOptions&#92;&quot;: {}&#92;n  },&#92;n  &#92;&quot;width&#92;&quot;: &#92;&quot;container&#92;&quot;&#92;n}&quot;'></marimo-mime-renderer><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Rows behind this chart:</strong> 36 hospitals (after filtering to CT). The bars add up to 36 \u2014 nothing was dropped.</span></span><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eShow the numbers as a table&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='PKri-0' random-id='9cee9f9e-cc08-413f-1c45-543f3b31a3ef'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;Not Available&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:10,&#92;&quot;share&#92;&quot;:0.2777777777777778},{&#92;&quot;category&#92;&quot;:&#92;&quot;3&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:9,&#92;&quot;share&#92;&quot;:0.25},{&#92;&quot;category&#92;&quot;:&#92;&quot;4&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:8,&#92;&quot;share&#92;&quot;:0.2222222222222222},{&#92;&quot;category&#92;&quot;:&#92;&quot;2&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:5,&#92;&quot;share&#92;&quot;:0.1388888888888889},{&#92;&quot;category&#92;&quot;:&#92;&quot;5&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:4,&#92;&quot;share&#92;&quot;:0.1111111111111111}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;share&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div></marimo-accordion></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "cfe6f890cba377dc1b690bc0e8c68a52",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eRead your chart before you publish it.&#92;u003c/strong&#92;u003e In your current view, &#92;u003cstrong&#92;u003e10 of 36 hospitals (28%)&#92;u003c/strong&#92;u003e have no value for &#92;u003cem&#92;u003eoverall star rating&#92;u003c/em&#92;u003e. If you removed them, every other bar&#x27;s share would go up \u2014 and nobody reading your chart would know.&#92;u003cbr /&#92;u003e&#92;nWrite one sentence you could defend about CT: what does the chart show, and what can&#x27;t it tell you?&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;warn&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "abf734884b56e96c625d24070abaa7f2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-callout-output data-html='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e&#92;u003cstrong&#92;u003eAsk your AI&#92;u003c/strong&#92;u003e \u2014 copy this prompt, paste the code it gives you into a new cell below.&#92;u003c/span&#92;u003e&#92;n&#92;u003cdiv class=&#92;&quot;language-text codehilite&#92;&quot;&#92;u003e&#92;u003cpre&#92;u003e&#92;u003cspan&#92;u003e&#92;u003c/span&#92;u003e&#92;u003ccode&#92;u003eI have a marimo notebook with a pandas DataFrame called `hospitals` (CMS Hospital General&#92;nInformation; every column is text). Add a cell that makes an Altair bar chart of&#92;n&#92;&quot;Hospital overall rating&#92;&quot; for hospitals where &#92;&quot;Emergency Services&#92;&quot; is &#92;&quot;Yes&#92;&quot;, shown next to&#92;nthe same chart for &#92;&quot;No&#92;&quot;. Keep &#92;&quot;Not Available&#92;&quot; as its own bar - do not drop it or turn it&#92;ninto zero. Print the number of rows in each group before charting.&#92;n&#92;u003c/code&#92;u003e&#92;u003c/pre&#92;u003e&#92;u003c/div&#92;u003e&#92;n&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThen check it: do the two groups&#x27; row counts add up to the total in the file?&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-kind='&quot;info&quot;'></marimo-callout-output>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "3de6ecfea5bbbcdc500e834fdd863389",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"publish-it-as-a-link\">Publish it as a link</h2>\n<span class=\"paragraph\">Your deliverable is a link a classmate can open and see your chart \u2014 without installing anything.</span>\n<ol>\n<li>Open this notebook in <strong>molab</strong> (marimo's free hosted notebooks) if you aren't already there.</li>\n<li>Click <strong>Save a copy</strong> (or <strong>Fork</strong> on the preview page) so the notebook is in your own workspace.\n   A notebook you only ran with <strong>Run it now</strong> isn't saved, so it can't be shared.</li>\n<li>In your copy, set the dropdowns to the view you want to show.</li>\n<li>Click <strong>Share</strong>, then <strong>Copy App URL</strong>. That's the notebook as an app, with the code hidden.</li>\n<li><strong>Test the link</strong> in a private/incognito browser window, or send it to a classmate and ask what they see.\n   If they can't open it, it isn't shared yet. If it opens with different dropdown settings from yours,\n   add a line to your submission naming the settings to pick.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "060faebdd447575b5758b6b1597c23b1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"your-question-for-the-term\">Your question for the term</h2>\n<span class=\"paragraph\">Over the next weeks you will join several public sources into one <strong>aggregator</strong> \u2014 a data layer\nyou can defend. Start with the question it should answer. Keep it to one sentence, about places\nor hospitals (not individual patients).</span></span><marimo-ui-element object-id='RGSE-0' random-id='8fb14490-731e-d4c4-8455-1cc0c6337691'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe one question I want my aggregator to answer this term:&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;e.g. Do hospitals in counties with higher diabetes rates have higher heart-failure readmissions?&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "0f0a9765d6c14b0d31831d2de0c17933",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><blockquote>\n<span class=\"paragraph\"><em>(Your question will appear here once you type it.)</em></span>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "6b0a5b024a6c005d640f1bd10ef32e3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-is-the-human-for\">What is the human for?</h2>\n<span class=\"paragraph\">An AI tool can write the code for this chart in seconds. It cannot decide whether \"Not Available\"\nbelongs on the chart, whether your question is worth asking, or whether you are willing to put your\nname on the result. <strong>Your job in this course is those decisions:</strong> choosing what to count, checking\nthe numbers, and saying out loud what you would and would not sign.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "7bc0b5e1eb9499ae0c40b2b9169986db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='Hstk-0' random-id='4746a603-b975-acaf-86da-0619d6973a9d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital General Information&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;xubh-q36u&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID (CMS Certification Number)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/xubh-q36u&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:34&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:38}]&quot;' data-total-rows='1' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "cf584cbe111eb5edd5d1a1a2ae889623",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"before-you-submit\">Before you submit</h2>\n<span class=\"paragraph\"><strong>Deliverable:</strong> (1) a link to your published chart that a classmate has opened, and (2) your one-sentence\nquestion for the term. Submit your AI transcript with it.</span>\n<span class=\"paragraph\"><strong>The one check to run:</strong> do your bars add up to the \"rows behind this chart\" number? If not, something\nwas dropped \u2014 find out what.</span>\n<span class=\"paragraph\"><strong>Sign-off (write three lines in your submission):</strong></span>\n<ul>\n<li><em>What I checked myself:</em> \u2026</li>\n<li><em>What I'm trusting the AI on:</em> \u2026</li>\n<li><em>What I won't sign:</em> \u2026</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

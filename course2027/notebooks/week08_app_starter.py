@@ -366,11 +366,11 @@ def _(mo):
     marimo opens the notebook in your browser as an app: code hidden, controls working.
     `marimo edit week08_app_starter.py` reopens it for editing.
 
-    **In molab** (marimo's free hosted service, https://molab.marimo.io/notebooks). marimo's molab guide
-    says: to share a notebook, share its URL (viewers get a static preview and can make their own copy);
-    to share it as a data app, choose **"Run as app"** from the share button on a running notebook.
-    If the menus look different from that description, trust what you see, and check
-    https://docs.marimo.io/guides/molab/.
+    **In molab** (marimo's free hosted service, https://molab.marimo.io/notebooks). Save a copy to your
+    own workspace first (**Save a copy**, or **Fork** on the preview page). Then click **Share**:
+    **Copy Notebook URL** gives viewers a preview they can run or copy, and **Copy App URL** shares it as
+    a data app with the code hidden. If the menus look different from that description, trust what you
+    see, and check https://docs.marimo.io/guides/molab/.
 
     Before you share: open your link in a private browser window to check a classmate can open it,
     and check the app only uses public, aggregate data.

@@ -1,6 +1,6 @@
 # Week 12: Recency in practice
 
-**Notebook:** [week12_refresh.py](../notebooks/week12_refresh.py) · [Course home](../README.md)
+**Notebook:** [week12_refresh.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week12_refresh.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -22,7 +22,7 @@ Public health data is republished on a schedule, and each release can change the
 
 ## Steps
 
-1. Run the [week 12 notebook](../notebooks/week12_refresh.py). The **current** version is your layer rebuilt now from the sources the course loads today.
+1. Run the [week 12 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week12_refresh.py). The **current** version is your layer rebuilt now from the sources the course loads today.
 2. **Section 1.** Check `obtained_from` and `loaded_at` in the provenance table. "local cache" means a copy saved earlier in the `data` folder; delete that folder and rerun to force a fresh copy, and ask your instructor when the course copy was last refreshed.
 3. **Section 2, the earlier version.** Upload your week 3 export (`aggregator_<measure>.csv`); the notebook then rebuilds the current layer the same way, so like is compared with like. With no upload, it uses a **SIMULATED** earlier snapshot with documented, made-up changes, and the diff should find exactly those.
 4. Read **section 3** (the week 3 checks, before and after) and **section 4** (what changed: rows added and removed, columns, period changes, score changes, new suppression, newly published).

@@ -1,6 +1,6 @@
 # Week 6: Validate the use; how an app is built and published
 
-**Notebook:** [week06_validate_use.py](../notebooks/week06_validate_use.py) · [Course home](../README.md)
+**Notebook:** [week06_validate_use.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week06_validate_use.py) · [Course home](../README.md)
 
 ## Why this week matters
 
@@ -28,13 +28,13 @@ You'll also see how a marimo notebook becomes an **app**: the same notebook, wit
 
 ## Steps
 
-1. Run the [week 6 notebook](../notebooks/week06_validate_use.py) and pick **"The measure at the heart of your layer"**.
+1. Run the [week 6 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week06_validate_use.py) and pick **"The measure at the heart of your layer"**.
 2. Read sections 1–3: **whose population** the measure covers and how many hospitals have a number (the file doesn't say which patients are counted; the measure definition does); **coverage by hospital type and state**; and **county data attached to hospitals** (the ecological fallacy, plus the hospitals that get no PLACES value).
 3. **Section 4, your data card.** Fill in the four boxes (what it can answer, for whom, what it can't answer, who should and shouldn't use it). The notebook adds the computed coverage. Move it into the full [data card template](../templates/data_card.md), and write the "Not for" section yourself: at least one use you'd refuse, and why. Then look for gaps:
    > Here is a data card for a public, county- and hospital-level dataset I built: [paste]. List the questions a skeptical reviewer would ask that this card doesn't answer. Don't rewrite it.
 4. **Section 5, how an app is built.** Read the two-cell app: one cell makes a dropdown, the other uses its value. That's the whole idea.
 5. **Section 6, your sketch.** Fill in the boxes (user, question, controls, main output, the number you'll defend, the warning the app must show), or draw it on paper or a slide.
-6. **Publishing, for week 8.** Locally, `marimo run your_notebook.py` opens a notebook as an app. In molab, sharing a notebook's URL gives viewers a static preview they can copy; to share it as an app, choose **"Run as app"** from the share button on a running notebook. If molab's menus look different, trust what you see and check marimo's molab guide (docs.marimo.io/guides/molab/). Always test the link in a private browser window.
+6. **Publishing, for week 8.** Locally, `marimo run your_notebook.py` opens a notebook as an app. In molab, save a copy to your workspace first, then use **Share**: **Copy Notebook URL** gives viewers a preview they can run or copy, and **Copy App URL** shares it as an app with the code hidden (see [Working in molab](../README.md#working-in-molab)). If molab's menus look different, trust what you see and check marimo's molab guide (docs.marimo.io/guides/molab/). Always test the link in a private browser window.
 
 ## The check to run before you submit
 

@@ -1,0 +1,178 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": "a911a4a3762c80f3977a24401149ddb7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a25ae3ea611a000442a3df591de6d757",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "ff1abc035043bb2799dbea2b3cdc2d05",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"week-7-compliance-public-aggregate-data-vs-phi\">Week 7 \u2014 Compliance: public aggregate data vs. PHI</h1>\n<span class=\"paragraph\">Your layer is built from <strong>public, facility-level</strong> files: one row per hospital (or hospital x measure),\npublished by CMS and CDC for anyone to download. That is very different from <strong>patient-level</strong> data.</span>\n<span class=\"paragraph\"><strong>The words, at the level this course uses them.</strong> Under HIPAA, <em>protected health information</em> (PHI) is\nindividually identifiable health information. HHS describes two ways to de-identify health information:\n<strong>Safe Harbor</strong> and <strong>Expert Determination</strong>. Look them up on the HHS de-identification guidance page\nbefore you rely on either; this notebook is a course check, not a legal review.</span>\n<span class=\"paragraph\"><strong>The lesson:</strong> a hospital's name, address and phone number are <em>public facts about a facility</em>, not PHI.\nA patient's name, a date of birth, or a count small enough to point at a few people is a different matter.</span>\n<span class=\"paragraph\">Run the checklist below against your layer: pick one of the course examples, or upload the CSV you\nexported from your own notebook.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "9f7ba21dd77497fb6063026905962246",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "8a935e5e11620ad5a113f3c105b2ac2e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='bkHC-0' random-id='45bc9bcc-837f-0b58-32df-a887856896ab'><marimo-radio data-initial-value='&quot;Example layer: HRRP joined to hospital info&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eRun the checklist on&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Example layer: HRRP joined to hospital info&quot;,&quot;CMS Unplanned Hospital Visits&quot;,&quot;CMS Hospital General Information&quot;,&quot;My exported CSV (upload below)&quot;]' data-inline='false' data-disabled='false'></marimo-radio></marimo-ui-element><marimo-ui-element object-id='bkHC-1' random-id='0e423b5a-ad74-4025-52b6-977bae63d727'><marimo-file data-initial-value='[]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eUpload my layer (CSV)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-filetypes='[&quot;.csv&quot;]' data-multiple='false' data-kind='&quot;button&quot;' data-max_size='100000000'></marimo-file></marimo-ui-element><marimo-ui-element object-id='bkHC-2' random-id='1b8aeb89-fee5-3df6-deca-0ae81a3877aa'><marimo-slider data-initial-value='11' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSmall-cell threshold (flag counts below this)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1' data-stop='30' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='true' data-full-width='false'></marimo-slider></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "a69ef9977f3152c29198588326f7912e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Checking <strong>example layer: HRRP + hospital info</strong>: 18,330 rows x 18 columns.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "c23fb8e38bce10c3d5e7a382cedcffb4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"check-1-identifiers\">Check 1 \u2014 Identifiers</h2>\n<span class=\"paragraph\">Columns whose name or values look like identifiers, and whose they are. Hospital names, addresses and phone numbers are published by CMS for every hospital: they identify a <em>facility</em>. Anything that identifies a <em>patient</em> fails.</span></span><marimo-ui-element object-id='PKri-0' random-id='1b173e87-1208-e68e-69a4-c41efea66d34'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column&#92;&quot;:&#92;&quot;Facility Name&#92;&quot;,&#92;&quot;found&#92;&quot;:&#92;&quot;name looks identifying&#92;&quot;,&#92;&quot;verdict&#92;&quot;:&#92;&quot;OK &#92;&#92;u2014 public facility information (about a hospital, not a person)&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Address&#92;&quot;,&#92;&quot;found&#92;&quot;:&#92;&quot;name looks identifying&#92;&quot;,&#92;&quot;verdict&#92;&quot;:&#92;&quot;OK &#92;&#92;u2014 public facility information (about a hospital, not a person)&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;City/Town&#92;&quot;,&#92;&quot;found&#92;&quot;:&#92;&quot;name looks identifying&#92;&quot;,&#92;&quot;verdict&#92;&quot;:&#92;&quot;OK &#92;&#92;u2014 public facility information (about a hospital, not a person)&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;ZIP Code&#92;&quot;,&#92;&quot;found&#92;&quot;:&#92;&quot;name looks identifying&#92;&quot;,&#92;&quot;verdict&#92;&quot;:&#92;&quot;OK &#92;&#92;u2014 public facility information (about a hospital, not a person)&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Telephone Number&#92;&quot;,&#92;&quot;found&#92;&quot;:&#92;&quot;phone numbers&#92;&quot;,&#92;&quot;verdict&#92;&quot;:&#92;&quot;OK &#92;&#92;u2014 public facility information (about a hospital, not a person)&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;found&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;verdict&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "69b64b18ba915e70b9519cd137f427d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"check-2-small-cells\">Check 2 \u2014 Small cells</h2>\n<span class=\"paragraph\">A count small enough can point at a handful of people. CMS's public files suppress small counts \u2014 this is <strong>CMS's cell-size suppression convention; confirm the current policy</strong> before you cite a number. You can see it in the data: in the HRRP file the smallest <em>Number of Readmissions</em> shown is <strong>11</strong>, and <strong>3,683</strong> rows say \"Too Few to Report\" instead. The default threshold here is 11 to match what the data shows; set your own if your policy differs. Zeros are listed separately: decide whether a zero in your layer could identify anyone.</span></span><marimo-ui-element object-id='Xref-0' random-id='4f629d6f-04be-706e-53eb-381d1cd1f9c3'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;count column&#92;&quot;:&#92;&quot;Number of Discharges&#92;&quot;,&#92;&quot;cells with a number&#92;&quot;:8242,&#92;&quot;cells from 1 to 10&#92;&quot;:0,&#92;&quot;cells equal to 0&#92;&quot;:205,&#92;&quot;smallest non-zero&#92;&quot;:27.0},{&#92;&quot;count column&#92;&quot;:&#92;&quot;Number of Readmissions&#92;&quot;,&#92;&quot;cells with a number&#92;&quot;:8037,&#92;&quot;cells from 1 to 10&#92;&quot;:0,&#92;&quot;cells equal to 0&#92;&quot;:0,&#92;&quot;smallest non-zero&#92;&quot;:11.0}]&quot;' data-total-rows='2' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;count column&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;cells with a number&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;cells from 1 to 10&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;cells equal to 0&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;smallest non-zero&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a83458ab29b22fa71736930de123c0f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"check-3-suppression-markers-preserved\">Check 3 \u2014 Suppression markers preserved</h2>\n<span class=\"paragraph\">CMS writes <em>why</em> a value is missing (\"Too Few to Report\", \"Not Available\"). If your export shows blanks or zeros where the source had a marker, a reader can't tell \"suppressed\" from \"zero\". Blanks are not always wrong (CMS leaves Footnote blank when there is none) \u2014 look at which columns have them. Columns with both markers and blanks: <strong>0</strong>.</span></span><marimo-ui-element object-id='SFPL-0' random-id='e4422520-fc85-288b-e46f-0de0d0d57ef9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Discharges&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:10088,&#92;&quot;blank cells&#92;&quot;:0},{&#92;&quot;column&#92;&quot;:&#92;&quot;Footnote&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:0,&#92;&quot;blank cells&#92;&quot;:11343},{&#92;&quot;column&#92;&quot;:&#92;&quot;Excess Readmission Ratio&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:6610,&#92;&quot;blank cells&#92;&quot;:0},{&#92;&quot;column&#92;&quot;:&#92;&quot;Predicted Readmission Rate&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:6610,&#92;&quot;blank cells&#92;&quot;:0},{&#92;&quot;column&#92;&quot;:&#92;&quot;Expected Readmission Rate&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:6610,&#92;&quot;blank cells&#92;&quot;:0},{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Readmissions&#92;&quot;,&#92;&quot;suppression-marker cells&#92;&quot;:10293,&#92;&quot;blank cells&#92;&quot;:0}]&quot;' data-total-rows='6' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;suppression-marker cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;blank cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "c13553cae50fe7b3775821076b11c19c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"check-4-what-you-may-give-an-ai-tool\">Check 4 \u2014 What you may give an AI tool</h2>\n<span class=\"paragraph\"><strong>Course rule:</strong> only public, aggregate data goes into any AI tool. No PHI, no row-level patient data, no credentials. Scan for credential-like text: none found.</span></span><marimo-ui-element object-id='BYtC-0' random-id='f3d02840-ec22-56dc-c440-4db089c8a17b'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eEverything I paste into an AI tool is public, aggregate data (facility or county level)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element><marimo-ui-element object-id='BYtC-1' random-id='34146f36-844b-8780-7512-27fd6de7c1d4'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eI never paste patient-level rows, or anything I was given under a data agreement&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element><marimo-ui-element object-id='BYtC-2' random-id='488ea561-30b6-1b00-148d-6399e57d1bc2'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eI never paste passwords, API keys or tokens&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "dbdb15df6d312977e80c154d415914d0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"your-compliance-checklist-example-layer-hrrp-hospital-info\">Your compliance checklist \u2014 example layer: HRRP + hospital info</h2>\n<table>\n<thead>\n<tr>\n<th>Check</th>\n<th>Result</th>\n<th>Detail</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>No patient-level identifiers</td>\n<td><strong>PASS</strong></td>\n<td>0 failing, 0 to check by hand (Check 1)</td>\n</tr>\n<tr>\n<td>No small cells (counts 1 to 10)</td>\n<td><strong>PASS</strong></td>\n<td>0 small cells (Check 2)</td>\n</tr>\n<tr>\n<td>Suppression markers preserved</td>\n<td><strong>PASS</strong></td>\n<td>40,211 marker cells kept as text (Check 3)</td>\n</tr>\n<tr>\n<td>No credentials in the data</td>\n<td><strong>PASS</strong></td>\n<td>0 columns flagged (Check 4)</td>\n</tr>\n<tr>\n<td>AI-tool rule acknowledged</td>\n<td><strong>CHECK</strong></td>\n<td>tick the three boxes</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Overall: NOT YET \u2014 fix or explain each FAIL/CHECK.</strong> A PASS here is a course check, not a legal opinion. Copy this table into the full checklist: <a href=\"../templates/compliance_checklist.md\"><code>../templates/compliance_checklist.md</code></a>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "2e17acfb29d49b3c8b1194e2df47b6ba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div class=\"admonition\">\n<span class=\"admonition-title\">Ask your AI \u2014 fix a failing check</span>\n<blockquote>\n<span class=\"paragraph\"><em>\"My data layer <code>layer</code> (public CMS hospital data) fails this check: ______. Add a marimo cell that\n______ (for example: replaces counts below 11 in column ______ with the text 'Suppressed (&lt;11)', or drops\ncolumn ______). Keep all other values as text exactly as they are, never turn suppressed values into 0,\nand print the row count and the number of changed cells.\"</em></span>\n</blockquote>\n<span class=\"paragraph\">Paste only column names and the check result into the AI tool \u2014 not patient data, not credentials.</span>\n</div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "7bc0b5e1eb9499ae0c40b2b9169986db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='emfo-0' random-id='e2bfa325-1a83-5776-9124-acea75f35dfb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital General Information&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;xubh-q36u&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID (CMS Certification Number)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/xubh-q36u&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:38},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital Readmissions Reduction Program&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;9n3s-kdb3&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x condition&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure Name&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/9n3s-kdb3&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:18330,&#92;&quot;columns&#92;&quot;:12},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Unplanned Hospital Visits&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;632h-zaca&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x measure&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure ID&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/632h-zaca&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-02 21:32&#92;&quot;,&#92;&quot;rows&#92;&quot;:67060,&#92;&quot;columns&#92;&quot;:20}]&quot;' data-total-rows='3' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "e75ddd99aa11ba39952db1ce264c134f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"before-you-submit\">Before you submit</h2>\n<span class=\"paragraph\"><strong>Deliverable:</strong> the compliance checklist for <strong>your</strong> layer (upload your exported CSV above), with every\nFAIL or CHECK fixed or explained, copied into <code>compliance_checklist.md</code>. Submit your AI transcript with it.</span>\n<span class=\"paragraph\"><strong>The one check to run:</strong> open your exported CSV and find one suppressed value from the source. Is it still\nthere as text, or did it become a blank or a zero?</span>\n<span class=\"paragraph\"><strong>Sign-off (write three lines in your submission):</strong></span>\n<ul>\n<li><em>What I checked myself:</em> \u2026</li>\n<li><em>What I'm trusting the AI on:</em> \u2026</li>\n<li><em>What I won't sign:</em> \u2026</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
