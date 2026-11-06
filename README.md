@@ -6,21 +6,13 @@ and Egan MPH students).
 
 ## Start here: the Spring 2027 course
 
-**[`course2027/`](course2027/README.md)** is the course. It holds the course home, the 14 weekly briefs,
-one marimo notebook per build week, the templates (provenance record, defend-a-number, data card,
-compliance checklist, human sign-off, transcript guide, peer review, app rubric), and the readings list.
+**[Open the DATA 6900 Start page in molab](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py).** It links every weekly brief,
+notebook, template and the readings, in order. All course pages are marimo notebooks in
+[`course2027/notebooks/`](course2027/notebooks/) and open in [molab](https://molab.marimo.io), marimo's free
+hosted service.
 
-No programming is required. Students run the notebooks on [molab](https://molab.marimo.io) (marimo's
-free hosted service) and use any AI assistant to write and explain code. Only public, aggregate data
-goes into any AI tool; no PHI, ever.
-
-| | |
-|---|---|
-| Course home | [course2027/README.md](course2027/README.md) |
-| Weekly briefs | [course2027/weeks/](course2027/weeks/) |
-| Notebooks | [course2027/notebooks/](course2027/notebooks/) |
-| Templates | [course2027/templates/](course2027/templates/) |
-| Readings | [course2027/READINGS.md](course2027/READINGS.md) |
+No programming is required. Students use any AI assistant to write and explain code. Only public,
+aggregate data goes into any AI tool; no PHI, ever.
 
 ## The data
 
