@@ -1,6 +1,10 @@
+<img src="assets/fairfield-university-logo-wide.svg" alt="Fairfield University" height="56">
+
 # DATA 6900: Healthcare Analytics (Spring 2027)
 
 Fairfield University, Dolan School of Business · Tuesdays 6:30–9:30 pm, online · for MSAIBA and Egan MPH students
+
+**Start here:** the [course start page in molab](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py) links every week's notebook and brief, in order.
 
 ## What this course is
 
