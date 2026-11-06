@@ -27,6 +27,14 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
+def _(mo):
+    mo.Html(
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week12_brief.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Read the week 12 brief</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div>'
+    )
+    return
+
+
+@app.cell(hide_code=True)
 def _():
     import marimo as mo
 

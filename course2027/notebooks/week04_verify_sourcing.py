@@ -27,6 +27,14 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
+def _(mo):
+    mo.Html(
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week04_brief.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Read the week 4 brief</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div>'
+    )
+    return
+
+
+@app.cell(hide_code=True)
 def _():
     import marimo as mo
 
@@ -140,7 +148,7 @@ def _(mo):
 
     **Part A — trace two numbers.** Pick a hospital and a measure. The notebook shows the number as it
     would sit in your layer *next to* the exact source row it came from: which file, which line, which column,
-    which reporting period. Then it shows a state average and every row that went into it. Do this three times.
+    which reporting period. Then it shows a state average and every row that went into it. Do this twice.
 
     **Part B — find the planted errors.** We give you a copy of the hospital file that someone "cleaned"
     badly. Several kinds of error are hidden in it. The notebook gives you tools, not answers: you find them,

@@ -20,6 +20,19 @@
     },
     {
       "id": "MJUe",
+      "code_hash": "dcb40b2a11a193815287acf93ddb7a83",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style=\"display:flex;gap:8px;flex-wrap:wrap;\"><a href=\"https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py\" target=\"_blank\" rel=\"noopener\" style=\"background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;\">Read the week 1 brief</a><a href=\"https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py\" target=\"_blank\" rel=\"noopener\" style=\"background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;\">\u2190 Start here</a></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
       "code_hash": "a25ae3ea611a000442a3df591de6d757",
       "outputs": [
         {
@@ -32,7 +45,7 @@
       "console": []
     },
     {
-      "id": "vblA",
+      "id": "bkHC",
       "code_hash": "4f181276d19c32ec9203d1086e1395f2",
       "outputs": [
         {
@@ -45,7 +58,7 @@
       "console": []
     },
     {
-      "id": "bkHC",
+      "id": "lEQa",
       "code_hash": "6813ba1ea150e8c3fa92d04a3194b15b",
       "outputs": [
         {
@@ -58,7 +71,7 @@
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "PKri",
       "code_hash": "51c31df08938aa348dd6b2f39c75a63b",
       "outputs": [
         {
@@ -71,26 +84,13 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "Xref",
       "code_hash": "2a0342f073d51dd3117cb80ea995d59a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='PKri-0' random-id='c0812967-734b-6c38-58de-4805169869bc'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;All states&quot;,&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='PKri-1' random-id='4a137998-f9ab-0ebb-0ab2-15b3a71fca31'><marimo-dropdown data-initial-value='[&quot;Overall star rating&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCount hospitals by&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Overall star rating&quot;,&quot;Hospital type&quot;,&quot;Ownership&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Xref",
-      "code_hash": "6729fa70b50b0206fd18be276bda3417",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-mime-renderer data-mime='&quot;application/vnd.vegalite.v6+json&quot;' data-data='&quot;{&#92;n  &#92;&quot;&#36;schema&#92;&quot;: &#92;&quot;https://vega.github.io/schema/vega-lite/v6.4.1.json&#92;&quot;,&#92;n  &#92;&quot;config&#92;&quot;: {&#92;n    &#92;&quot;view&#92;&quot;: {&#92;n      &#92;&quot;continuousHeight&#92;&quot;: 300,&#92;n      &#92;&quot;continuousWidth&#92;&quot;: 300&#92;n    }&#92;n  },&#92;n  &#92;&quot;data&#92;&quot;: {&#92;n    &#92;&quot;name&#92;&quot;: &#92;&quot;data-46e0b994e1a1c6a0a515ed4c97a27376&#92;&quot;&#92;n  },&#92;n  &#92;&quot;datasets&#92;&quot;: {&#92;n    &#92;&quot;data-46e0b994e1a1c6a0a515ed4c97a27376&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;Not Available&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 10,&#92;n        &#92;&quot;missing&#92;&quot;: true,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;No (Not Available)&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.2777777777777778&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 9,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.25&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 8,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.2222222222222222&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 5,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.1388888888888889&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 4,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.1111111111111111&#92;n      }&#92;n    ]&#92;n  },&#92;n  &#92;&quot;encoding&#92;&quot;: {&#92;n    &#92;&quot;color&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;reported&#92;&quot;,&#92;n      &#92;&quot;legend&#92;&quot;: {&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Value reported?&#92;&quot;&#92;n      },&#92;n      &#92;&quot;scale&#92;&quot;: {&#92;n        &#92;&quot;domain&#92;&quot;: [&#92;n          &#92;&quot;Yes&#92;&quot;,&#92;n          &#92;&quot;No (Not Available)&#92;&quot;&#92;n        ],&#92;n        &#92;&quot;range&#92;&quot;: [&#92;n          &#92;&quot;#2a78d6&#92;&quot;,&#92;n          &#92;&quot;#8f8d87&#92;&quot;&#92;n        ]&#92;n      },&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    },&#92;n    &#92;&quot;tooltip&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Overall star rating&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;share&#92;&quot;,&#92;n        &#92;&quot;format&#92;&quot;: &#92;&quot;.0%&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Share&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      }&#92;n    ],&#92;n    &#92;&quot;x&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n      &#92;&quot;title&#92;&quot;: &#92;&quot;Number of hospitals&#92;&quot;,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n    },&#92;n    &#92;&quot;y&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n      &#92;&quot;sort&#92;&quot;: [&#92;n        &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;Not Available&#92;&quot;&#92;n      ],&#92;n      &#92;&quot;title&#92;&quot;: null,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    }&#92;n  },&#92;n  &#92;&quot;height&#92;&quot;: {&#92;n    &#92;&quot;step&#92;&quot;: 26&#92;n  },&#92;n  &#92;&quot;mark&#92;&quot;: {&#92;n    &#92;&quot;cornerRadiusEnd&#92;&quot;: 4,&#92;n    &#92;&quot;size&#92;&quot;: 18,&#92;n    &#92;&quot;type&#92;&quot;: &#92;&quot;bar&#92;&quot;&#92;n  },&#92;n  &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals in CT by overall star rating (n = 36)&#92;&quot;,&#92;n  &#92;&quot;usermeta&#92;&quot;: {&#92;n    &#92;&quot;embedOptions&#92;&quot;: {}&#92;n  },&#92;n  &#92;&quot;width&#92;&quot;: &#92;&quot;container&#92;&quot;&#92;n}&quot;'></marimo-mime-renderer><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Rows behind this chart:</strong> 36 hospitals (after filtering to CT). The bars add up to 36 \u2014 nothing was dropped.</span></span><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eShow the numbers as a table&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='Xref-0' random-id='813efbfc-3f8b-f86d-e1ec-7e3868858fba'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;Not Available&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:10,&#92;&quot;share&#92;&quot;:0.2777777777777778},{&#92;&quot;category&#92;&quot;:&#92;&quot;3&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:9,&#92;&quot;share&#92;&quot;:0.25},{&#92;&quot;category&#92;&quot;:&#92;&quot;4&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:8,&#92;&quot;share&#92;&quot;:0.2222222222222222},{&#92;&quot;category&#92;&quot;:&#92;&quot;2&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:5,&#92;&quot;share&#92;&quot;:0.1388888888888889},{&#92;&quot;category&#92;&quot;:&#92;&quot;5&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:4,&#92;&quot;share&#92;&quot;:0.1111111111111111}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;share&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div></marimo-accordion></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='Xref-0' random-id='5c836256-0ad0-b15f-d3bd-06f08ad82d06'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;All states&quot;,&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Xref-1' random-id='1c514477-abb4-1045-d493-8df8468da06c'><marimo-dropdown data-initial-value='[&quot;Overall star rating&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCount hospitals by&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Overall star rating&quot;,&quot;Hospital type&quot;,&quot;Ownership&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
           }
         }
       ],
@@ -98,6 +98,19 @@
     },
     {
       "id": "SFPL",
+      "code_hash": "6729fa70b50b0206fd18be276bda3417",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-mime-renderer data-mime='&quot;application/vnd.vegalite.v6+json&quot;' data-data='&quot;{&#92;n  &#92;&quot;&#36;schema&#92;&quot;: &#92;&quot;https://vega.github.io/schema/vega-lite/v6.4.1.json&#92;&quot;,&#92;n  &#92;&quot;config&#92;&quot;: {&#92;n    &#92;&quot;view&#92;&quot;: {&#92;n      &#92;&quot;continuousHeight&#92;&quot;: 300,&#92;n      &#92;&quot;continuousWidth&#92;&quot;: 300&#92;n    }&#92;n  },&#92;n  &#92;&quot;data&#92;&quot;: {&#92;n    &#92;&quot;name&#92;&quot;: &#92;&quot;data-46e0b994e1a1c6a0a515ed4c97a27376&#92;&quot;&#92;n  },&#92;n  &#92;&quot;datasets&#92;&quot;: {&#92;n    &#92;&quot;data-46e0b994e1a1c6a0a515ed4c97a27376&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;Not Available&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 10,&#92;n        &#92;&quot;missing&#92;&quot;: true,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;No (Not Available)&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.2777777777777778&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 9,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.25&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 8,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.2222222222222222&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 5,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.1388888888888889&#92;n      },&#92;n      {&#92;n        &#92;&quot;category&#92;&quot;: &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;hospitals&#92;&quot;: 4,&#92;n        &#92;&quot;missing&#92;&quot;: false,&#92;n        &#92;&quot;reported&#92;&quot;: &#92;&quot;Yes&#92;&quot;,&#92;n        &#92;&quot;share&#92;&quot;: 0.1111111111111111&#92;n      }&#92;n    ]&#92;n  },&#92;n  &#92;&quot;encoding&#92;&quot;: {&#92;n    &#92;&quot;color&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;reported&#92;&quot;,&#92;n      &#92;&quot;legend&#92;&quot;: {&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Value reported?&#92;&quot;&#92;n      },&#92;n      &#92;&quot;scale&#92;&quot;: {&#92;n        &#92;&quot;domain&#92;&quot;: [&#92;n          &#92;&quot;Yes&#92;&quot;,&#92;n          &#92;&quot;No (Not Available)&#92;&quot;&#92;n        ],&#92;n        &#92;&quot;range&#92;&quot;: [&#92;n          &#92;&quot;#2a78d6&#92;&quot;,&#92;n          &#92;&quot;#8f8d87&#92;&quot;&#92;n        ]&#92;n      },&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    },&#92;n    &#92;&quot;tooltip&#92;&quot;: [&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Overall star rating&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      },&#92;n      {&#92;n        &#92;&quot;field&#92;&quot;: &#92;&quot;share&#92;&quot;,&#92;n        &#92;&quot;format&#92;&quot;: &#92;&quot;.0%&#92;&quot;,&#92;n        &#92;&quot;title&#92;&quot;: &#92;&quot;Share&#92;&quot;,&#92;n        &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n      }&#92;n    ],&#92;n    &#92;&quot;x&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;hospitals&#92;&quot;,&#92;n      &#92;&quot;title&#92;&quot;: &#92;&quot;Number of hospitals&#92;&quot;,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;quantitative&#92;&quot;&#92;n    },&#92;n    &#92;&quot;y&#92;&quot;: {&#92;n      &#92;&quot;field&#92;&quot;: &#92;&quot;category&#92;&quot;,&#92;n      &#92;&quot;sort&#92;&quot;: [&#92;n        &#92;&quot;2&#92;&quot;,&#92;n        &#92;&quot;3&#92;&quot;,&#92;n        &#92;&quot;4&#92;&quot;,&#92;n        &#92;&quot;5&#92;&quot;,&#92;n        &#92;&quot;Not Available&#92;&quot;&#92;n      ],&#92;n      &#92;&quot;title&#92;&quot;: null,&#92;n      &#92;&quot;type&#92;&quot;: &#92;&quot;nominal&#92;&quot;&#92;n    }&#92;n  },&#92;n  &#92;&quot;height&#92;&quot;: {&#92;n    &#92;&quot;step&#92;&quot;: 26&#92;n  },&#92;n  &#92;&quot;mark&#92;&quot;: {&#92;n    &#92;&quot;cornerRadiusEnd&#92;&quot;: 4,&#92;n    &#92;&quot;size&#92;&quot;: 18,&#92;n    &#92;&quot;type&#92;&quot;: &#92;&quot;bar&#92;&quot;&#92;n  },&#92;n  &#92;&quot;title&#92;&quot;: &#92;&quot;Hospitals in CT by overall star rating (n = 36)&#92;&quot;,&#92;n  &#92;&quot;usermeta&#92;&quot;: {&#92;n    &#92;&quot;embedOptions&#92;&quot;: {}&#92;n  },&#92;n  &#92;&quot;width&#92;&quot;: &#92;&quot;container&#92;&quot;&#92;n}&quot;'></marimo-mime-renderer><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Rows behind this chart:</strong> 36 hospitals (after filtering to CT). The bars add up to 36 \u2014 nothing was dropped.</span></span><marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eShow the numbers as a table&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><marimo-ui-element object-id='SFPL-0' random-id='63f3d2fa-4c1c-c82c-17cf-ff2aae61efa8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;Not Available&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:10,&#92;&quot;share&#92;&quot;:0.2777777777777778},{&#92;&quot;category&#92;&quot;:&#92;&quot;3&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:9,&#92;&quot;share&#92;&quot;:0.25},{&#92;&quot;category&#92;&quot;:&#92;&quot;4&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:8,&#92;&quot;share&#92;&quot;:0.2222222222222222},{&#92;&quot;category&#92;&quot;:&#92;&quot;2&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:5,&#92;&quot;share&#92;&quot;:0.1388888888888889},{&#92;&quot;category&#92;&quot;:&#92;&quot;5&#92;&quot;,&#92;&quot;hospitals&#92;&quot;:4,&#92;&quot;share&#92;&quot;:0.1111111111111111}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;hospitals&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;share&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div></marimo-accordion></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
       "code_hash": "cfe6f890cba377dc1b690bc0e8c68a52",
       "outputs": [
         {
@@ -110,7 +123,7 @@
       "console": []
     },
     {
-      "id": "BYtC",
+      "id": "RGSE",
       "code_hash": "abf734884b56e96c625d24070abaa7f2",
       "outputs": [
         {
@@ -123,7 +136,7 @@
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "Kclp",
       "code_hash": "3de6ecfea5bbbcdc500e834fdd863389",
       "outputs": [
         {
@@ -136,20 +149,20 @@
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "emfo",
       "code_hash": "060faebdd447575b5758b6b1597c23b1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"your-question-for-the-term\">Your question for the term</h2>\n<span class=\"paragraph\">Over the next weeks you will join several public sources into one <strong>aggregator</strong> \u2014 a data layer\nyou can defend. Start with the question it should answer. Keep it to one sentence, about places\nor hospitals (not individual patients).</span></span><marimo-ui-element object-id='Kclp-0' random-id='85f378f3-fbaa-266e-dca2-372d240893ad'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe one question I want my aggregator to answer this term:&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;e.g. Do hospitals in counties with higher diabetes rates have higher heart-failure readmissions?&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"your-question-for-the-term\">Your question for the term</h2>\n<span class=\"paragraph\">Over the next weeks you will join several public sources into one <strong>aggregator</strong> \u2014 a data layer\nyou can defend. Start with the question it should answer. Keep it to one sentence, about places\nor hospitals (not individual patients).</span></span><marimo-ui-element object-id='emfo-0' random-id='dcbfa5f1-80c5-1c63-e1c1-6d4b67a5891b'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eThe one question I want my aggregator to answer this term:&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;e.g. Do hospitals in counties with higher diabetes rates have higher heart-failure readmissions?&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element></div>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "Hstk",
       "code_hash": "0f0a9765d6c14b0d31831d2de0c17933",
       "outputs": [
         {
@@ -162,7 +175,7 @@
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "nWHF",
       "code_hash": "6b0a5b024a6c005d640f1bd10ef32e3b",
       "outputs": [
         {
@@ -175,20 +188,20 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "iLit",
       "code_hash": "7bc0b5e1eb9499ae0c40b2b9169986db",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='nWHF-0' random-id='4b59b230-7d2a-3c20-269a-fa4494ae35c1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital General Information&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;xubh-q36u&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID (CMS Certification Number)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/xubh-q36u&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:01&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:38}]&quot;' data-total-rows='1' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='iLit-0' random-id='f266692d-a95c-a76b-d30d-0e180e17b2ca'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital General Information&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;xubh-q36u&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID (CMS Certification Number)&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/xubh-q36u&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:10&#92;&quot;,&#92;&quot;rows&#92;&quot;:5419,&#92;&quot;columns&#92;&quot;:38}]&quot;' data-total-rows='1' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ZHCJ",
       "code_hash": "4ab4a73218719897fa3558d23caf88c2",
       "outputs": [
         {

@@ -20,6 +20,19 @@
     },
     {
       "id": "MJUe",
+      "code_hash": "577299c09dc3cf15228e392f65954d22",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style=\"display:flex;gap:8px;flex-wrap:wrap;\"><a href=\"https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week05_brief.py\" target=\"_blank\" rel=\"noopener\" style=\"background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;\">Read the week 5 brief</a><a href=\"https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py\" target=\"_blank\" rel=\"noopener\" style=\"background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;\">\u2190 Start here</a></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
       "code_hash": "a25ae3ea611a000442a3df591de6d757",
       "outputs": [
         {
@@ -32,7 +45,7 @@
       "console": []
     },
     {
-      "id": "vblA",
+      "id": "bkHC",
       "code_hash": "c54c6db83f3309cd9fa7993e93452ab7",
       "outputs": [
         {
@@ -45,7 +58,7 @@
       "console": []
     },
     {
-      "id": "bkHC",
+      "id": "lEQa",
       "code_hash": "b6d85fb644115a74bd5687c9957e9f56",
       "outputs": [
         {
@@ -58,26 +71,13 @@
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "PKri",
       "code_hash": "40637b7ebb3e50e582571030b2f8e973",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='lEQa-0' random-id='7df2a533-8ad3-03fc-89f2-7f0990cfd3c9'><marimo-radio data-initial-value='&quot;Unplanned Hospital Visits&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSource file&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Unplanned Hospital Visits&quot;,&quot;Hospital Readmissions Reduction Program (HRRP)&quot;]' data-inline='false' data-disabled='false'></marimo-radio></marimo-ui-element><marimo-ui-element object-id='lEQa-1' random-id='e8a7523c-480a-a62a-e6a9-c5c8d6af6f37'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "PKri",
-      "code_hash": "55ab1a52fa6b803be3f5889ad979e097",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='PKri-0' random-id='507bb697-b4d3-6efc-9448-d35419f3793c'><marimo-dropdown data-initial-value='[&quot;BRIDGEPORT HOSPITAL (070010)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eHospital (28 in this file for CT)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;BRIDGEPORT HOSPITAL (070010)&quot;,&quot;BRISTOL HOSPITAL (070029)&quot;,&quot;CHARLOTTE HUNGERFORD HOSPITAL (070011)&quot;,&quot;CONNECTICUT CHILDRENS MEDICAL CENTER (073300)&quot;,&quot;DANBURY HOSPITAL (070033)&quot;,&quot;DAY KIMBALL HOSPITAL (070003)&quot;,&quot;GREENWICH HOSPITAL ASSOCIATION - (070018)&quot;,&quot;GRIFFIN HOSPITAL (070031)&quot;,&quot;HARTFORD HOSPITAL (070025)&quot;,&quot;JOHN DEMPSEY HOSPITAL OF THE UNIVERSITY OF CONNECT (070036)&quot;,&quot;JOHNSON MEMORIAL HOSPITAL (070008)&quot;,&quot;LAWRENCE &amp; MEMORIAL HOSPITAL (070007)&quot;,&quot;MANCHESTER MEMORIAL HOSPITAL (070027)&quot;,&quot;MIDDLESEX HOSPITAL (070020)&quot;,&quot;MIDSTATE MEDICAL CENTER (070017)&quot;,&quot;NORWALK HOSPITAL (070034)&quot;,&quot;SAINT MARY&#x27;S HOSPITAL (070016)&quot;,&quot;SHARON HOSPITAL (070004)&quot;,&quot;ST FRANCIS HOSPITAL &amp; MEDICAL CENTER (070002)&quot;,&quot;ST VINCENT&#x27;S MEDICAL CENTER (070028)&quot;,&quot;STAMFORD HOSPITAL (070006)&quot;,&quot;THE CONNECTICUT HOSPICE INC. (070038)&quot;,&quot;THE HOSPITAL OF CENTRAL CONNECTICUT (070035)&quot;,&quot;WATERBURY HOSPITAL (070005)&quot;,&quot;WEST HAVEN VA MEDICAL CENTER (07003F)&quot;,&quot;WILLIAM W BACKUS HOSPITAL (070024)&quot;,&quot;WINDHAM COMMUNITY MEMORIAL HOSPITAL (070021)&quot;,&quot;YALE-NEW HAVEN HOSPITAL (070022)&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='PKri-1' random-id='2c7e56d4-2400-f373-b318-421f885ce4b5'><marimo-dropdown data-initial-value='[&quot;READM_30_HF&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMeasure&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;EDAC_30_AMI&quot;,&quot;EDAC_30_HF&quot;,&quot;EDAC_30_PN&quot;,&quot;Hybrid_HWR&quot;,&quot;OP_32&quot;,&quot;OP_35_ADM&quot;,&quot;OP_35_ED&quot;,&quot;OP_36&quot;,&quot;READM_30_AMI&quot;,&quot;READM_30_CABG&quot;,&quot;READM_30_COPD&quot;,&quot;READM_30_HF&quot;,&quot;READM_30_HIP_KNEE&quot;,&quot;READM_30_PN&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='PKri-0' random-id='9df73683-6ba3-bda4-70cd-39f323b5e6f5'><marimo-radio data-initial-value='&quot;Unplanned Hospital Visits&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSource file&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Unplanned Hospital Visits&quot;,&quot;Hospital Readmissions Reduction Program (HRRP)&quot;]' data-inline='false' data-disabled='false'></marimo-radio></marimo-ui-element><marimo-ui-element object-id='PKri-1' random-id='601fa8cf-21d4-6506-36de-d0f408a55238'><marimo-dropdown data-initial-value='[&quot;CT&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eState&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;AK&quot;,&quot;AL&quot;,&quot;AR&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DC&quot;,&quot;DE&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;IA&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;MA&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MP&quot;,&quot;MS&quot;,&quot;MT&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;NE&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NV&quot;,&quot;NY&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VA&quot;,&quot;VI&quot;,&quot;VT&quot;,&quot;WA&quot;,&quot;WI&quot;,&quot;WV&quot;,&quot;WY&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
           }
         }
       ],
@@ -85,12 +85,12 @@
     },
     {
       "id": "Xref",
-      "code_hash": "5ab9981f665c57cfdd2f7359df357dbc",
+      "code_hash": "55ab1a52fa6b803be3f5889ad979e097",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Which columns hold numbers for READM_30_HF?</strong> Check this before you claim a numerator or denominator \u2014 a column that exists is not a column that is filled in.</span></span><marimo-ui-element object-id='Xref-0' random-id='5883b232-fe0e-3d83-ea86-d77825e4ca13'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column&#92;&quot;:&#92;&quot;Denominator&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:3253,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Score&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:3253,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Lower Estimate&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Higher Estimate&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Patients&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Applicable&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Patients Returned&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Applicable&#92;&quot;}]&quot;' data-total-rows='6' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows with a number&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;rows for this measure&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;most common non-number text&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='Xref-0' random-id='b803bf24-9c12-1da7-714c-5adbd90b8e1c'><marimo-dropdown data-initial-value='[&quot;BRIDGEPORT HOSPITAL (070010)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eHospital (28 in this file for CT)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;BRIDGEPORT HOSPITAL (070010)&quot;,&quot;BRISTOL HOSPITAL (070029)&quot;,&quot;CHARLOTTE HUNGERFORD HOSPITAL (070011)&quot;,&quot;CONNECTICUT CHILDRENS MEDICAL CENTER (073300)&quot;,&quot;DANBURY HOSPITAL (070033)&quot;,&quot;DAY KIMBALL HOSPITAL (070003)&quot;,&quot;GREENWICH HOSPITAL ASSOCIATION - (070018)&quot;,&quot;GRIFFIN HOSPITAL (070031)&quot;,&quot;HARTFORD HOSPITAL (070025)&quot;,&quot;JOHN DEMPSEY HOSPITAL OF THE UNIVERSITY OF CONNECT (070036)&quot;,&quot;JOHNSON MEMORIAL HOSPITAL (070008)&quot;,&quot;LAWRENCE &amp; MEMORIAL HOSPITAL (070007)&quot;,&quot;MANCHESTER MEMORIAL HOSPITAL (070027)&quot;,&quot;MIDDLESEX HOSPITAL (070020)&quot;,&quot;MIDSTATE MEDICAL CENTER (070017)&quot;,&quot;NORWALK HOSPITAL (070034)&quot;,&quot;SAINT MARY&#x27;S HOSPITAL (070016)&quot;,&quot;SHARON HOSPITAL (070004)&quot;,&quot;ST FRANCIS HOSPITAL &amp; MEDICAL CENTER (070002)&quot;,&quot;ST VINCENT&#x27;S MEDICAL CENTER (070028)&quot;,&quot;STAMFORD HOSPITAL (070006)&quot;,&quot;THE CONNECTICUT HOSPICE INC. (070038)&quot;,&quot;THE HOSPITAL OF CENTRAL CONNECTICUT (070035)&quot;,&quot;WATERBURY HOSPITAL (070005)&quot;,&quot;WEST HAVEN VA MEDICAL CENTER (07003F)&quot;,&quot;WILLIAM W BACKUS HOSPITAL (070024)&quot;,&quot;WINDHAM COMMUNITY MEMORIAL HOSPITAL (070021)&quot;,&quot;YALE-NEW HAVEN HOSPITAL (070022)&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Xref-1' random-id='2244675f-4c5e-8c5f-f05d-cb3d0520ded6'><marimo-dropdown data-initial-value='[&quot;READM_30_HF&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMeasure&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;EDAC_30_AMI&quot;,&quot;EDAC_30_HF&quot;,&quot;EDAC_30_PN&quot;,&quot;Hybrid_HWR&quot;,&quot;OP_32&quot;,&quot;OP_35_ADM&quot;,&quot;OP_35_ED&quot;,&quot;OP_36&quot;,&quot;READM_30_AMI&quot;,&quot;READM_30_CABG&quot;,&quot;READM_30_COPD&quot;,&quot;READM_30_HF&quot;,&quot;READM_30_HIP_KNEE&quot;,&quot;READM_30_PN&quot;]' data-allow-select-none='false' data-searchable='true' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element></div>"
           }
         }
       ],
@@ -98,6 +98,19 @@
     },
     {
       "id": "SFPL",
+      "code_hash": "5ab9981f665c57cfdd2f7359df357dbc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Which columns hold numbers for READM_30_HF?</strong> Check this before you claim a numerator or denominator \u2014 a column that exists is not a column that is filled in.</span></span><marimo-ui-element object-id='SFPL-0' random-id='fecdd9d9-11b1-2b1f-8e31-8370e63d37eb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column&#92;&quot;:&#92;&quot;Denominator&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:3253,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Score&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:3253,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Lower Estimate&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Higher Estimate&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Available&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Patients&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Applicable&#92;&quot;},{&#92;&quot;column&#92;&quot;:&#92;&quot;Number of Patients Returned&#92;&quot;,&#92;&quot;rows with a number&#92;&quot;:0,&#92;&quot;rows for this measure&#92;&quot;:4790,&#92;&quot;most common non-number text&#92;&quot;:&#92;&quot;Not Applicable&#92;&quot;}]&quot;' data-total-rows='6' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows with a number&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;rows for this measure&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;most common non-number text&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
       "code_hash": "63068ebb525f56a0bc97077b7479f53d",
       "outputs": [
         {
@@ -110,7 +123,7 @@
       "console": []
     },
     {
-      "id": "BYtC",
+      "id": "RGSE",
       "code_hash": "1faf286154531fa6786a5b52227e1011",
       "outputs": [
         {
@@ -123,7 +136,7 @@
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "Kclp",
       "code_hash": "64c80dfd8c4531cf0697a1b0dd5b0268",
       "outputs": [
         {
@@ -136,7 +149,7 @@
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "emfo",
       "code_hash": "a7a2227c2e3148000932d60d93762d5b",
       "outputs": [
         {
@@ -149,20 +162,20 @@
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "Hstk",
       "code_hash": "2876911c8c3822ebe2a3155dd35e9d65",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='emfo-0' random-id='7ebe1c7a-3078-a16d-8214-fa9967c4002c'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col&#92;u003e&#92;n&#92;u003cli&#92;u003eIn one or two sentences, what does this number mean for a reader?&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='emfo-1' random-id='b6ba6bfd-199a-f87e-848f-5d8fcd779e65'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col start=&#92;&quot;2&#92;&quot;&#92;u003e&#92;n&#92;u003cli&#92;u003eWhy do I believe it? (what I checked, and where)&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='emfo-2' random-id='19a9a934-1b04-e90b-7aaa-f27c25ed7ed7'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col start=&#92;&quot;3&#92;&quot;&#92;u003e&#92;n&#92;u003cli&#92;u003eWhat would I refuse to claim from it?&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Hstk-0' random-id='c168ba68-5584-8eea-5ee8-11b011e21707'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col&#92;u003e&#92;n&#92;u003cli&#92;u003eIn one or two sentences, what does this number mean for a reader?&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='Hstk-1' random-id='ebfc3ae8-0468-0f3a-1e4e-57cf94d16216'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col start=&#92;&quot;2&#92;&quot;&#92;u003e&#92;n&#92;u003cli&#92;u003eWhy do I believe it? (what I checked, and where)&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element><marimo-ui-element object-id='Hstk-2' random-id='822deef2-fde4-572f-e63a-9f4da3898e15'><marimo-text-area data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003col start=&#92;&quot;3&#92;&quot;&#92;u003e&#92;n&#92;u003cli&#92;u003eWhat would I refuse to claim from it?&#92;u003c/li&#92;u003e&#92;n&#92;u003c/ol&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='3'></marimo-text-area></marimo-ui-element></div>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "nWHF",
       "code_hash": "e4ac8f6a9655e033f0ca0c47859daa97",
       "outputs": [
         {
@@ -175,7 +188,7 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "iLit",
       "code_hash": "9a38611b44c88c25512e1bca5fe43e92",
       "outputs": [
         {
@@ -188,20 +201,20 @@
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ZHCJ",
       "code_hash": "7bc0b5e1eb9499ae0c40b2b9169986db",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='iLit-0' random-id='8d35484e-64ff-06f2-3134-162c74d416b8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Unplanned Hospital Visits&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;632h-zaca&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x measure&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure ID&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/632h-zaca&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:02&#92;&quot;,&#92;&quot;rows&#92;&quot;:67060,&#92;&quot;columns&#92;&quot;:20},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital Readmissions Reduction Program&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;9n3s-kdb3&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x condition&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure Name&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/9n3s-kdb3&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:02&#92;&quot;,&#92;&quot;rows&#92;&quot;:18330,&#92;&quot;columns&#92;&quot;:12}]&quot;' data-total-rows='2' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-these-numbers-came-from\">Where these numbers came from</h2></span><marimo-ui-element object-id='ZHCJ-0' random-id='a7198cf9-e314-de9d-e425-fc2313875269'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Unplanned Hospital Visits&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;632h-zaca&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x measure&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure ID&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/632h-zaca&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:10&#92;&quot;,&#92;&quot;rows&#92;&quot;:67060,&#92;&quot;columns&#92;&quot;:20},{&#92;&quot;source&#92;&quot;:&#92;&quot;CMS Hospital Readmissions Reduction Program&#92;&quot;,&#92;&quot;publisher&#92;&quot;:&#92;&quot;Centers for Medicare &amp; Medicaid Services&#92;&quot;,&#92;&quot;dataset_id&#92;&quot;:&#92;&quot;9n3s-kdb3&#92;&quot;,&#92;&quot;grain&#92;&quot;:&#92;&quot;one row per hospital x condition&#92;&quot;,&#92;&quot;join_key&#92;&quot;:&#92;&quot;Facility ID + Measure Name&#92;&quot;,&#92;&quot;source_page&#92;&quot;:&#92;&quot;https://data.cms.gov/provider-data/dataset/9n3s-kdb3&#92;&quot;,&#92;&quot;obtained_from&#92;&quot;:&#92;&quot;local cache&#92;&quot;,&#92;&quot;mirror_snapshot&#92;&quot;:&#92;&quot;2026-10-26&#92;&quot;,&#92;&quot;loaded_at&#92;&quot;:&#92;&quot;2026-11-05 21:10&#92;&quot;,&#92;&quot;rows&#92;&quot;:18330,&#92;&quot;columns&#92;&quot;:12}]&quot;' data-total-rows='2' data-total-columns='11' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;source&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;publisher&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;dataset_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;grain&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_key&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;source_page&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;obtained_from&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;mirror_snapshot&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;loaded_at&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;columns&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "ROlb",
       "code_hash": "f0575b6f029a326f519d646b83f1331b",
       "outputs": [
         {
