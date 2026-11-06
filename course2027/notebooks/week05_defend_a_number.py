@@ -123,7 +123,7 @@ def _(mo):
     mo.md(r"""
     # Week 5 — Defend one number
 
-    Pick **one hospital and one measure**. By the end you will have a one-page defense of that single number:
+    Pick **one hospital and one measure**. By the end you will have a half-page defense of that single number:
     what kind of number it is, what it was counted from, when, what was hidden, how it compares, and what it
     does *not* tell you.
 
@@ -372,7 +372,7 @@ def _(mo):
     AI can help you draft this; make sure every claim is one you can explain live, without the AI open. Once
     you have a draft, paste it and:
 
-    > *"Here is my one-page defense of a CMS hospital measure. List every claim in it, and for
+    > *"Here is my short defense of a CMS hospital measure. List every claim in it, and for
     > each one tell me whether it is supported by the facts I gave, needs a source I haven't cited (for example
     > the measure definition or the CMS footnote list), or is wrong. Ask me two questions a skeptical hospital
     > executive would ask."*
@@ -394,10 +394,10 @@ def _(mo):
     mo.md(r"""
     ## Before you submit
 
-    **Deliverable:** a one-page defense of one number — what it is, numerator and denominator (or why the file
-    doesn't give them), suppression and footnotes, reporting period, how it compares, and what it does not tell
-    you. AI may help draft it; every claim must be one you can explain live without the AI open. Submit your AI
-    transcript with it.
+    **Deliverable:** a half-page defense of one number — numerator and denominator (or why the file doesn't
+    give them), suppression and footnotes, and reporting period. *Optional, for more:* how it compares, and
+    what it does not tell you. AI may help draft it; every claim must be one you can explain live without
+    the AI open.
 
     **The one check to run:** open the measure definition on the CMS source page and confirm the unit and the
     patient population you describe. If you can't find it, write "not confirmed" rather than guess.

@@ -484,7 +484,7 @@ def _(mo):
     ## Before you submit
 
     **Deliverable:** your joined layer at hospital grain (CSV), with the join ledger showing row counts before
-    and after each join and filter. Submit your AI transcript with it.
+    and after each join and filter. If this is one of your three transcript weeks, submit your AI transcript with it.
 
     **The one check to run:** pick one row of the ledger where *rows matched* is lower than *rows*, and say in
     one sentence who didn't match and why (use the "What didn't match" tabs).

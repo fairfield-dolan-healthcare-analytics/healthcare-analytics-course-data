@@ -336,7 +336,7 @@ def _(mo):
     ## Before you submit
 
     **Deliverable:** (1) a link to your published chart that a classmate has opened, and (2) your one-sentence
-    question for the term. Submit your AI transcript with it.
+    question for the term. If this is one of your three transcript weeks, submit your AI transcript with it.
 
     **The one check to run:** do your bars add up to the "rows behind this chart" number? If not, something
     was dropped — find out what.

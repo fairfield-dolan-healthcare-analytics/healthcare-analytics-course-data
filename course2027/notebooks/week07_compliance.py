@@ -354,7 +354,7 @@ def _(mo):
     ## Before you submit
 
     **Deliverable:** the compliance checklist for **your** layer (upload your exported CSV above), with every
-    FAIL or CHECK fixed or explained, copied into `compliance_checklist.md`. Submit your AI transcript with it.
+    FAIL or CHECK fixed or explained, copied into `compliance_checklist.md`. If this is one of your three transcript weeks, submit your AI transcript with it.
 
     **The one check to run:** open your exported CSV and find one suppressed value from the source. Is it still
     there as text, or did it become a blank or a zero?

@@ -38,7 +38,7 @@ def _(mo):
     mo.md(r"""
     # Week 12: recency in practice
 
-    **Deliverable:** refresh one source, rerun your checks, report what changed.
+    **Deliverable:** refresh one source, rerun your row counts and one trace, report what changed.
 
     Public data is not a fixed thing. CMS refreshes Care Compare on a schedule (the course data mirror's
     README says quarterly), and every refresh can add or drop hospitals, change numbers, move the
@@ -503,8 +503,8 @@ def _(mo):
     ## Before you submit
 
     **Deliverable:** a short "what changed" report: which source you refreshed (with its provenance row),
-    the before-and-after checks table, and what the changes mean for your app. If you used the simulated
-    snapshot, say so, and say when you will rerun it on a real refresh.
+    what changed, and what it means for your app. If you used the simulated snapshot, say so.
+    *Optional, for more:* the full before-and-after checks table.
 
     **The one check:** pick one hospital from "Hospitals whose score changed" (or "New suppression") and
     confirm the current value on the source page yourself.

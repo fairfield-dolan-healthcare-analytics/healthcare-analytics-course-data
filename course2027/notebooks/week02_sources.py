@@ -388,7 +388,7 @@ def _(mo):
     ## Before you submit
 
     **Deliverable:** a provenance record for each of your 2–3 chosen sources, every field filled in.
-    Submit your AI transcript with it.
+    If this is one of your three transcript weeks, submit your AI transcript with it.
 
     **The one check to run:** for one source, open its source page and confirm the reporting period
     yourself. Does it match what the data says? If not, write down which one you believe and why.

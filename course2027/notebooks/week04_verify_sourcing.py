@@ -138,7 +138,7 @@ def _(mo):
 
     Last week you built a joined layer. This week you prove where its numbers came from.
 
-    **Part A — trace three numbers.** Pick a hospital and a measure. The notebook shows the number as it
+    **Part A — trace two numbers.** Pick a hospital and a measure. The notebook shows the number as it
     would sit in your layer *next to* the exact source row it came from: which file, which line, which column,
     which reporting period. Then it shows a state average and every row that went into it. Do this three times.
 
@@ -464,11 +464,11 @@ def _(mo):
     mo.md(r"""
     ## Before you submit
 
-    **Deliverable:** (1) three traces from Part A — ideally numbers from *your* layer — each with file, line,
-    column, raw text and period; (2) your list of planted errors: what, how many rows, how you found it, what
-    it would break. Submit your AI transcript with it.
+    **Deliverable:** (1) two traces from Part A — ideally numbers from *your* layer — each with file, line,
+    column, raw text and period; (2) the kinds of planted errors you found, one line each.
+    *Optional, for more:* a third trace, and for each error how many rows it affects and what it would break.
 
-    **The one check to run:** for one of your three traces, open the source CSV yourself at the line number
+    **The one check to run:** for one of your traces, open the source CSV yourself at the line number
     shown and read the raw text with your own eyes. Does it match?
 
     **Sign-off (write three lines in your submission):**

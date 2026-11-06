@@ -129,7 +129,7 @@ def _(mo):
     **First half:** whose population does your measure cover, which hospitals are missing and why, and what
     happens when county data is attached to hospitals. You end with your **data card**.
 
-    **Second half:** how a marimo notebook becomes an app, and a **one-screen sketch** of the app you'll build.
+    **Second half:** how a marimo notebook becomes an app, and an optional **one-screen sketch** of the app you'll build.
     """)
     return
 
@@ -353,7 +353,7 @@ def _(mo):
     sk_out = mo.ui.text(label="Main output (chart or table)", full_width=True)
     sk_num = mo.ui.text(label="The one number you'll defend on screen", full_width=True)
     sk_warn = mo.ui.text(label="The warning the app must show (from your data card)", full_width=True)
-    mo.vstack([mo.md("## 6. Your one-screen app sketch"), sk_user, sk_q, sk_controls, sk_out, sk_num, sk_warn])
+    mo.vstack([mo.md("## 6. Your one-screen app sketch (optional)"), sk_user, sk_q, sk_controls, sk_out, sk_num, sk_warn])
     return sk_controls, sk_num, sk_out, sk_q, sk_user, sk_warn
 
 
@@ -383,9 +383,9 @@ def _(mo):
     mo.md(r"""
     ## Before you submit
 
-    **Deliverable:** (1) your data card (what it can answer, for whom, what it cannot), and (2) a one-screen
-    sketch of the app you will build — this page's box, a photo of a paper sketch, or a slide. Submit your AI
-    transcript with it.
+    **Deliverable:** your data card (what it can answer, for whom, what it cannot).
+    *Optional, for more:* a one-screen sketch of the app you will build — this page's box, a photo of a paper
+    sketch, or a slide.
 
     **The one check to run:** open the measure definition and confirm the patient population you wrote under
     "For whom". If you can't confirm it, write "not confirmed".

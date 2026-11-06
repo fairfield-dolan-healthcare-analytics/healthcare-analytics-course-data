@@ -40,13 +40,13 @@ def _(mo):
     mo.md(r"""
     # Week 11: check the AI's answers
 
-    **Deliverable:** ten test questions with known answers; where your agent is wrong, and why.
+    **Deliverable:** at least five test questions with known answers (all ten if you like); where your agent is wrong, and why.
 
     Last week your agent answered questions. This week you find out **how often it is right**. The method
     is old and simple: ask questions you already know the answer to.
 
     1. The notebook computes the true answer to ten questions **from the layer itself** (nothing typed in by hand).
-    2. You ask your week-10 agent the same ten questions and record what it said.
+    2. You ask your week-10 agent at least five of the same questions (all ten if you like) and record what it said.
     3. The notebook scores each answer and sorts the mistakes by kind: wrong number, wrong period,
        treated a suppressed value as zero, answered a question the data can't answer.
     4. You read every verdict and overrule the scorer where it is wrong. That is the human's job.
@@ -472,7 +472,7 @@ def _(mo):
     mo.md(r"""
     ## Before you submit
 
-    **Deliverable:** the downloaded scorecard (ten questions, your agent's answers, your verdicts) and a
+    **Deliverable:** the downloaded scorecard (at least five questions answered, your agent's answers, your verdicts) and a
     short paragraph: where your agent is wrong, and why (AI can help you draft it; you should be able to explain every point live, without the AI open).
 
     **The one check:** pick one question the scorer marked correct and confirm it yourself in the layer.
