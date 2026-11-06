@@ -19,7 +19,7 @@ Every link below was opened and its title, authors and date were checked. The "C
 | 10 | Erik Schluntz & Barry Zhang, [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents), Anthropic, Dec 19, 2024 | ~25 min | Plain vocabulary for workflows vs. agents and tools, and why to start with the simplest design that works. | 2026-10-29 |
 | 11 | Hamel Husain, [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/), Mar 29, 2024 | ~20 min | A practical guide to testing an AI product: simple checks, human review, and looking closely at failures. It's the thinking behind your ten test questions. | 2026-10-29 |
 | 12 | None | | | |
-| 13 | None (peer review) | | | |
+| 13 | None (mock hand-off) | | | |
 | 14 | None (showcase) | | | |
 
 All readings are free to open without a library login.

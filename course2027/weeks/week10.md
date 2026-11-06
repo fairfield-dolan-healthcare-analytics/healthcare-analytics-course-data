@@ -57,4 +57,4 @@ For one of your three answers, find the same number yourself in the layer table 
 
 ## Reading
 
-About 25 minutes: Schluntz & Zhang, *Building effective agents* (Anthropic, 2024). See [READINGS.md](../READINGS.md).
+Optional, about 25 minutes: Schluntz & Zhang, *Building effective agents* (Anthropic, 2024). See [READINGS.md](../READINGS.md).

@@ -27,18 +27,19 @@ Next week you'll let an AI agent answer questions from your data. Before you do,
 
 *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)).
 
-**One page** using the [human sign-off template](../templates/human_signoff.md), position section:
+**Half a page** using the [human sign-off template](../templates/human_signoff.md), position section:
 
-- **What in my project should never be automated**: name one to three specific steps and give your reason for each.
-- **Who signs off**: for each step, the role that should approve it and what that person checks.
-- **One thing I changed my mind about** in the discussion, or why I didn't.
+- **What in my project should never be automated**: one specific step, and your reason.
+- **Who signs off** on it: the role, and what that person checks.
+
+*Optional, for more:* a second or third step, and one thing you changed your mind about in the discussion.
 
 ## Steps
 
 1. Do the reading (about 25 minutes).
 2. Write short answers to the five prompts before class.
-3. After the discussion, write your one page. You may use your AI tool to challenge your draft:
-   > Here is my one-page position on what should never be automated in my healthcare data project: [paste]. Argue the opposite side as strongly as you can. Don't rewrite my page.
+3. After the discussion, write your half page. You may use your AI tool to challenge your draft:
+   > Here is my short position on what should never be automated in my healthcare data project: [paste]. Argue the opposite side as strongly as you can. Don't rewrite my page.
 4. Revise it. AI can help with the drafting, but the positions and the reasons must be yours. You'll defend them in discussion.
 
 ## The check to run before you submit

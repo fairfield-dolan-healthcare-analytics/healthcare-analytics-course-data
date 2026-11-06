@@ -18,7 +18,9 @@ Public health data is republished on a schedule, and each release can change the
 
 ## Your one required deliverable
 
-**Refresh one source**, rerun your checks, and write a short **change report**: which source you refreshed (with its provenance row), the before-and-after checks table, what changed (periods, row counts, values, suppression), and what the changes mean for your app. If you used the simulated snapshot, say so, and say when you'll rerun it on a real refresh.
+**Refresh one source**, rerun your **row counts and one trace**, and write a short **change report**: which source you refreshed (with its provenance row), what changed (periods, row counts, values, suppression), and what it means for your app. If you used the simulated snapshot, say so.
+
+*Optional, for more:* rerun every check you've built (compliance, all traces, your test questions) and include the before-and-after table.
 
 ## Steps
 
@@ -27,7 +29,7 @@ Public health data is republished on a schedule, and each release can change the
 3. **Section 2, the earlier version.** Upload your week 3 export (`aggregator_<measure>.csv`); the notebook then rebuilds the current layer the same way, so like is compared with like. With no upload, it uses a **SIMULATED** earlier snapshot with documented, made-up changes, and the diff should find exactly those.
 4. Read **section 3** (the week 3 checks, before and after) and **section 4** (what changed: rows added and removed, columns, period changes, score changes, new suppression, newly published).
 5. **Section 5.** Decide what each change means for your app, your week 5 defense and your data card. The **Ask your AI** box can draft a "what changed" note; check every number in it against the tables.
-6. Update your [provenance record](../templates/provenance_record.md) with the new download date and data period. Rerun your three traces, compliance checklist and ten test questions where anything changed.
+6. Update your [provenance record](../templates/provenance_record.md) with the new download date and data period. Rerun your row counts and one trace. Rerunning everything else is optional.
 
 ## The check to run before you submit
 

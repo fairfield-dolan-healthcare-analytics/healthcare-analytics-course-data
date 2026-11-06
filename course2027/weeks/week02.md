@@ -50,4 +50,4 @@ For one source, open its source page and confirm the **reporting period** yourse
 
 ## Reading
 
-About 30 minutes: Greenlund et al., *PLACES: Local Data for Better Health* (2022). Focus on what a model-based estimate is and the cautions about change over time. See [READINGS.md](../READINGS.md).
+Optional, about 30 minutes: Greenlund et al., *PLACES: Local Data for Better Health* (2022). Focus on what a model-based estimate is and the cautions about change over time. See [READINGS.md](../READINGS.md).

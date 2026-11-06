@@ -15,9 +15,8 @@ def _():
     import marimo as mo
 
     MOLAB = "https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/"
-    GH = "https://github.com/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/"
     RED = "#C8102E"
-    return GH, MOLAB, RED, mo
+    return MOLAB, RED, mo
 
 
 @app.cell(hide_code=True)
@@ -90,7 +89,7 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
-def _(GH, MOLAB, RED, mo):
+def _(MOLAB, RED, mo):
     WEEKS = [
         # (week, phase, theme, notebook file or None)
         (1, "Build", "Healthcare data, and what the human is for", "week01_first_chart.py"),
@@ -105,7 +104,7 @@ def _(GH, MOLAB, RED, mo):
         (10, "Agent", "Let an agent query your aggregator", "week10_agent.py"),
         (11, "Agent", "Check the AI's answers", "week11_check_answers.py"),
         (12, "Agent", "Recency in practice", "week12_refresh.py"),
-        (13, "Finish", "Peer review", None),
+        (13, "Finish", "Mock hand-off: deliver your app to a client", None),
         (14, "Finish", "Showcase and reflection", None),
     ]
     PHASES = [
@@ -113,7 +112,7 @@ def _(GH, MOLAB, RED, mo):
         ("Prove", "Weeks 4–7", "Verify the sourcing, defend a number, validate the use, check compliance."),
         ("Apps", "Weeks 8–9", "Build your app on the layer, then decide what must stay with a person."),
         ("Agent", "Weeks 10–12", "Let an AI agent query your layer, test its answers, refresh a source."),
-        ("Finish", "Weeks 13–14", "Review a classmate's work, then show your app and reflect."),
+        ("Finish", "Weeks 13–14", "Hand your app over to a client, then show it and reflect."),
     ]
 
     def _button(href, label, solid):
@@ -127,7 +126,7 @@ def _(GH, MOLAB, RED, mo):
         )
 
     def _week_card(n, theme, nb):
-        brief = f"{GH}weeks/week{n:02d}.md"
+        brief = f"{MOLAB}briefs/week{n:02d}_brief.py"
         buttons = (_button(f"{MOLAB}{nb}", "Open notebook", True) if nb else
                    '<span style="font-size:0.82rem;color:#6b6b6b;padding:5px 0;">No notebook this week</span>')
         return (
@@ -158,17 +157,23 @@ def _(GH, MOLAB, RED, mo):
 
 
 @app.cell(hide_code=True)
-def _(GH, MOLAB, mo):
+def _(MOLAB, mo):
     mo.md(f"""
     ## Before week 1
 
     - [ ] Make a free molab account at [molab.marimo.io](https://molab.marimo.io).
     - [ ] Have an AI assistant ready: ChatGPT's free tier, Muse, Claude, or another you like.
-    - [ ] Read the [course README]({GH}README.md): the weekly rhythm, grading, and the data rule.
+    - [ ] Read the [course guide]({MOLAB}course_guide.py): the weekly rhythm, grading, and the data rule.
     - [ ] Open the [week 1 notebook]({MOLAB}week01_first_chart.py) and click **Run it now**.
 
     In weeks 4 to 7, 9 and 10 you'll also run one 15-minute **mini-seminar** on a topic you propose
-    ([mini-seminar guide]({GH}templates/mini_seminar.md)). Readings are in [READINGS.md]({GH}READINGS.md).
+    ([mini-seminar guide]({MOLAB}templates/mini_seminar.py)). Readings are optional except week 9's: see [the readings page]({MOLAB}readings.py).
+
+    **Templates:** [provenance record]({MOLAB}templates/provenance_record.py) ·
+    [defend a number]({MOLAB}templates/defend_a_number.py) · [data card]({MOLAB}templates/data_card.py) ·
+    [compliance checklist]({MOLAB}templates/compliance_checklist.py) · [app rubric]({MOLAB}templates/app_rubric.py) ·
+    [human sign-off]({MOLAB}templates/human_signoff.py) · [hand-off]({MOLAB}templates/handoff.py) ·
+    [AI transcript guide]({MOLAB}templates/transcript_guide.py) · [mini-seminar]({MOLAB}templates/mini_seminar.py)
     """)
     return
 

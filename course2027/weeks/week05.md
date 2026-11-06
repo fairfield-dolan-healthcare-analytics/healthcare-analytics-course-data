@@ -26,7 +26,7 @@ Every rate has four parts you must be able to name:
 
 *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
-A one-page [defend-a-number](../templates/defend_a_number.md) walkthrough of **one rate** from your layer: what kind of number it is, its numerator and denominator (or why the file doesn't give them), suppression and footnotes, reporting period, how it compares, and what it does not tell you. The notebook assembles a draft page you can use. You may draft it with AI help, but you must be able to explain every line in class without the AI open.
+A half-page [defend-a-number](../templates/defend_a_number.md) walkthrough of **one rate** from your layer: its numerator and denominator (or why the file doesn't give them), suppression and footnotes, and reporting period. *Optional, for more:* how it compares, and what it does not tell you. The notebook assembles a draft page you can use. You may draft it with AI help, but you must be able to explain every line in class without the AI open.
 
 ## Steps
 
@@ -54,4 +54,4 @@ Open the measure definition on the CMS source page and confirm the **unit** and 
 
 ## Reading
 
-About 5 minutes: the CMS page *Hospital Readmissions Reduction Program (HRRP)*. See [READINGS.md](../READINGS.md).
+Optional, about 5 minutes: the CMS page *Hospital Readmissions Reduction Program (HRRP)*. See [READINGS.md](../READINGS.md).

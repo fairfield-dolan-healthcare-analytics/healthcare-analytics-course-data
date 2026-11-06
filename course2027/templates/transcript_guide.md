@@ -1,6 +1,6 @@
 # AI transcript guide
 
-Submit the AI transcript with each deliverable. Three of your transcripts are graded (15% of the course), chosen **after** you submit, so every transcript counts.
+Submit your AI transcript **three times** during the term, with deliverables you choose. All three are graded (15% of the course).
 
 ## How to export a transcript
 

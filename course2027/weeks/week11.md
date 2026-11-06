@@ -20,11 +20,13 @@ The [week 11 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare
 
 ## Your one required deliverable
 
-The downloaded **scorecard** (ten questions, your agent's answers, your verdicts) and a short paragraph: **where your agent is wrong, and why**, with one sentence for every wrong answer.
+The downloaded **scorecard** with at least **five** of the ten questions answered and checked, and a short paragraph: **where your agent is wrong, and why**, one sentence per wrong answer.
+
+*Optional, for more:* all ten questions.
 
 ## Steps
 
-1. **Section 1.** Ask your week 10 agent each of the ten questions, **in a fresh chat each time** (paste the brief first), using the same AI tool as week 10. The questions are about the course default layer, so use the brief week 10 makes for the default layer (no upload). Run each SQL it writes in week 10's query box.
+1. **Section 1.** Ask your week 10 agent at least five of the ten questions (all ten if you like), **in a fresh chat each time** (paste the brief first), using the same AI tool as week 10. The questions are about the course default layer, so use the brief week 10 makes for the default layer (no upload). Run each SQL it writes in week 10's query box.
 2. **Section 2.** Record the final answer it gave you for each question, and tick **"named the source and period"** where it did. Turn on the demo switch if you want to see how scoring works with made-up answers first.
 3. **Section 3, the scorecard.** The notebook scores each answer. Turn on **"Show the known answers"** only after you've recorded your agent's answers.
 4. **Section 4, your verdict.** The scorer matches numbers and key words, and it can be fooled. Read every answer yourself and overrule it where it's wrong. Then use **Download the scorecard** (`week11_scorecard.csv`).
@@ -48,4 +50,4 @@ Pick one question the scorer marked **correct** and confirm it yourself in the l
 
 ## Reading
 
-About 20 minutes: Hamel Husain, *Your AI Product Needs Evals* (2024). See [READINGS.md](../READINGS.md).
+Optional, about 20 minutes: Hamel Husain, *Your AI Product Needs Evals* (2024). See [READINGS.md](../READINGS.md).

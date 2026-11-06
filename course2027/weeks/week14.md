@@ -19,12 +19,12 @@ The final app is graded on the same standard as everything else: numbers traced,
 ## Your one required deliverable
 
 1. Your **final app**, shared as a link, demoed in class. Graded with the [app rubric](../templates/app_rubric.md) (final column).
-2. **One page of reflection: what did you decide that the AI couldn't?** Give two or three specific decisions from your project (a source you rejected, an exclusion you made, an answer you refused to trust) and why each one needed a person.
+2. **Half a page of reflection: what did you decide that the AI couldn't?** Give two specific decisions from your project (a source you rejected, an exclusion you made, an answer you refused to trust) and why each one needed a person.
 
 ## Steps
 
-1. Act on your peer review: fix the one or two things that matter most. Don't add features.
-2. Rerun every check one last time: row counts, traces, compliance checklist, test questions.
+1. Act on your hand-off log: fix the one or two things your client struggled with most. Don't add features.
+2. Rerun your row counts and one trace one last time.
 3. Rehearse your demo with one number traced live.
 4. Write your reflection. AI may help you draft it, but the decisions must be yours, and you should be ready to talk about any of them in class. A useful prompt for testing it:
    > Here is my reflection on what I decided that the AI couldn't: [paste]. For each decision, ask me one question that tests whether it really needed a human. Don't rewrite anything.

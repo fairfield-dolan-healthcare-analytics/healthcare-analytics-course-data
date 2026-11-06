@@ -24,13 +24,15 @@ Suppose your layer says a Connecticut county has an adult diabetes estimate of s
 
 *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](../templates/mini_seminar.md)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
-1. **Trace three numbers** from your layer back to the source file: file, line, column, raw text, and reporting period.
-2. **Find the planted errors** in the provided practice file (`lab03_hospitals.csv`, loaded in the notebook). For each kind of error: what is wrong, how many rows, how you found it, and what it would break.
+1. **Trace two numbers** from your layer back to the source file: file, line, column, raw text, and reporting period.
+2. **List the kinds of planted errors** you found in the practice file (`lab03_hospitals.csv`, loaded in the notebook), one line each.
+
+*Optional, for more:* a third trace, and for each error, how many rows it affects and what it would break.
 
 ## Steps
 
 1. Run the [week 4 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week04_verify_sourcing.py).
-2. **Part A, trace.** Choose the **Source file** (Unplanned Hospital Visits or HRRP), **State**, **Hospital**, **Measure** and **Column**. The notebook shows the number as it sits in your layer next to the source row (file, line in the file, raw text, period, footnote), plus a state average and every row behind it. Copy the trace block it gives you. Do this three times, using hospitals and measures from your layer.
+2. **Part A, trace.** Choose the **Source file** (Unplanned Hospital Visits or HRRP), **State**, **Hospital**, **Measure** and **Column**. The notebook shows the number as it sits in your layer next to the source row (file, line in the file, raw text, period, footnote), plus a state average and every row behind it. Copy the trace block it gives you. Do this twice, using hospitals and measures from your layer.
 3. For a number Part A doesn't cover (a PLACES or ACS value, for example), use the **Ask your AI** box under Part A, then open the file yourself at that line.
 4. **Part B, planted errors.** Use the five tools: **1** row counts, **2** Facility IDs that appear more than once, **3** format check (pick a column), **4** value distribution side by side (pick a column), **5** compare one hospital to the clean file (type a Facility ID exactly as it appears). The tools find things; you decide what each one means.
 5. Remember that duplicate rows also change the counts in Tool 4. Which differences are *not* explained by duplicates?
@@ -38,7 +40,7 @@ Suppose your layer says a Connecticut county has an adult diabetes estimate of s
 
 ## The check to run before you submit
 
-For one of your three traces, open the source CSV yourself at the line number shown and read the raw text with your own eyes. Does it match **exactly**, including decimals? If it doesn't, explain where it changed.
+For one of your traces, open the source CSV yourself at the line number shown and read the raw text with your own eyes. Does it match **exactly**, including decimals? If it doesn't, explain where it changed.
 
 ## Human sign-off
 
@@ -50,7 +52,7 @@ For one of your three traces, open the source CSV yourself at the line number sh
 
 - Ask a second AI tool (or a fresh session) to look for planted errors independently, then compare its list with yours. What did each of you miss?
 - Use the notebook's second **Ask your AI** box to turn your findings into a `check(df)` cell that fails on the practice file and passes on the clean one.
-- Turn your three traces into a cell that re-checks them automatically every time the notebook runs.
+- Turn your traces into a cell that re-checks them automatically every time the notebook runs.
 
 ## Reading
 

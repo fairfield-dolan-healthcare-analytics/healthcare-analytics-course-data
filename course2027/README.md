@@ -18,7 +18,7 @@ Each week adds one layer to a single project:
 2. **Verify**: trace your numbers back to the source files (weeks 4–5).
 3. **Validate**: check that the data actually fits the question you're asking (week 6).
 4. **Comply**: confirm that what you hold and what you share is public, aggregate and safe (week 7).
-5. **Apps**: build an app on your layer (week 8), discuss the human role (week 9), add an agent and test it (weeks 10–12), then review, show and reflect (weeks 13–14).
+5. **Apps**: build an app on your layer (week 8), discuss the human role (week 9), add an agent and test it (weeks 10–12), then hand it over to a client, show it and reflect (weeks 13–14).
 
 Two themes run through every week: **relevance and recency** (is this the right data, and how old is it?) and **the human role** (which calls must a person make?).
 
@@ -49,17 +49,17 @@ If you can't answer one of these, the number isn't ready yet. "The AI said so" i
 
 **Between classes:** one small required deliverable, about 3 hours of work. Each week's brief is sized at half of what seems doable, on purpose. Everything marked **power-up** is optional.
 
-**With each deliverable**, submit your AI transcript (see [transcript guide](templates/transcript_guide.md)) and a three-line [human sign-off](templates/human_signoff.md).
+**With each deliverable**, add a three-line [human sign-off](templates/human_signoff.md). **Three times during the term**, with deliverables you choose, also submit your AI transcript (see [transcript guide](templates/transcript_guide.md)).
 
 ## Grading (proposed; the syllabus has the final version)
 
 | Part | Weight |
 |---|---|
 | Weekly deliverables (12 count, lowest dropped; your mini-seminar counts as the deliverable for its week) | 40% |
-| AI transcripts: three are graded, chosen after you submit, on whether you directed and checked the tool | 15% |
+| AI transcripts: the three you submit, graded on whether you directed and checked the tool | 15% |
 | Midterm app and explanation (week 8) | 15% |
 | Final app, showcase and reflection (week 14) | 20% |
-| Class discussion and peer review | 10% |
+| Class discussion and mock hand-off | 10% |
 
 There are no exams. You may use AI to help draft written work, including defenses and reflections, but the ideas and decisions must be yours. Your live explanation in class, without the AI open, is how that gets checked.
 
@@ -103,10 +103,10 @@ Only **public, aggregate data** goes into any AI tool. The course data is publis
 | 10 | Let an agent query your aggregator | [week10](weeks/week10.md) | [week10_agent.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py) |
 | 11 | Check the AI's answers | [week11](weeks/week11.md) | [week11_check_answers.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week11_check_answers.py) |
 | 12 | Recency in practice | [week12](weeks/week12.md) | [week12_refresh.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week12_refresh.py) |
-| 13 | Peer review | [week13](weeks/week13.md) | none ([peer review template](templates/peer_review.md)) |
+| 13 | Mock hand-off | [week13](weeks/week13.md) | none ([hand-off template](templates/handoff.md)) |
 | 14 | Showcase and reflection | [week14](weeks/week14.md) | none |
 
-Readings are short (most weeks have none or one, never more than about 30 minutes): see [READINGS.md](READINGS.md). Templates are in [templates/](templates/).
+Readings are optional except week 9's, and short (never more than about 30 minutes): see [READINGS.md](READINGS.md). Templates are in [templates/](templates/).
 
 ## How to get help
 
