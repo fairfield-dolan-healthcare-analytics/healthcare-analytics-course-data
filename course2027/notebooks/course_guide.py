@@ -104,7 +104,7 @@ def _(mo):
     **Class night (Tuesdays)**
 
     | Time | What happens |
-    |---|---|
+    |:---|:---|
     | 6:30–7:15 | **Show and explain.** Four or five students show last week's work, explain one number, and say what they decided that the AI could not. Two classmates, named the week before, ask the first questions. |
     | 7:15–8:00 | Concept for the week |
     | 8:00–8:10 | Break |
@@ -123,10 +123,10 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## Grading (proposed; the syllabus has the final version)
+    ## Grading (proposed; the [syllabus](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/syllabus.py) has the final version)
 
     | Part | Weight |
-    |---|---|
+    |:---|:---|
     | Weekly deliverables (12 count, lowest dropped; your mini-seminar counts as the deliverable for its week) | 40% |
     | AI transcripts: the three you submit, graded on whether you directed and checked the tool | 15% |
     | Midterm app and explanation (week 8) | 15% |
@@ -186,7 +186,7 @@ def _(mo):
     ## The 14 weeks
 
     | Wk | Theme | Brief | Notebook |
-    |---|---|---|---|
+    |:---|:---|:---|:---|
     | 1 | Healthcare data, and what the human is for | [week01](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py) | [week01_first_chart.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) |
     | 2 | Where data comes from: relevance and recency | [week02](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week02_brief.py) | [week02_sources.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py) |
     | 3 | Build the aggregator (guided, in class) | [week03](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week03_brief.py) | [week03_build_aggregator.py](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week03_build_aggregator.py) |

@@ -65,7 +65,7 @@ def _(mo):
     ## When
 
     | Week | Theme your topic connects to | Slots |
-    |---|---|---|
+    |:---|:---|:---|
     | 4 | Verifying sourcing: where numbers come from, and how they go wrong | 2 |
     | 5 | Defending a number: rates, denominators, suppression, risk adjustment | 2 |
     | 6 | Validating the use: is this the right data for this decision? | 2 |
@@ -147,7 +147,7 @@ def _(mo):
     ## How it's graded
 
     | | Strong | Needs work |
-    |---|---|---|
+    |:---|:---|:---|
     | **A view** | A clear claim you defend and can be argued with. | A summary of a topic with no position. |
     | **Sources** | You've read them and can answer questions about them; numbers meet the course standard. | Claims you can't trace, or a source you only know from an AI summary. |
     | **Against** | You state the strongest opposing point fairly. | Only one side. |

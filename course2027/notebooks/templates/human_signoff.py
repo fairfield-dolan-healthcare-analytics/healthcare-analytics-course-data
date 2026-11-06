@@ -83,14 +83,14 @@ def _(mo):
     **1. What in my project should never be automated**
 
     | Step (point to it in my notebook) | Why a person must do it |
-    |---|---|
+    |:---|:---|
     | | |
     | | |
 
     **2. Who signs off**
 
     | Step | Role who signs | What that person checks |
-    |---|---|---|
+    |:---|:---|:---|
     | | | |
 
     **3. One thing I changed my mind about in the discussion (or why I didn't):**

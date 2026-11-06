@@ -57,7 +57,7 @@ def _(mo):
     One per source (week 2). Update it every time you refresh the source (week 12). Fill in every field. "Unknown" is an allowed answer, but say how you tried to find out.
 
     | Field | Your answer |
-    |---|---|
+    |:---|:---|
     | Source name (as the publisher titles it) | |
     | Publisher | |
     | Official page (link you opened) | |

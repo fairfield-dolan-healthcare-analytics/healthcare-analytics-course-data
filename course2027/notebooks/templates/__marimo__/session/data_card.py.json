@@ -85,12 +85,12 @@
     },
     {
       "id": "Xref",
-      "code_hash": "c5f7e24ac58dae80a8a014dcc9a41c7a",
+      "code_hash": "db2fe77c0bc11d74294ebee80fd13895",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-sources\">2. Sources</h2>\n<table>\n<thead>\n<tr>\n<th>Source</th>\n<th>Publisher</th>\n<th>Data period</th>\n<th>Downloaded</th>\n<th>Provenance record</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>link</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>link</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Period mismatch:</strong> do the sources cover different years? Say so here, plainly.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-sources\">2. Sources</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Source</th>\n<th style=\"text-align: left;\">Publisher</th>\n<th style=\"text-align: left;\">Data period</th>\n<th style=\"text-align: left;\">Downloaded</th>\n<th style=\"text-align: left;\">Provenance record</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">link</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">link</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Period mismatch:</strong> do the sources cover different years? Say so here, plainly.</span></span>"
           }
         }
       ],

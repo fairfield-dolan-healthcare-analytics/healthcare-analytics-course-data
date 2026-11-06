@@ -95,7 +95,7 @@ def _(mo):
     ## 3. Run-book: keeping it current
 
     | Source | Data period now | When it updates | How I know it changed |
-    |---|---|---|---|
+    |:---|:---|:---|:---|
     | | | | |
 
     **To refresh:** the steps, in order, plain enough for your client to follow (from your week 12 work).
@@ -107,7 +107,7 @@ def _(mo):
     **Checks to rerun after every refresh** (row counts, your three traces, the compliance checklist, your ten test questions), and **what to do if one fails**:
 
     | Check | What "pass" looks like | If it fails |
-    |---|---|---|
+    |:---|:---|:---|
     | | | |
     """)
     return
@@ -119,7 +119,7 @@ def _(mo):
     ## 4. Who owns what after the hand-off
 
     | Task | Who does it (role) | What they check before signing |
-    |---|---|---|
+    |:---|:---|:---|
     | Refresh the data | | |
     | Rerun the checks | | |
     | Approve numbers before they reach a decision-maker | | |
@@ -140,7 +140,7 @@ def _(mo):
     During the cold start, write down every question you would have had to ask the builder, and whether the package answered it.
 
     | # | Question I had | Answered by the package? (yes / partly / no) | Where I looked |
-    |---|---|---|---|
+    |:---|:---|:---|:---|
     | 1 | | | |
     | 2 | | | |
     | 3 | | | |

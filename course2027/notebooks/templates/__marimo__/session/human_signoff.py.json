@@ -72,12 +72,12 @@
     },
     {
       "id": "PKri",
-      "code_hash": "ab21771f6755a0d0fa486c6c96fcee61",
+      "code_hash": "c318581be31128ec5c230b5e68b57219",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"week-9-position-page\">Week 9 position page</h2>\n<span class=\"paragraph\">Use this section for the week 9 deliverable (one page).</span>\n<span class=\"paragraph\"><strong>My project in one sentence:</strong></span>\n<span class=\"paragraph\"><strong>1. What in my project should never be automated</strong></span>\n<table>\n<thead>\n<tr>\n<th>Step (point to it in my notebook)</th>\n<th>Why a person must do it</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>2. Who signs off</strong></span>\n<table>\n<thead>\n<tr>\n<th>Step</th>\n<th>Role who signs</th>\n<th>What that person checks</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>3. One thing I changed my mind about in the discussion (or why I didn't):</strong></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"week-9-position-page\">Week 9 position page</h2>\n<span class=\"paragraph\">Use this section for the week 9 deliverable (one page).</span>\n<span class=\"paragraph\"><strong>My project in one sentence:</strong></span>\n<span class=\"paragraph\"><strong>1. What in my project should never be automated</strong></span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Step (point to it in my notebook)</th>\n<th style=\"text-align: left;\">Why a person must do it</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>2. Who signs off</strong></span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Step</th>\n<th style=\"text-align: left;\">Role who signs</th>\n<th style=\"text-align: left;\">What that person checks</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>3. One thing I changed my mind about in the discussion (or why I didn't):</strong></span></span>"
           }
         }
       ],

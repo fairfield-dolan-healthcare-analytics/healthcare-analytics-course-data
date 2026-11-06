@@ -72,12 +72,12 @@
     },
     {
       "id": "PKri",
-      "code_hash": "a2ecdeba2f7cb510d99a2dbf1fad860c",
+      "code_hash": "aae11e2ec305d2bddd519f3f5e9552f2",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"a-whats-in-the-layer\">A. What's in the layer</h2>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Check</th>\n<th>Pass?</th>\n<th>Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A1</td>\n<td>Every source is public and published as aggregate data (hospital or county level).</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>A2</td>\n<td>No column describes an individual person (no names, birth dates, addresses, record numbers or similar).</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>A3</td>\n<td>Identifiers are facility or geography codes only (for example, CMS facility ID, county FIPS).</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>A4</td>\n<td>No data from my workplace or any non-public source.</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"a-whats-in-the-layer\">A. What's in the layer</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">#</th>\n<th style=\"text-align: left;\">Check</th>\n<th style=\"text-align: left;\">Pass?</th>\n<th style=\"text-align: left;\">Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">A1</td>\n<td style=\"text-align: left;\">Every source is public and published as aggregate data (hospital or county level).</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">A2</td>\n<td style=\"text-align: left;\">No column describes an individual person (no names, birth dates, addresses, record numbers or similar).</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">A3</td>\n<td style=\"text-align: left;\">Identifiers are facility or geography codes only (for example, CMS facility ID, county FIPS).</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">A4</td>\n<td style=\"text-align: left;\">No data from my workplace or any non-public source.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table></span>"
           }
         }
       ],
@@ -85,12 +85,12 @@
     },
     {
       "id": "Xref",
-      "code_hash": "b160af83d6268b5afdce42c83bc6ccbf",
+      "code_hash": "f979363a22b7d8995f19adf1ed91ffff",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"b-small-cells-and-suppression\">B. Small cells and suppression</h2>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Check</th>\n<th>Pass?</th>\n<th>Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>B1</td>\n<td>Values the publisher withheld (\"Too Few to Report\", \"Not Available\", \"N/A\", etc.) are still text in my layer. None were converted to zero or to a number.</td>\n<td></td>\n<td>count of text values per column</td>\n</tr>\n<tr>\n<td>B2</td>\n<td>I did not back-calculate any withheld value from other columns.</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>B3</td>\n<td>My app doesn't show a count where the source shows a suppressed value.</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>B4</td>\n<td>If I cite a small-cell threshold, I name the policy and link the page I read. (Otherwise, write \"not cited\".)</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"b-small-cells-and-suppression\">B. Small cells and suppression</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">#</th>\n<th style=\"text-align: left;\">Check</th>\n<th style=\"text-align: left;\">Pass?</th>\n<th style=\"text-align: left;\">Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">B1</td>\n<td style=\"text-align: left;\">Values the publisher withheld (\"Too Few to Report\", \"Not Available\", \"N/A\", etc.) are still text in my layer. None were converted to zero or to a number.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\">count of text values per column</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">B2</td>\n<td style=\"text-align: left;\">I did not back-calculate any withheld value from other columns.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">B3</td>\n<td style=\"text-align: left;\">My app doesn't show a count where the source shows a suppressed value.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">B4</td>\n<td style=\"text-align: left;\">If I cite a small-cell threshold, I name the policy and link the page I read. (Otherwise, write \"not cited\".)</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table></span>"
           }
         }
       ],
@@ -98,12 +98,12 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "ef354d942a1701dcfe127113c269845f",
+      "code_hash": "91a8a835f33533fff207a0c13727b4f0",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"c-what-i-gave-ai-tools\">C. What I gave AI tools</h2>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Check</th>\n<th>Pass?</th>\n<th>Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C1</td>\n<td>I only pasted public, aggregate data, code and my own writing into AI tools.</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>C2</td>\n<td>No passwords, API keys or other credentials appear in my notebook, app or transcripts.</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>C3</td>\n<td>I reviewed my transcripts for this check. Anything I shouldn't have shared is noted here honestly.</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"c-what-i-gave-ai-tools\">C. What I gave AI tools</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">#</th>\n<th style=\"text-align: left;\">Check</th>\n<th style=\"text-align: left;\">Pass?</th>\n<th style=\"text-align: left;\">Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">C1</td>\n<td style=\"text-align: left;\">I only pasted public, aggregate data, code and my own writing into AI tools.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">C2</td>\n<td style=\"text-align: left;\">No passwords, API keys or other credentials appear in my notebook, app or transcripts.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">C3</td>\n<td style=\"text-align: left;\">I reviewed my transcripts for this check. Anything I shouldn't have shared is noted here honestly.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table></span>"
           }
         }
       ],
@@ -111,12 +111,12 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "fd3a3c91d7ef44053bf182471e4b4f75",
+      "code_hash": "6b8e14f67fa79bef4c6e495171d087ca",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"d-what-i-publish\">D. What I publish</h2>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Check</th>\n<th>Pass?</th>\n<th>Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>D1</td>\n<td>My app shows where its numbers came from (provenance visible).</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>D2</td>\n<td>My app says what's excluded and why.</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Signed (name, date):</strong></span>\n<span class=\"paragraph\">I checked every item above myself.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"d-what-i-publish\">D. What I publish</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">#</th>\n<th style=\"text-align: left;\">Check</th>\n<th style=\"text-align: left;\">Pass?</th>\n<th style=\"text-align: left;\">Evidence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">D1</td>\n<td style=\"text-align: left;\">My app shows where its numbers came from (provenance visible).</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">D2</td>\n<td style=\"text-align: left;\">My app says what's excluded and why.</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Signed (name, date):</strong></span>\n<span class=\"paragraph\">I checked every item above myself.</span></span>"
           }
         }
       ],

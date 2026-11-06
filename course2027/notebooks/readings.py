@@ -51,7 +51,7 @@ def _(mo):
     Every link below was opened and its title, authors and date were checked. The "Checked" column gives the date.
 
     | Wk | Reading | Time | Why it's here | Checked |
-    |---|---|---|---|---|
+    |:---|:---|:---|:---|:---|
     | 1 | *Optional.* Christen Linke Young & Matthew Fiedler, [What can be done to improve all-payer claims databases?](https://www.brookings.edu/articles/what-can-be-done-to-improve-all-payer-claims-databases), Brookings, Oct 23, 2020 | ~5 min | Why so much commercial claims data isn't public or complete: a 2016 Supreme Court ruling left self-insured employer plans out of state databases. Useful background for "what is public?" | 2026-10-29 |
     | 2 | Greenlund KJ, Lu H, Wang Y, et al., [PLACES: Local Data for Better Health](https://pmc.ncbi.nlm.nih.gov/articles/PMC9258452/), *Preventing Chronic Disease* 19:E31, 2022 | ~30 min | Written by the CDC team behind one of your sources. Explains model-based estimates and their cautions: no correction for self-report bias, no account of local programs, and limits on comparing over time. | 2026-10-29 (full text via Europe PMC; PMC page itself showed a bot check) |
     | 3 | None | | | |

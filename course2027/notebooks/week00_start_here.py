@@ -35,7 +35,7 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
-def _(RED, mo):
+def _(MOLAB, RED, mo):
     mo.Html(f"""
     <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:28px 28px 24px;
                 border:1px solid #e6e2dd;border-left:6px solid {RED};">
@@ -47,6 +47,11 @@ def _(RED, mo):
         This term you build one real piece of healthcare analytics, a data layer joined from public CMS and CDC
         sources, then an app and an AI agent on top of it. You don't need to program. An AI assistant of your
         choice writes the code; your job is to <b>direct it, check it, and decide</b>.
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+        <a href="{MOLAB}syllabus.py" target="_blank" rel="noopener" style="background:{RED};color:#fff;border:1px solid {RED};text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;">Syllabus</a>
+        <a href="{MOLAB}course_guide.py" target="_blank" rel="noopener" style="background:#fff;color:{RED};border:1px solid {RED};text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;">Course guide</a>
+        <a href="{MOLAB}readings.py" target="_blank" rel="noopener" style="background:#fff;color:{RED};border:1px solid {RED};text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;">Readings</a>
       </div>
     </div>
     """)
@@ -163,7 +168,7 @@ def _(MOLAB, mo):
 
     - [ ] Make a free molab account at [molab.marimo.io](https://molab.marimo.io).
     - [ ] Have an AI assistant ready: ChatGPT's free tier, Muse, Claude, or another you like.
-    - [ ] Read the [course guide]({MOLAB}course_guide.py): the weekly rhythm, grading, and the data rule.
+    - [ ] Read the [syllabus]({MOLAB}syllabus.py) and the [course guide]({MOLAB}course_guide.py): the weekly rhythm, grading, and the data rule.
     - [ ] Open the [week 1 notebook]({MOLAB}week01_first_chart.py) and click **Run it now**.
 
     In weeks 4 to 7, 9 and 10 you'll also run one 15-minute **mini-seminar** on a topic you propose

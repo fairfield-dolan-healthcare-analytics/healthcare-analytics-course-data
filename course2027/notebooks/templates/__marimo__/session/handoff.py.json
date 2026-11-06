@@ -98,12 +98,12 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "6e2363180b6a6c6b20042341724f6acc",
+      "code_hash": "49418c201868d44dafdc0c22637bdb39",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-run-book-keeping-it-current\">3. Run-book: keeping it current</h2>\n<table>\n<thead>\n<tr>\n<th>Source</th>\n<th>Data period now</th>\n<th>When it updates</th>\n<th>How I know it changed</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>To refresh:</strong> the steps, in order, plain enough for your client to follow (from your week 12 work).</span>\n<span class=\"paragraph\">1.\n2.\n3.</span>\n<span class=\"paragraph\"><strong>Checks to rerun after every refresh</strong> (row counts, your three traces, the compliance checklist, your ten test questions), and <strong>what to do if one fails</strong>:</span>\n<table>\n<thead>\n<tr>\n<th>Check</th>\n<th>What \"pass\" looks like</th>\n<th>If it fails</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-run-book-keeping-it-current\">3. Run-book: keeping it current</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Source</th>\n<th style=\"text-align: left;\">Data period now</th>\n<th style=\"text-align: left;\">When it updates</th>\n<th style=\"text-align: left;\">How I know it changed</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>To refresh:</strong> the steps, in order, plain enough for your client to follow (from your week 12 work).</span>\n<span class=\"paragraph\">1.\n2.\n3.</span>\n<span class=\"paragraph\"><strong>Checks to rerun after every refresh</strong> (row counts, your three traces, the compliance checklist, your ten test questions), and <strong>what to do if one fails</strong>:</span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Check</th>\n<th style=\"text-align: left;\">What \"pass\" looks like</th>\n<th style=\"text-align: left;\">If it fails</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table></span>"
           }
         }
       ],
@@ -111,12 +111,12 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "14f2e6d5c5307b9fc472f94f6d71ac1a",
+      "code_hash": "6a70b2c2345b5184d2c08383859af2c5",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-who-owns-what-after-the-hand-off\">4. Who owns what after the hand-off</h2>\n<table>\n<thead>\n<tr>\n<th>Task</th>\n<th>Who does it (role)</th>\n<th>What they check before signing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Refresh the data</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Rerun the checks</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Approve numbers before they reach a decision-maker</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Decide what may go into an AI tool</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Known issues</strong> (anything still wrong or uncertain, and where it shows):</span>\n<span class=\"paragraph\">-</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-who-owns-what-after-the-hand-off\">4. Who owns what after the hand-off</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Task</th>\n<th style=\"text-align: left;\">Who does it (role)</th>\n<th style=\"text-align: left;\">What they check before signing</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">Refresh the data</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">Rerun the checks</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">Approve numbers before they reach a decision-maker</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">Decide what may go into an AI tool</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\"><strong>Known issues</strong> (anything still wrong or uncertain, and where it shows):</span>\n<span class=\"paragraph\">-</span></span>"
           }
         }
       ],
@@ -124,12 +124,12 @@
     },
     {
       "id": "RGSE",
-      "code_hash": "25299199e1f154aaf74bd419fcf96a8d",
+      "code_hash": "cc3e0970444c606caf429f182bef533e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-hand-off-log-filled-in-by-the-client\">5. Hand-off log (filled in by the client)</h2>\n<span class=\"paragraph\">During the cold start, write down every question you would have had to ask the builder, and whether the package answered it.</span>\n<table>\n<thead>\n<tr>\n<th>#</th>\n<th>Question I had</th>\n<th>Answered by the package? (yes / partly / no)</th>\n<th>Where I looked</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>2</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>3</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li><strong>Could I answer the app's one question without help?</strong> yes / partly / no</li>\n<li><strong>Could I say what it can't tell me?</strong> yes / partly / no</li>\n<li><strong>The two things the builder should fix first:</strong>\n  1.\n  2.</li>\n</ul>\n<span class=\"paragraph\"><strong>Builder's sign-off:</strong> this package describes the app as it is, and I've checked every step in the run-book myself.</span>\n<span class=\"paragraph\"><strong>Client's sign-off:</strong> the log above is what I actually ran into, without help.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-hand-off-log-filled-in-by-the-client\">5. Hand-off log (filled in by the client)</h2>\n<span class=\"paragraph\">During the cold start, write down every question you would have had to ask the builder, and whether the package answered it.</span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">#</th>\n<th style=\"text-align: left;\">Question I had</th>\n<th style=\"text-align: left;\">Answered by the package? (yes / partly / no)</th>\n<th style=\"text-align: left;\">Where I looked</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">1</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">2</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">3</td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n<td style=\"text-align: left;\"></td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li><strong>Could I answer the app's one question without help?</strong> yes / partly / no</li>\n<li><strong>Could I say what it can't tell me?</strong> yes / partly / no</li>\n<li><strong>The two things the builder should fix first:</strong>\n  1.\n  2.</li>\n</ul>\n<span class=\"paragraph\"><strong>Builder's sign-off:</strong> this package describes the app as it is, and I've checked every step in the run-book myself.</span>\n<span class=\"paragraph\"><strong>Client's sign-off:</strong> the log above is what I actually ran into, without help.</span></span>"
           }
         }
       ],

@@ -80,7 +80,7 @@ def _(mo):
     ## 2. Sources
 
     | Source | Publisher | Data period | Downloaded | Provenance record |
-    |---|---|---|---|---|
+    |:---|:---|:---|:---|:---|
     | | | | | link |
     | | | | | link |
 

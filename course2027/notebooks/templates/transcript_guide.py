@@ -88,7 +88,7 @@ def _(mo):
     The question is: **did you direct and check the tool, or just ask it to finish the work?**
 
     | Strong transcripts show you... | Weak transcripts look like... |
-    |---|---|
+    |:---|:---|
     | Stating the goal, the data, and the constraints ("don't convert Not Available to zero; print row counts") | "Do my week 4 assignment" |
     | Asking it to explain what it did, in plain language | Accepting code you can't describe |
     | Checking its output against the source or a count, and saying so | Never checking, or "looks good!" |

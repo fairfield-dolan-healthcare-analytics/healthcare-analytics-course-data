@@ -59,7 +59,7 @@ def _(mo):
     Each criterion is scored 0–4: **4** exceeds · **3** meets · **2** partly meets · **1** attempted · **0** missing.
 
     | Criterion | Midterm (week 8): meets expectations | Final (week 14): meets expectations |
-    |---|---|---|
+    |:---|:---|:---|
     | **1. Numbers traced** | You can trace a number on screen, chosen by someone else, back to the source file: file, key, column, value. | Any number on screen can be traced, and your checks (traces, test questions) rerun when the data refreshes. |
     | **2. Provenance visible** | The main screen shows each source, publisher and data period. | As midterm, plus the download date or "data as of" and any period mismatch between sources, stated plainly. |
     | **3. Exclusions explained** | The app shows how many rows are shown out of how many, and why the rest are excluded. Suppressed values are never shown as zero. | As midterm, plus places that dropped out of joins (for example, territories or Connecticut) are named, and the agent says "I don't know" rather than guessing. |
