@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 7 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Compliance: public aggregate data vs. PHI</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week06_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 6</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 8</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 7 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Compliance: public aggregate data vs. PHI</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week06_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 6</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 8</a></div></div>
     """)
     return
 
@@ -58,9 +58,9 @@ def _(mo):
     mo.callout(mo.md(r"""
     ## Your one required deliverable
 
-    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
+    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)). Hand in the piece below with next week's work, checked for completion only: later weeks build on it.
 
-    Pass the [compliance checklist](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/compliance_checklist.py) on your layer, with one line of evidence for each item: a row count, a cell output, or a sentence.
+    Pass the [compliance checklist](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/compliance_checklist.py) on your layer, with one line of evidence for each item: a row count, a cell output, or a sentence.
     """), kind="success")
     return
 
@@ -70,12 +70,12 @@ def _(mo):
     mo.md(r"""
     /// details | Step by step
 
-    1. Run the [week 7 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py). Try it first on the example layer (HRRP joined to hospital information) to see what each check does.
+    1. Run the [week 7 notebook](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week07_compliance.py). Try it first on the example layer (HRRP joined to hospital information) to see what each check does.
     2. Under **"Run the checklist on"**, choose **My exported CSV** and upload your week 3 export (`aggregator_<measure>.csv`).
     3. Read the four checks: **1 Identifiers** (hospital names, addresses and phones are public facts about a facility; anything about a patient fails), **2 Small cells** (counts below the **small-cell threshold** slider), **3 Suppression markers preserved**, and **4 What you may give an AI tool** (a credential scan plus three boxes you tick yourself).
     4. The slider starts at 11 to match what the HRRP file shows. CMS's suppression convention is described in the notebook; confirm the current policy before you cite any number.
     5. Fix or explain every FAIL or CHECK in the summary table. To fix one, use the notebook's **Ask your AI** box, pasting only column names and the check result.
-    6. Copy the summary into the full [compliance checklist](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/compliance_checklist.py). Review your AI transcripts from weeks 1–6 for section C, note anything you shouldn't have shared honestly, and sign it yourself.
+    6. Copy the summary into the full [compliance checklist](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/compliance_checklist.py). Review your AI transcripts from weeks 1–6 for section C, note anything you shouldn't have shared honestly, and sign it yourself.
 
     ///
     """)
@@ -137,7 +137,7 @@ def _(mo):
 
     /// details | Reading
 
-    None required. Optional for the price-transparency power-up, about 20 minutes: Kurani et al., *Early results from federal price transparency rule show difficulty in estimating the cost of care* (Peterson-KFF, 2021). See [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
+    None required. Optional for the price-transparency power-up, about 20 minutes: Kurani et al., *Early results from federal price transparency rule show difficulty in estimating the cost of care* (Peterson-KFF, 2021). See [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
 
     ///
     """)

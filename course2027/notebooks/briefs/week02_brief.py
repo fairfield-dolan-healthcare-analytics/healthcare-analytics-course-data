@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 2 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Where data comes from: relevance and recency</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 1</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week03_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 3</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 2 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Where data comes from: relevance and recency</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 1</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week03_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 3</a></div></div>
     """)
     return
 
@@ -58,7 +58,7 @@ def _(mo):
     mo.callout(mo.md(r"""
     ## Your one required deliverable
 
-    Choose **2–3 sources** that could answer your week 1 question, and complete one [provenance record](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/provenance_record.py) for each. The form at the bottom of the notebook produces one record per source.
+    Choose **2–3 sources** that could answer your week 1 question, and complete one [provenance record](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/provenance_record.py) for each. The form at the bottom of the notebook produces one record per source.
     """), kind="success")
     return
 
@@ -68,7 +68,7 @@ def _(mo):
     mo.md(r"""
     /// details | Step by step
 
-    1. Run the [week 2 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py). The **Source cards** tabs give each course source's publisher, grain, join key, row count, source page, and a reporting period computed from the data itself.
+    1. Run the [week 2 notebook](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week02_sources.py). The **Source cards** tabs give each course source's publisher, grain, join key, row count, source page, and a reporting period computed from the data itself.
     2. Read the four lessons: one file with five different periods (Unplanned Hospital Visits); HRRP vs. Unplanned Visits readmissions covering different years; release year vs. data year (PLACES and ACS); and Connecticut's planning regions.
     3. Choose your sources. Ask your AI tool to help you think, but you make the decision:
        > I want to answer: "[your question]". My options are CMS Hospital General Information, CMS Unplanned Hospital Visits, CMS HRRP, CDC PLACES county data, and CDC ACS county measures. For each, tell me what one row represents and what it could and could not tell me about my question. Don't recommend one yet.
@@ -121,7 +121,7 @@ def _(mo):
     - Concept: provenance, grain, data period vs. release date, relevance to your question.
     - Breakouts: fill in a provenance record together for one source.
 
-    **Also before the week 3 class:** send the instructor your one-paragraph [mini-seminar proposal](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py) (about 15 minutes; it isn't graded).
+    **Also before the week 3 class:** send the instructor your one-paragraph [mini-seminar proposal](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py) (about 15 minutes; it isn't graded).
 
     ///
 
@@ -134,7 +134,7 @@ def _(mo):
 
     /// details | Reading
 
-    Optional, about 30 minutes: Greenlund et al., *PLACES: Local Data for Better Health* (2022). Focus on what a model-based estimate is and the cautions about change over time. See [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
+    Optional, about 30 minutes: Greenlund et al., *PLACES: Local Data for Better Health* (2022). Focus on what a model-based estimate is and the cautions about change over time. See [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
 
     ///
     """)

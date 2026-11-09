@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Syllabus</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">DATA 6900 Healthcare Analytics, Spring 2027</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Syllabus</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">DATA 6900 Healthcare Analytics, Spring 2027</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
     """)
     return
 
@@ -57,7 +57,7 @@ def _(mo):
     | Instructor | Steven Elliott |
     | Email | [faculty email to be added] |
     | Office hours | [to be added], online, and by appointment |
-    | Course materials | The [Start page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py) links every weekly brief, notebook and template |
+    | Course materials | The [Start page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py) links every weekly brief, notebook and template |
     | Open to | MSAIBA and Egan MPH students; no programming background required |
     """)
     return
@@ -124,7 +124,7 @@ def _(mo):
     4. **Guided build (8:10 to 9:15).** You start the deliverable with your AI tool in small breakout rooms while the instructor circulates.
     5. **Before you submit (9:15 to 9:30).** You name the one check you will run before handing in.
 
-    **Mini-seminars (weeks 4 to 7, 9 and 10).** Once during the term, you run a 15-minute seminar on a topic you propose and the instructor approves. You spend about 7 minutes defending a view on healthcare data, then lead the discussion for about 8. You choose your week in week 1 and send a one-paragraph proposal before the week 3 class (before the week 2 class if you present in week 4). On seminar nights, three students show and explain (6:30 to 7:00), two seminars follow (7:00 to 7:30), then the week's idea (7:30 to 8:10), the break, and the guided build (8:20 to 9:15). Week 9 has four seminars and no build. See the [mini-seminar guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py).
+    **Mini-seminars (weeks 4 to 7, 9 and 10).** Once during the term, you run a 15-minute seminar on a topic you propose and the instructor approves. You spend about 7 minutes defending a view on healthcare data, then lead the discussion for about 8. You choose your week in week 1 and send a one-paragraph proposal before the week 3 class (before the week 2 class if you present in week 4). On seminar nights, three students show and explain (6:30 to 7:00), two seminars follow (7:00 to 7:30), then the week's idea (7:30 to 8:10), the break, and the guided build (8:20 to 9:15). Week 9 has four seminars and no build. See the [mini-seminar guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py).
 
     Outside class, plan on about 3 hours a week. If a deliverable is taking much longer, tell the instructor: the deliverable is probably too big, not you too slow.
     """)
@@ -140,22 +140,22 @@ def _(mo):
 
     | Week | Theme | Your one required deliverable |
     |:---|:---|:---|
-    | [1](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py) | Healthcare data, and what the human is for | One chart from one CMS file, published as a link a classmate can open, plus the question you want your data layer to answer |
-    | [2](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week02_brief.py) | Where data comes from: relevance and recency | Choose 2 or 3 sources; a provenance record for each |
-    | [3](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week03_brief.py) | Build your aggregator (guided, in class) | A joined data layer at one grain, with row counts before and after each join |
-    | [4](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week04_brief.py) | Verify the sourcing | Trace two of your numbers back to the source file; list the planted errors you find in a provided file |
-    | [5](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week05_brief.py) | Defend one number | A half-page walkthrough of one rate: numerator, denominator, suppression, reporting period |
-    | [6](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week06_brief.py) | Validate the use; how an app is built and published | Your data card |
-    | [7](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week07_brief.py) | Compliance: public aggregate data vs. protected health information | Pass the compliance checklist on your data layer |
-    | [8](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py) | Midterm: app version 1 on your aggregator | A working app, shown to the class, with a 5-minute explanation of how you know its numbers are right |
-    | [9](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week09_brief.py) | The human role (seminar) | Half a page: one step in your project that should never be automated, and who signs off |
-    | [10](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week10_brief.py) | Let an agent query your aggregator | An agent that answers questions from your data layer and says which source it used |
-    | [11](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week11_brief.py) | Check the AI's answers | At least five test questions with known answers; where your agent is wrong, and why |
-    | [12](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week12_brief.py) | Recency in practice | Refresh one source, rerun your row counts and one trace, and report what changed |
-    | [13](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week13_brief.py) | Mock hand-off | A hand-off package for your app (how to use it, what it can't answer, how to keep it current), plus the log you kept as a classmate's client |
-    | [14](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week14_brief.py) | Showcase and reflection | Final app demo and a class vote for best app; half a page on what you decided that the AI could not |
+    | [1](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week01_brief.py) | Healthcare data, and what the human is for | One chart from one CMS file, published as a link a classmate can open, plus the question you want your data layer to answer |
+    | [2](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week02_brief.py) | Where data comes from: relevance and recency | Choose 2 or 3 sources; a provenance record for each |
+    | [3](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week03_brief.py) | Build your aggregator (guided, in class) | A joined data layer at one grain, with row counts before and after each join |
+    | [4](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week04_brief.py) | Verify the sourcing | Trace two of your numbers back to the source file; list the planted errors you find in a provided file |
+    | [5](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week05_brief.py) | Defend one number | A half-page walkthrough of one rate: numerator, denominator, suppression, reporting period |
+    | [6](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week06_brief.py) | Validate the use; how an app is built and published | Your data card |
+    | [7](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week07_brief.py) | Compliance: public aggregate data vs. protected health information | Pass the compliance checklist on your data layer |
+    | [8](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py) | Midterm: app version 1 on your aggregator | A working app, shown to the class, with a 5-minute explanation of how you know its numbers are right |
+    | [9](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week09_brief.py) | The human role (seminar) | Half a page: one step in your project that should never be automated, and who signs off |
+    | [10](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week10_brief.py) | Let an agent query your aggregator | An agent that answers questions from your data layer and says which source it used |
+    | [11](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week11_brief.py) | Check the AI's answers | At least five test questions with known answers; where your agent is wrong, and why |
+    | [12](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week12_brief.py) | Recency in practice | Refresh one source, rerun your row counts and one trace, and report what changed |
+    | [13](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week13_brief.py) | Mock hand-off | A hand-off package for your app (how to use it, what it can't answer, how to keep it current), plus the log you kept as a classmate's client |
+    | [14](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week14_brief.py) | Showcase and reflection | Final app demo and a class vote for best app; half a page on what you decided that the AI could not |
 
-    Readings are optional except week 9's, never more than about 30 minutes, and listed on the [readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
+    Readings are optional except week 9's, never more than about 30 minutes, and listed on the [readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
     """)
     return
 
@@ -192,7 +192,7 @@ def _(mo):
     - **Building:** use any AI tool for code, queries, charts and apps. Save your conversations; three times during the term you'll submit one with a deliverable.
     - **Explaining:** you may use AI to help draft written work, but the ideas and decisions must be yours, because you will explain them live.
     - **Showing:** when you show your work in class, you answer questions without the AI open. If you can't explain a number, it isn't done yet.
-    - **Transcripts:** graders look for you asking the tool for checks, catching its mistakes and making decisions. A transcript that is only "finish this assignment" earns little credit, even if the output is right. See the [AI transcript guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/transcript_guide.py).
+    - **Transcripts:** graders look for you asking the tool for checks, catching its mistakes and making decisions. A transcript that is only "finish this assignment" earns little credit, even if the output is right. See the [AI transcript guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/transcript_guide.py).
 
     All work is subject to the Fairfield University academic honesty policy [link to be added]. If you're unsure whether a use of AI is allowed, ask before you submit.
     """)

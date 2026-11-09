@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 1 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Healthcare data, and what the human is for</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week02_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 2</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 1 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Healthcare data, and what the human is for</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week02_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 2</a></div></div>
     """)
     return
 
@@ -71,14 +71,14 @@ def _(mo):
     mo.md(r"""
     /// details | Step by step
 
-    1. Open the [week 1 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) in molab and run it. Read the "Where these numbers came from" table at the bottom.
+    1. Open the [week 1 notebook](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py) in molab and run it. Read the "Where these numbers came from" table at the bottom.
     2. Make your chart with the two dropdowns: **State** (it starts on CT; "All states" is an option) and **Count hospitals by** (overall star rating, hospital type, or ownership). "Not Available" always shows as its own grey bar, and the line under the chart gives the rows behind it.
     3. Optional: to go beyond the dropdowns, use the notebook's **Ask your AI** box (it charts ratings for hospitals with and without emergency services), or paste this into your AI tool along with the chart cell:
        > Here is a marimo cell that charts CMS Hospital General Information with altair. Change it to show [your column] by [state / hospital type]. Do not convert "Not Available" to zero. Show how many hospitals are in the chart and how many were left out, and say why they were left out.
 
        Then ask it to explain what it did:
        > Explain this code line by line in plain English for someone who doesn't code. Which rows does it drop or change?
-    4. Make the link (see [Working in molab](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/course_guide.py)): click **Save a copy** so the notebook is in your own workspace, set the dropdowns to the view you want, then **Share → Copy App URL**. Open the link in a private browser window (or ask a classmate) to make sure it works for someone else. If it opens with different dropdown settings from yours, add a line to your submission naming the settings to pick.
+    4. Make the link (see [Working in molab](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/course_guide.py)): click **Save a copy** so the notebook is in your own workspace, set the dropdowns to the view you want, then **Share → Copy App URL**. Open the link in a private browser window (or ask a classmate) to make sure it works for someone else. If it opens with different dropdown settings from yours, add a line to your submission naming the settings to pick.
     5. Type your one-sentence question into the **"The one question I want my aggregator to answer"** box, and copy it into your submission.
 
     ///
@@ -101,7 +101,7 @@ def _(mo):
     mo.callout(mo.md(r"""
     ## Human sign-off
 
-    Use the [human sign-off template](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/human_signoff.py):
+    Use the [human sign-off template](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/human_signoff.py):
 
     - What I checked myself:
     - What I'm trusting the AI on:
@@ -126,7 +126,7 @@ def _(mo):
     - Tour of the public sources the course uses (CMS hospital files, CDC county files) and the data rule: public, aggregate data only, and no PHI.
     - Open the week 1 notebook in molab and run it top to bottom together.
     - Breakouts: make a first chart and share the link with your group.
-    - Before you leave: choose your week for a **mini-seminar**, a 15-minute session you'll run on a topic you propose (see the [mini-seminar guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)). Sign up in the class channel; slots are first come, first served. If you take a week 4 slot, your topic proposal is due before the week 2 class.
+    - Before you leave: choose your week for a **mini-seminar**, a 15-minute session you'll run on a topic you propose (see the [mini-seminar guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)). Sign up in the class channel; slots are first come, first served. If you take a week 4 slot, your topic proposal is due before the week 2 class.
 
     ///
 
@@ -139,7 +139,7 @@ def _(mo):
 
     /// details | Reading
 
-    Optional, about 5 minutes: Young & Fiedler, *What can be done to improve all-payer claims databases?* (see [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py)). It explains why so much commercial claims data isn't public.
+    Optional, about 5 minutes: Young & Fiedler, *What can be done to improve all-payer claims databases?* (see [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py)). It explains why so much commercial claims data isn't public.
 
     ///
     """)

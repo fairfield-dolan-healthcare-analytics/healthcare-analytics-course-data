@@ -6,7 +6,7 @@ and Egan MPH students).
 
 ## Start here: the Spring 2027 course
 
-**[Open the DATA 6900 Start page in molab](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py).** It links every weekly brief,
+**[Open the DATA 6900 Start page in molab](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py).** It links every weekly brief,
 notebook, template and the readings, in order. All course pages are marimo notebooks in
 [`course2027/notebooks/`](course2027/notebooks/) and open in [molab](https://molab.marimo.io), marimo's free
 hosted service.
@@ -20,7 +20,7 @@ Every course notebook reads these files by URL through a shared setup cell. It l
 from this mirror (never the live CMS or CDC site, which can refuse scripted downloads or change mid-term)
 and records each load, including the snapshot date, in a provenance table the student can read.
 
-    https://raw.githubusercontent.com/stevenelliottjr/healthcare-analytics-course-data/main/data/<file>
+    https://raw.githubusercontent.com/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/main/data/<file>
 
 | File | Used in | What it is |
 |---|---|---|

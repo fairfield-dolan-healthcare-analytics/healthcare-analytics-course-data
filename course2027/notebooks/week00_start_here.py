@@ -14,7 +14,7 @@ app = marimo.App(width="medium")
 def _():
     import marimo as mo
 
-    MOLAB = "https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/"
+    MOLAB = "https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/"
     RED = "#C8102E"
     return MOLAB, RED, mo
 

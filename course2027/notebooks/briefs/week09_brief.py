@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 9 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">The human role (seminar)</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 8</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week10_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 10</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 9 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">The human role (seminar)</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week08_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 8</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week10_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 10</a></div></div>
     """)
     return
 
@@ -46,7 +46,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *No notebook this week:reading and discussion · [Course home](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/course_guide.py)*
+    *No notebook this week:reading and discussion · [Course home](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/course_guide.py)*
     """)
     return
 
@@ -66,9 +66,9 @@ def _(mo):
     mo.callout(mo.md(r"""
     ## Your one required deliverable
 
-    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)).
+    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)).
 
-    **Half a page** using the [human sign-off template](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/human_signoff.py), position section:
+    **Half a page** using the [human sign-off template](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/human_signoff.py), position section:
 
     - **What in my project should never be automated**: one specific step, and your reason.
     - **Who signs off** on it: the role, and what that person checks.
@@ -144,13 +144,13 @@ def _(mo):
 
     /// details | Going further
 
-    - Read Gu et al. (2024) on how analysts verify AI-assisted analyses (see [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py)) and compare their participants' checks with the ones you've used so far.
+    - Read Gu et al. (2024) on how analysts verify AI-assisted analyses (see [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py)) and compare their participants' checks with the ones you've used so far.
 
     ///
 
     /// details | Reading
 
-    About 25 minutes: Goddard, Roudsari & Wyatt, *Automation bias: a systematic review of frequency, effect mediators, and mitigators* (JAMIA, 2012). Read the Background and the Discussion, and skim the methods. See [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
+    About 25 minutes: Goddard, Roudsari & Wyatt, *Automation bias: a systematic review of frequency, effect mediators, and mitigators* (JAMIA, 2012). Read the Background and the Discussion, and skim the methods. See [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
 
     ///
     """)

@@ -38,7 +38,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 10 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Let an agent query your aggregator</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week09_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 9</a><a href="https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week11_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 11</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Week 10 brief</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Let an agent query your aggregator</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py" target="_blank" rel="noopener" style="background:#C8102E;color:#fff;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Open this week's notebook</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week09_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 9</a><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/briefs/week11_brief.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">Week 11</a></div></div>
     """)
     return
 
@@ -58,9 +58,9 @@ def _(mo):
     mo.callout(mo.md(r"""
     ## Your one required deliverable
 
-    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)).
+    *Running a mini-seminar this week?* The seminar is your graded deliverable instead (see the [mini-seminar guide](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py)).
 
-    An agent, in the [week 10 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py), that answers questions from your layer and **says which source it used**. Submit the agent brief you used, your AI chat transcript, and **three questions**, each with the query, the answer, and the source and period the notebook showed. One of the three should be a question it correctly refused.
+    An agent, in the [week 10 notebook](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py), that answers questions from your layer and **says which source it used**. Submit the agent brief you used, your AI chat transcript, and **three questions**, each with the query, the answer, and the source and period the notebook showed. One of the three should be a question it correctly refused.
     """), kind="success")
     return
 
@@ -70,7 +70,7 @@ def _(mo):
     mo.md(r"""
     /// details | Step by step
 
-    1. Run the [week 10 notebook](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py). **Section 1:** use the course default layer, or upload your own layer (your week 3 export) and paste your week 6 data card into the box.
+    1. Run the [week 10 notebook](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week10_agent.py). **Section 1:** use the course default layer, or upload your own layer (your week 3 export) and paste your week 6 data card into the box.
     2. **Section 2, the agent brief.** Read the column list and the brief: anything wrong in it, the agent will repeat. Copy the brief, or use **Download the brief** (`agent_brief.txt`).
     3. Paste the brief into any AI chat (ChatGPT, Muse or another), then type your question under it. The AI replies with a SQL query.
     4. **Section 3.** Type your question into **"The question you asked the AI"** and paste the AI's reply into the query box (just the SQL, or the whole reply). The notebook runs only one read-only query and shows the answer with the source and period of each column it used. Anything else is refused.
@@ -141,7 +141,7 @@ def _(mo):
 
     /// details | Reading
 
-    Optional, about 25 minutes: Schluntz & Zhang, *Building effective agents* (Anthropic, 2024). See [the readings page](https://molab.marimo.io/github/stevenelliottjr/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
+    Optional, about 25 minutes: Schluntz & Zhang, *Building effective agents* (Anthropic, 2024). See [the readings page](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py).
 
     ///
     """)

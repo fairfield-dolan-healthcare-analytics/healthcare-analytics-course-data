@@ -19,7 +19,7 @@ def setup():
     CACHE = Path("data")
     CACHE.mkdir(exist_ok=True)
     # Course mirror on GitHub: a dated snapshot of every file the course uses.
-    MIRROR = "https://raw.githubusercontent.com/stevenelliottjr/healthcare-analytics-course-data/main/data"
+    MIRROR = "https://raw.githubusercontent.com/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/main/data"
     # Date each mirror folder was last refreshed from its publisher. Update these when you refresh the mirror.
     MIRROR_SNAPSHOT = {"cms": "2026-10-26", "cdc": "2026-10-29", "course": "2026-10-29"}
     # For testing before files are pushed: point this at a local folder laid out like the mirror.
@@ -52,7 +52,7 @@ def setup():
         "crosswalk": dict(
             title="Course crosswalk: hospital to county FIPS", publisher="DATA 6900 (built from CMS county names + CDC county list)",
             dataset_id="course", grain="one row per hospital", key="Facility ID -> county_fips",
-            page="https://github.com/stevenelliottjr/healthcare-analytics-course-data", mirror="course/hospital_county_crosswalk.csv"),
+            page="https://github.com/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data", mirror="course/hospital_county_crosswalk.csv"),
     }
 
     PROVENANCE = []  # one record per load; shown in every notebook
