@@ -104,7 +104,7 @@ def _(mo):
     |:---|:---|:---|
     | An AI assistant of your choice: ChatGPT, which you already have access to [confirm], or one you already like, such as Muse, Claude or Gemini | Free tier is enough | Writes and explains the code; you direct and check it |
     | marimo notebooks, on molab (hosted) or your own computer | Free | Where your data layer, checks and app run; every course page opens here |
-    | Claude Code or another coding agent | Paid; optional | For students who want the full agent workflow; never required |
+    | Claude Code or another coding agent | Paid; optional | For students who want the full agent workflow; runs on your own computer ([working locally](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py)); never required |
 
     You will create a free molab account in week 1. If you already pay for an AI tool, use it; no one is graded on which tool they use.
     """)

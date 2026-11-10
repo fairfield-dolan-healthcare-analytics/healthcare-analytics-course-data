@@ -133,7 +133,7 @@ def _(mo):
     /// details | Going further
 
     - Make a second version of the chart that treats "Not Available" differently, and write one line on which version is more honest.
-    - Install Claude Code (paid) or any other coding agent and ask it to explain the setup cell to you.
+    - Install Claude Code (paid) or any other coding agent and ask it to explain the setup cell to you. Coding agents run on your own computer, not in molab: [working locally (optional)](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py) shows how on a Mac.
 
     ///
 

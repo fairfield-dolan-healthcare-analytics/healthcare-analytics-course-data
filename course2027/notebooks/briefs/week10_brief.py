@@ -135,7 +135,7 @@ def _(mo):
     /// details | Going further
 
     - **An MCP connector.** MCP (Model Context Protocol) is a standard way to give an AI tool access to data or other tools. Expose your layer through an MCP server so your own AI assistant can query it directly, read-only and public data only.
-    - **The full agent workflow** (Claude Code or another coding agent): a project-instructions file with your data rule and citation rule, plan mode before changes, and a second agent that audits the first agent's answers.
+    - **The full agent workflow** (Claude Code or another coding agent): a project-instructions file with your data rule and citation rule, plan mode before changes, and a second agent that audits the first agent's answers. This runs on your own computer: see [working locally (optional)](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py).
 
     ///
 

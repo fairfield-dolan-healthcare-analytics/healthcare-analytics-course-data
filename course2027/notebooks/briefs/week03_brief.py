@@ -127,7 +127,7 @@ def _(mo):
 
     /// details | Going further
 
-    - **The full agent workflow** (Claude Code or another coding agent): write a short project-instructions file that states the data rule, your grain and "always print row counts after joins". Use plan mode so the agent shows its plan before it changes anything, then have a second agent session audit the first one's join and report what it would question.
+    - **The full agent workflow** (Claude Code or another coding agent): write a short project-instructions file that states the data rule, your grain and "always print row counts after joins". Use plan mode so the agent shows its plan before it changes anything, then have a second agent session audit the first one's join and report what it would question. This runs on your own computer: see [working locally (optional)](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py) for setup and a starter instructions file.
     - Fix the 16 "check by hand" hospitals yourself and document each decision.
 
     ///

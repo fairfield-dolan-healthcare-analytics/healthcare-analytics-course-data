@@ -33,7 +33,7 @@
     },
     {
       "id": "vblA",
-      "code_hash": "150e5ca3cec651d854bd74cf3f89e877",
+      "code_hash": "9c6c8626b3d85cf136e0cb98fc9d11dd",
       "outputs": [
         {
           "type": "data",
@@ -98,7 +98,7 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "8fc7715b271fcb37f93e860eaede5e17",
+      "code_hash": "d17b442ffab0853cafb594771da1ba98",
       "outputs": [
         {
           "type": "data",
@@ -111,7 +111,7 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "a1361dadbf9f7deb40e47af1b5add587",
+      "code_hash": "951c92806e8646a5bef03e0ae048fd5a",
       "outputs": [
         {
           "type": "data",
@@ -124,12 +124,12 @@
     },
     {
       "id": "RGSE",
-      "code_hash": "2605c5e945629463b490e4eeba1c4310",
+      "code_hash": "2bd69d00b34903a9992e851b4e7ac93f",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"tools\">Tools</h2>\n<ul>\n<li><strong>Free tools cover all required work.</strong></li>\n<li><strong>marimo is where your work runs.</strong> Every course notebook is a marimo notebook. Run it on <strong>molab</strong> (marimo's free hosted service), or on your own computer if you prefer. marimo can also run a notebook as an app, and that is how you'll build and share yours.</li>\n<li><strong>Any AI assistant</strong> (ChatGPT, Muse, Claude, or another) to write and explain code. Each brief includes ready-to-paste prompts.</li>\n<li><strong>Claude Code</strong> is optional (paid). Some power-ups use it, but nothing required does.</li>\n</ul></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"tools\">Tools</h2>\n<ul>\n<li><strong>Free tools cover all required work.</strong></li>\n<li><strong>marimo is where your work runs.</strong> Every course notebook is a marimo notebook. Run it on <strong>molab</strong> (marimo's free hosted service), or on your own computer if you prefer (<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">working locally</a>, optional). marimo can also run a notebook as an app, and that is how you'll build and share yours.</li>\n<li><strong>Any AI assistant</strong> (ChatGPT, Muse, Claude, or another) to write and explain code. Each brief includes ready-to-paste prompts.</li>\n<li><strong>Claude Code</strong> is optional (paid). Some power-ups use it, but nothing required does. It runs on your own computer: see <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">working locally</a>.</li>\n</ul></span>"
           }
         }
       ],
@@ -163,7 +163,7 @@
     },
     {
       "id": "Hstk",
-      "code_hash": "45010b0e7e5e25e30638ba2786b58faa",
+      "code_hash": "19b377912f3df017826eb433455074e2",
       "outputs": [
         {
           "type": "data",

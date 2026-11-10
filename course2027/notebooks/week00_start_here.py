@@ -183,5 +183,19 @@ def _(MOLAB, mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(MOLAB, mo):
+    mo.md(f"""
+    ## Optional: work on your own Mac
+
+    Everything in the course runs in molab, and most students never need anything else. If you're curious
+    to run the notebooks on your own computer, or to try a coding agent such as Claude Code that works on
+    your files directly, see [working locally]({MOLAB}working_locally.py). It covers setup on a Mac, the
+    data rule for your own computer, and how to submit (still a molab link). It earns no extra credit and
+    isn't required.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()

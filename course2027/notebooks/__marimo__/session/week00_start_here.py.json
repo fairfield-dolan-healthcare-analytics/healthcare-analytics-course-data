@@ -7,7 +7,7 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "14473a555a87a3b30d9ffe41331f6e48",
+      "code_hash": "57d49f43f1e983972a4e78d6141abeb8",
       "outputs": [
         {
           "type": "data",
@@ -91,6 +91,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"before-week-1\">Before week 1</h2>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Make a free molab account at <a href=\"https://molab.marimo.io\" rel=\"noopener noreferrer\" target=\"_blank\">molab.marimo.io</a>.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Have an AI assistant ready: ChatGPT's free tier, Muse, Claude, or another you like.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Read the <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/syllabus.py\" rel=\"noopener noreferrer\" target=\"_blank\">syllabus</a> and the <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/course_guide.py\" rel=\"noopener noreferrer\" target=\"_blank\">course guide</a>: the weekly rhythm, grading, and the data rule.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Open the <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week01_first_chart.py\" rel=\"noopener noreferrer\" target=\"_blank\">week 1 notebook</a> and click <strong>Run it now</strong>.</li>\n</ul>\n<span class=\"paragraph\">In weeks 4 to 7, 9 and 10 you'll also run one 15-minute <strong>mini-seminar</strong> on a topic you propose\n(<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py\" rel=\"noopener noreferrer\" target=\"_blank\">mini-seminar guide</a>). Readings are optional except week 9's: see <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/readings.py\" rel=\"noopener noreferrer\" target=\"_blank\">the readings page</a>.</span>\n<span class=\"paragraph\"><strong>Templates:</strong> <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/provenance_record.py\" rel=\"noopener noreferrer\" target=\"_blank\">provenance record</a> \u00b7\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/defend_a_number.py\" rel=\"noopener noreferrer\" target=\"_blank\">defend a number</a> \u00b7 <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/data_card.py\" rel=\"noopener noreferrer\" target=\"_blank\">data card</a> \u00b7\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/compliance_checklist.py\" rel=\"noopener noreferrer\" target=\"_blank\">compliance checklist</a> \u00b7 <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/app_rubric.py\" rel=\"noopener noreferrer\" target=\"_blank\">app rubric</a> \u00b7\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/human_signoff.py\" rel=\"noopener noreferrer\" target=\"_blank\">human sign-off</a> \u00b7 <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/handoff.py\" rel=\"noopener noreferrer\" target=\"_blank\">hand-off</a> \u00b7\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/transcript_guide.py\" rel=\"noopener noreferrer\" target=\"_blank\">AI transcript guide</a> \u00b7 <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py\" rel=\"noopener noreferrer\" target=\"_blank\">mini-seminar</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "16097ddd57dc3c874f40bbd1bb9095ae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"optional-work-on-your-own-mac\">Optional: work on your own Mac</h2>\n<span class=\"paragraph\">Everything in the course runs in molab, and most students never need anything else. If you're curious\nto run the notebooks on your own computer, or to try a coding agent such as Claude Code that works on\nyour files directly, see <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">working locally</a>. It covers setup on a Mac, the\ndata rule for your own computer, and how to submit (still a molab link). It earns no extra credit and\nisn't required.</span></span>"
           }
         }
       ],

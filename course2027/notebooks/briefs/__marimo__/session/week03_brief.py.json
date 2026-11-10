@@ -33,7 +33,7 @@
     },
     {
       "id": "vblA",
-      "code_hash": "802fb6889cbe230d45ecf3ea782646cb",
+      "code_hash": "d711526613255331c403cf3f14495836",
       "outputs": [
         {
           "type": "data",
@@ -72,7 +72,7 @@
     },
     {
       "id": "PKri",
-      "code_hash": "d8ff40ff9d8f2f82a5f250bd9b0e6bbd",
+      "code_hash": "83e903595061f1926d005749c357df16",
       "outputs": [
         {
           "type": "data",
@@ -111,12 +111,12 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "644ae0c4c9ae5ac38381e8147044897e",
+      "code_hash": "891822789cd3863c1f7d44b1cf8ec10c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"more-optional\">More (optional)</h2>\n<details>\n<summary>The idea</summary>\n<span class=\"paragraph\">Your <strong>aggregator</strong> is one table at one <strong>grain</strong>, built by joining your sources on a shared key. In the course notebook the grain is <strong>one row per hospital</strong>: county measures are attached to each hospital through the crosswalk. A join is where numbers quietly vanish or multiply, so after every join you record <strong>row counts before and after</strong> and explain any difference. This is the one week where reading the code is the lesson. The notebook shows the join and explains each line.</span>\n</details>\n<details>\n<summary>In class</summary>\n<ul>\n<li>Show and explain: four or five of you show a provenance record, focusing on the data period.</li>\n<li>Concept: grain, keys, the four outcomes of a join (matched, unmatched left, unmatched right, duplicated).</li>\n<li>Breakouts: build the layer together, step by step, in the notebook.</li>\n</ul>\n<span class=\"paragraph\"><strong>Running a mini-seminar in week 4?</strong> Post your one-page handout in the class channel by Sunday (see the <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py\" rel=\"noopener noreferrer\" target=\"_blank\">mini-seminar guide</a>).</span>\n</details>\n<details>\n<summary>Going further</summary>\n<ul>\n<li><strong>The full agent workflow</strong> (Claude Code or another coding agent): write a short project-instructions file that states the data rule, your grain and \"always print row counts after joins\". Use plan mode so the agent shows its plan before it changes anything, then have a second agent session audit the first one's join and report what it would question.</li>\n<li>Fix the 16 \"check by hand\" hospitals yourself and document each decision.</li>\n</ul>\n</details>\n<details>\n<summary>Reading</summary>\n<span class=\"paragraph\">None this week.</span>\n</details></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"more-optional\">More (optional)</h2>\n<details>\n<summary>The idea</summary>\n<span class=\"paragraph\">Your <strong>aggregator</strong> is one table at one <strong>grain</strong>, built by joining your sources on a shared key. In the course notebook the grain is <strong>one row per hospital</strong>: county measures are attached to each hospital through the crosswalk. A join is where numbers quietly vanish or multiply, so after every join you record <strong>row counts before and after</strong> and explain any difference. This is the one week where reading the code is the lesson. The notebook shows the join and explains each line.</span>\n</details>\n<details>\n<summary>In class</summary>\n<ul>\n<li>Show and explain: four or five of you show a provenance record, focusing on the data period.</li>\n<li>Concept: grain, keys, the four outcomes of a join (matched, unmatched left, unmatched right, duplicated).</li>\n<li>Breakouts: build the layer together, step by step, in the notebook.</li>\n</ul>\n<span class=\"paragraph\"><strong>Running a mini-seminar in week 4?</strong> Post your one-page handout in the class channel by Sunday (see the <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/templates/mini_seminar.py\" rel=\"noopener noreferrer\" target=\"_blank\">mini-seminar guide</a>).</span>\n</details>\n<details>\n<summary>Going further</summary>\n<ul>\n<li><strong>The full agent workflow</strong> (Claude Code or another coding agent): write a short project-instructions file that states the data rule, your grain and \"always print row counts after joins\". Use plan mode so the agent shows its plan before it changes anything, then have a second agent session audit the first one's join and report what it would question. This runs on your own computer: see <a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">working locally (optional)</a> for setup and a starter instructions file.</li>\n<li>Fix the 16 \"check by hand\" hospitals yourself and document each decision.</li>\n</ul>\n</details>\n<details>\n<summary>Reading</summary>\n<span class=\"paragraph\">None this week.</span>\n</details></span>"
           }
         }
       ],

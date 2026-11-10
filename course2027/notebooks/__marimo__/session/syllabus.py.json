@@ -33,7 +33,7 @@
     },
     {
       "id": "vblA",
-      "code_hash": "249d7e84a0c75cec6522b505b6858024",
+      "code_hash": "2df7b755580ca16ed2cb1a7ca2784bb0",
       "outputs": [
         {
           "type": "data",
@@ -46,7 +46,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "d6af848d6294f860b3a6353632f94326",
+      "code_hash": "3a62168a05cfdc02811a78c699ef4954",
       "outputs": [
         {
           "type": "data",
@@ -85,12 +85,12 @@
     },
     {
       "id": "Xref",
-      "code_hash": "72797a6053c72fab5d9997e839ca80fa",
+      "code_hash": "33acf095e6135d5004d516b331baf836",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-you-need\">What you need</h2>\n<span class=\"paragraph\">No programming or statistics prerequisite beyond your program's core courses. Comfort with a spreadsheet and curiosity about healthcare are enough. Every required assignment can be done with free tools.</span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Tool</th>\n<th style=\"text-align: left;\">Cost</th>\n<th style=\"text-align: left;\">What it is for</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">An AI assistant of your choice: ChatGPT, which you already have access to [confirm], or one you already like, such as Muse, Claude or Gemini</td>\n<td style=\"text-align: left;\">Free tier is enough</td>\n<td style=\"text-align: left;\">Writes and explains the code; you direct and check it</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">marimo notebooks, on molab (hosted) or your own computer</td>\n<td style=\"text-align: left;\">Free</td>\n<td style=\"text-align: left;\">Where your data layer, checks and app run; every course page opens here</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">Claude Code or another coding agent</td>\n<td style=\"text-align: left;\">Paid; optional</td>\n<td style=\"text-align: left;\">For students who want the full agent workflow; never required</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\">You will create a free molab account in week 1. If you already pay for an AI tool, use it; no one is graded on which tool they use.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-you-need\">What you need</h2>\n<span class=\"paragraph\">No programming or statistics prerequisite beyond your program's core courses. Comfort with a spreadsheet and curiosity about healthcare are enough. Every required assignment can be done with free tools.</span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Tool</th>\n<th style=\"text-align: left;\">Cost</th>\n<th style=\"text-align: left;\">What it is for</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\">An AI assistant of your choice: ChatGPT, which you already have access to [confirm], or one you already like, such as Muse, Claude or Gemini</td>\n<td style=\"text-align: left;\">Free tier is enough</td>\n<td style=\"text-align: left;\">Writes and explains the code; you direct and check it</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">marimo notebooks, on molab (hosted) or your own computer</td>\n<td style=\"text-align: left;\">Free</td>\n<td style=\"text-align: left;\">Where your data layer, checks and app run; every course page opens here</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\">Claude Code or another coding agent</td>\n<td style=\"text-align: left;\">Paid; optional</td>\n<td style=\"text-align: left;\">For students who want the full agent workflow; runs on your own computer (<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">working locally</a>); never required</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\">You will create a free molab account in week 1. If you already pay for an AI tool, use it; no one is graded on which tool they use.</span></span>"
           }
         }
       ],
@@ -98,7 +98,7 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "8f5cc81b2c567a441b9c3207ab573aa0",
+      "code_hash": "bdd9e97a188456a6963954b25620bbb7",
       "outputs": [
         {
           "type": "data",
@@ -111,7 +111,7 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "0b7eb3ffef239eb0948c31d3aec68ebf",
+      "code_hash": "9f138c64532a608194f7fc5cd22f5115",
       "outputs": [
         {
           "type": "data",
@@ -137,7 +137,7 @@
     },
     {
       "id": "Kclp",
-      "code_hash": "c8aece28458fba4cb6a1aa9b2be0dc8b",
+      "code_hash": "812ed5cb76173e3c52e7ffc311ec85e8",
       "outputs": [
         {
           "type": "data",
