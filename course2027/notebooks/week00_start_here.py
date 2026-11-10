@@ -189,9 +189,9 @@ def _(MOLAB, mo):
     ## Optional: coding agents and working locally
 
     Everything in the course runs in molab with any AI chat, and most students never need anything else. If
-    you're curious to try a coding agent such as Claude Code, molab can connect one running on your Mac to
+    you're curious to try a coding agent such as Claude Code, molab can connect one running on your computer to
     your notebook (**☰ menu → Connect your agent**). You can also run the notebooks on your own computer.
-    [Coding agents and working locally]({MOLAB}working_locally.py) covers both on a Mac, plus the data rule
+    [Coding agents and working locally]({MOLAB}working_locally.py) covers both, for Mac and Windows, plus the data rule
     for your own computer. It earns no extra credit and isn't required.
     """)
     return

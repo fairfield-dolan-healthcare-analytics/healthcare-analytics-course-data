@@ -35,7 +35,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Optional</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Coding agents and working locally (Mac)</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Optional</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Coding agents and working locally</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
     """)
     return
 
@@ -58,14 +58,15 @@ def _(mo):
     ## Two optional routes
 
     - **A. Connect a coding agent to a molab notebook.** Your notebook stays in molab; the agent runs on your
-      Mac and edits the notebook for you. This is the easier route if you want to try an agent.
-    - **B. Run marimo on your Mac.** The notebook itself runs on your computer. Try this only if you want to
-      work offline or without molab.
+      computer and edits the notebook for you. This is the easier route if you want to try an agent.
+    - **B. Run marimo on your computer.** The notebook itself runs on your computer. Try this only if you
+      want to work offline or without molab.
 
     **Before you start**
 
-    - These steps are for a **Mac**. Windows and Linux work too, but this page doesn't cover them yet.
-    - You'll type a few commands in **Terminal**. You don't need to understand them: copy each one exactly.
+    - There are steps for **Mac** and **Windows**: pick your tab wherever you see one.
+    - You'll type a few commands in **Terminal** (Mac) or **PowerShell** (Windows). You don't need to
+      understand them: copy each one exactly.
     - This is **self-supported**. Classmates and the class channel can help, but class time stays on the
       course work. If something doesn't work, carry on in molab with an AI chat; that always works.
     - Read **the data rule on your own computer** (below) before you start an agent.
@@ -75,9 +76,7 @@ def _(mo):
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""
-    ## Set up your Mac (once)
-
+    _mac = mo.md(r"""
     1. Open **Terminal**: press ⌘ Space, type *Terminal*, press Return.
     2. **Install uv**, a small free tool that installs Python and the packages a notebook needs:
 
@@ -102,9 +101,40 @@ def _(mo):
         mkdir -p ~/DATA6900
         ```
 
-    6. Close Terminal and open it again. Type `uv --version` and `npx --version`; each should print a
-       version number.
+    6. Close Terminal and open it again. Type `uv --version`, `npx --version` and `claude --version`; each
+       should print a version number.
     """)
+    _windows = mo.md(r"""
+    1. Open **PowerShell**: press the Windows key, type *PowerShell*, press Enter. (Not "Command Prompt".)
+    2. **Install Git for Windows** from [git-scm.com](https://git-scm.com/downloads/win) and accept the
+       default options. Claude Code and the agent connection both need it.
+    3. **Install uv**, a small free tool that installs Python and the packages a notebook needs:
+
+        ```
+        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+        ```
+
+    4. **Install Node.js** (route A needs its `npx` command): download the **LTS** installer (`.msi`) from
+       [nodejs.org](https://nodejs.org) and run it with the default options.
+    5. **Install a coding agent.** Claude Code is paid (it needs a Claude subscription or API account);
+       check [claude.com/claude-code](https://claude.com/claude-code) for current instructions. At the time
+       of writing:
+
+        ```
+        irm https://claude.ai/install.ps1 | iex
+        ```
+
+       Codex and OpenCode also work; molab shows the commands for each.
+    6. **Make a course folder**, and keep only course files in it:
+
+        ```
+        mkdir $HOME\DATA6900
+        ```
+
+    7. Close PowerShell and open it again. Type `uv --version`, `npx.cmd --version` and `claude --version`;
+       each should print a version number.
+    """)
+    mo.vstack([mo.md("## Set up your computer (once)"), mo.ui.tabs({"Mac": _mac, "Windows": _windows})])
     return
 
 
@@ -113,9 +143,10 @@ def _(mo):
     mo.md(r"""
     ## Give the agent your rules (once)
 
-    Claude Code reads a file called `CLAUDE.md` in the folder you start it from. Save this as
-    `~/DATA6900/CLAUDE.md` and make it yours; the "Going further" items in weeks 3 and 10 ask you to add your
-    grain and your citation rule. Always start the agent from inside `~/DATA6900`.
+    Claude Code reads a file called `CLAUDE.md` in the folder you start it from. Save this as `CLAUDE.md` in
+    your course folder (`~/DATA6900` on a Mac, `C:\Users\<you>\DATA6900` on Windows) and make it yours; the
+    "Going further" items in weeks 3 and 10 ask you to add your grain and your citation rule. Always start
+    the agent from inside your course folder.
 
     ```
     # DATA 6900 course folder
@@ -143,66 +174,74 @@ def _(mo):
 
     1. In molab, open **your own copy** of the notebook (click **Fork**, or **Save a copy** while it runs)
        and run it. Changes an agent makes to the read-only preview aren't saved.
-    2. Open the **☰ menu** at the top right of the notebook and choose **Connect your agent**. Pick the tab
-       for your agent (for example **Claude**).
-    3. **Step 1 in that window, once per Mac:** copy the install command into Terminal and press Return. It
-       looks like this:
+    2. Open the **☰ menu** at the top right of the notebook and choose **Connect your agent**. A window
+       called **Pair with an agent** opens. Pick the tab for your agent (for example **Claude**).
+    3. **Step 1 in that window, once per computer:** copy the install command and run it in Terminal or
+       PowerShell. It adds the *marimo-pair* skill, which teaches the agent how to work in a marimo notebook.
+       On Windows, type `npx.cmd` where the command says `npx`.
 
         ```
         npx skills add marimo-team/marimo-pair
         ```
 
-    4. **Step 2:** in Terminal, go to your course folder first:
-
-        ```
-        cd ~/DATA6900
-        ```
-
-       Then paste the command **copied from the window**, which starts with `claude`, and press Return. Copy
-       it from molab, not from this page: it contains your notebook's address, and it changes each time you
+    4. **Step 2:** go to your course folder (`cd ~/DATA6900` on a Mac, `cd $HOME\DATA6900` on Windows), then
+       paste the command **copied from the window**, which starts with `claude`, and press Return. Copy it
+       from molab, not from this page: it contains your notebook's address, and it changes each time you
        start the notebook.
+    5. **Step 3:** before the agent starts, Terminal asks for a **token**. Copy it from the window (the copy
+       button next to the stars) and paste it. The token is a key to your running notebook: don't share it,
+       post it, or put it in a notebook. It stays in a temporary file on your computer, not in the chat, and
+       only works while that notebook session is running.
+    6. Claude Code starts, connects, and usually pops up a short message in your molab notebook to say it's
+       ready. It asks your permission before it runs commands: read what it wants to do before you say yes.
+    7. Ask for something small first. The week 1 **Ask your AI** prompt works well: paste it into the agent
+       and watch the new cell appear in molab. Check its work the same way you'd check an AI chat's code.
 
-    5. **Step 3:** when the agent asks for a token, copy it from the window and paste it in. The token is a
-       key to your running notebook: don't share it, post it, or put it in a notebook. It only works while
-       that notebook session is running.
-    6. Ask the agent for something small first, such as *"Explain what the setup cell does,"* and watch the
-       notebook change in molab. Check its work the same way you'd check an AI chat's code.
-
-    Your work stays in your molab copy, so you submit its link as usual.
+    Your work stays in your molab copy, so you submit its link as usual. To stop, type `/exit` in the agent.
     """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(r"""
-    ## Route B: run marimo on your Mac
-
-    Each course notebook is a single file. For week 1:
-
+    _url = ("https://raw.githubusercontent.com/fairfield-dolan-healthcare-analytics/"
+            "healthcare-analytics-course-data/main/course2027/notebooks/week01_first_chart.py")
+    _mac = mo.md(f"""
     ```
     cd ~/DATA6900
-    curl -O https://raw.githubusercontent.com/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/main/course2027/notebooks/week01_first_chart.py
+    curl -O {_url}
     uvx marimo edit --sandbox week01_first_chart.py
     ```
-
-    For another week, change the file name in the last two lines (the names are in the Start page links).
-    marimo opens in your browser. The first time takes a minute or two while uv installs Python and the
-    notebook's packages; after that it starts quickly.
-
-    - **Always include `--sandbox`.** It installs exactly the packages the notebook lists, so your numbers
-      match everyone's on molab.
-    - **To stop marimo,** go back to Terminal and press Control-C.
-    - The notebook loads the same dated course data as molab and keeps a copy in a `data` folder next to it.
-    - Your changes are saved in the `.py` file in your course folder.
-    - **Started in molab?** Download your notebook from molab as a `.py` file, put it in your course folder,
-      and open that file instead.
-    - **To add an agent,** use **Connect your agent** in the ☰ menu, the same way as route A.
-
-    **Submitting:** deliverables are still **molab links** that a classmate can open without installing
-    anything. Upload your `.py` file to your molab workspace, check that it runs there, and submit that
-    link. Don't submit a `.py` file or an HTML export.
     """)
+    _windows = mo.md(f"""
+    ```
+    cd $HOME\\DATA6900
+    curl.exe -O {_url}
+    uvx marimo edit --sandbox week01_first_chart.py
+    ```
+    """)
+    mo.vstack([
+        mo.md("## Route B: run marimo on your computer\n\nEach course notebook is a single file. For week 1:"),
+        mo.ui.tabs({"Mac": _mac, "Windows": _windows}),
+        mo.md(r"""
+        For another week, change the file name in the last two lines (the names are in the Start page links).
+        marimo opens in your browser. The first time takes a minute or two while uv installs Python and the
+        notebook's packages; after that it starts quickly.
+
+        - **Always include `--sandbox`.** It installs exactly the packages the notebook lists, so your numbers
+          match everyone's on molab.
+        - **To stop marimo,** go back to Terminal or PowerShell and press Control-C.
+        - The notebook loads the same dated course data as molab and keeps a copy in a `data` folder next to it.
+        - Your changes are saved in the `.py` file in your course folder.
+        - **Started in molab?** Download your notebook from molab as a `.py` file, put it in your course
+          folder, and open that file instead.
+        - **To add an agent,** use **Connect your agent** in the ☰ menu, the same way as route A.
+
+        **Submitting:** deliverables are still **molab links** that a classmate can open without installing
+        anything. Upload your `.py` file to your molab workspace, check that it runs there, and submit that
+        link. Don't submit a `.py` file or an HTML export.
+        """),
+    ])
     return
 
 
@@ -212,8 +251,9 @@ def _(mo):
     ## The data rule, on your own computer
 
     The rule doesn't change: **only public, aggregate data.** A coding agent adds one thing to watch. A chat
-    assistant only sees what you paste into it; an agent on your Mac can read **any file it can reach**, and
-    once it's connected to a molab notebook it can copy what it reads into that notebook, which may be shared.
+    assistant only sees what you paste into it; an agent on your computer can read **any file it can
+    reach**, and once it's connected to a molab notebook it can copy what it reads into that notebook, which
+    may be shared.
 
     - Work only inside your course folder, and start the agent from inside it.
     - **Don't use a work computer** for this course. Your employer's rules come first, and a work laptop is
@@ -240,14 +280,17 @@ def _(mo):
     mo.md(r"""
     ## If something goes wrong
 
-    - **`command not found: uv` or `npx`**: close Terminal and open it again. If `npx` is still missing,
-      install Node.js (see setup).
+    - **`command not found` (Mac) or `is not recognized` (Windows)** for `uv`, `npx` or `claude`: close
+      Terminal or PowerShell and open it again. If it's still missing, repeat that install step.
+    - **Windows: "running scripts is disabled on this system"**: type `npx.cmd` instead of `npx`.
+    - **Windows: the Step 2 command fails in PowerShell**: open **Git Bash** (installed with Git for
+      Windows), go to your course folder with `cd ~/DATA6900`, and paste the command there.
     - **No "Connect your agent" in the ☰ menu**: you're looking at the read-only preview. Open your own copy
       and run it.
     - **The agent can't reach the notebook**: the notebook session ended or restarted. Open **Connect your
       agent** again and copy the new command and token.
-    - **The browser didn't open (route B)**: copy the `http://localhost` link that Terminal printed into your
-      browser.
+    - **The browser didn't open (route B)**: copy the `http://localhost` link that Terminal or PowerShell
+      printed into your browser.
     - **Anything else**: carry on in molab with an AI chat, and ask in the class channel if you want to keep
       trying.
     """)

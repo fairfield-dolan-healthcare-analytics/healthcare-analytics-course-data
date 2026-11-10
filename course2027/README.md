@@ -9,5 +9,5 @@ Charles F. Dolan School of Business, Fairfield University.
 It links every week's brief and notebook, in order, plus the course guide, templates and readings.
 Everything opens in molab (marimo's free hosted notebooks); nothing needs installing.
 
-Optional: to connect a coding agent to a molab notebook, or run the notebooks on your own Mac, see
+Optional: to connect a coding agent to a molab notebook, or run the notebooks on your own computer (Mac or Windows), see
 [coding agents and working locally](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py).

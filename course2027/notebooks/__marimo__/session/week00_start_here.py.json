@@ -98,12 +98,12 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "4cc49fb61ba6e08111bc52634a393e6f",
+      "code_hash": "1959a4298905772ce288afe224bd7796",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"optional-coding-agents-and-working-locally\">Optional: coding agents and working locally</h2>\n<span class=\"paragraph\">Everything in the course runs in molab with any AI chat, and most students never need anything else. If\nyou're curious to try a coding agent such as Claude Code, molab can connect one running on your Mac to\nyour notebook (<strong>\u2630 menu \u2192 Connect your agent</strong>). You can also run the notebooks on your own computer.\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">Coding agents and working locally</a> covers both on a Mac, plus the data rule\nfor your own computer. It earns no extra credit and isn't required.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"optional-coding-agents-and-working-locally\">Optional: coding agents and working locally</h2>\n<span class=\"paragraph\">Everything in the course runs in molab with any AI chat, and most students never need anything else. If\nyou're curious to try a coding agent such as Claude Code, molab can connect one running on your computer to\nyour notebook (<strong>\u2630 menu \u2192 Connect your agent</strong>). You can also run the notebooks on your own computer.\n<a href=\"https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py\" rel=\"noopener noreferrer\" target=\"_blank\">Coding agents and working locally</a> covers both, for Mac and Windows, plus the data rule\nfor your own computer. It earns no extra credit and isn't required.</span></span>"
           }
         }
       ],
