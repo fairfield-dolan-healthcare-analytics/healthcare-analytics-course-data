@@ -1,0 +1,10 @@
+# Fast checks on every commit; run scripts/check_notebooks.sh before pushing for the full run.
+repos:
+  - repo: local
+    hooks:
+      - id: marimo-check
+        name: marimo check
+        entry: marimo check
+        language: system
+        files: ^course2027/.*\.py$
+        exclude: (__marimo__/|_setup_cell\.py$)
