@@ -186,13 +186,13 @@ def _(MOLAB, mo):
 @app.cell(hide_code=True)
 def _(MOLAB, mo):
     mo.md(f"""
-    ## Optional: work on your own Mac
+    ## Optional: coding agents and working locally
 
-    Everything in the course runs in molab, and most students never need anything else. If you're curious
-    to run the notebooks on your own computer, or to try a coding agent such as Claude Code that works on
-    your files directly, see [working locally]({MOLAB}working_locally.py). It covers setup on a Mac, the
-    data rule for your own computer, and how to submit (still a molab link). It earns no extra credit and
-    isn't required.
+    Everything in the course runs in molab with any AI chat, and most students never need anything else. If
+    you're curious to try a coding agent such as Claude Code, molab can connect one running on your Mac to
+    your notebook (**☰ menu → Connect your agent**). You can also run the notebooks on your own computer.
+    [Coding agents and working locally]({MOLAB}working_locally.py) covers both on a Mac, plus the data rule
+    for your own computer. It earns no extra credit and isn't required.
     """)
     return
 

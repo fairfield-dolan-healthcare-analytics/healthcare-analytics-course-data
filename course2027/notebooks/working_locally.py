@@ -35,7 +35,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.Html(r"""
-    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Optional</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Working locally on a Mac</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
+    <div style="background:#fff;color:#1a1a1a;border-radius:10px;padding:22px 24px;border:1px solid #e6e2dd;border-left:6px solid #C8102E;"><div style="font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#C8102E;font-weight:700;">Optional</div><div style="font-size:1.8rem;line-height:1.2;font-weight:700;margin:6px 0 14px;">Coding agents and working locally (Mac)</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/week00_start_here.py" target="_blank" rel="noopener" style="background:#fff;color:#C8102E;border:1px solid #C8102E;text-decoration:none;font-size:0.82rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-block;">← Start here</a></div></div>
     """)
     return
 
@@ -44,10 +44,10 @@ def _(mo):
 def _(mo):
     mo.callout(mo.md(r"""
     **This page is optional, and most students never need it.** Everything the course requires runs in
-    molab, in your browser, with nothing to install. If you're curious to run the notebooks on your own
-    computer, for example to try a coding agent such as Claude Code that works on your files directly,
-    this page shows how. It earns no extra credit, nothing is graded differently, and you can go back to
-    molab any time.
+    molab, in your browser, with nothing to install, and any AI chat can write the code for you. This page
+    is for anyone curious to try a **coding agent** (such as Claude Code) that works on a notebook directly,
+    or to run the notebooks on their own computer. It earns no extra credit, nothing is graded differently,
+    and you can stop any time.
     """), kind="info")
     return
 
@@ -55,12 +55,20 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## Before you start
+    ## Two optional routes
+
+    - **A. Connect a coding agent to a molab notebook.** Your notebook stays in molab; the agent runs on your
+      Mac and edits the notebook for you. This is the easier route if you want to try an agent.
+    - **B. Run marimo on your Mac.** The notebook itself runs on your computer. Try this only if you want to
+      work offline or without molab.
+
+    **Before you start**
 
     - These steps are for a **Mac**. Windows and Linux work too, but this page doesn't cover them yet.
     - You'll type a few commands in **Terminal**. You don't need to understand them: copy each one exactly.
-    - Running locally is **self-supported**. Classmates and the class channel can help, but class time stays
-      on the course work. If something doesn't work, use molab for that week; it always works.
+    - This is **self-supported**. Classmates and the class channel can help, but class time stays on the
+      course work. If something doesn't work, carry on in molab with an AI chat; that always works.
+    - Read **the data rule on your own computer** (below) before you start an agent.
     """)
     return
 
@@ -68,20 +76,34 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 1. Install uv (once)
-
-    uv is a small, free tool that installs Python and each notebook's packages for you.
+    ## Set up your Mac (once)
 
     1. Open **Terminal**: press ⌘ Space, type *Terminal*, press Return.
-    2. Paste this line and press Return:
+    2. **Install uv**, a small free tool that installs Python and the packages a notebook needs:
 
         ```
         curl -LsSf https://astral.sh/uv/install.sh | sh
         ```
 
-    3. Close Terminal and open it again. Type `uv --version`; it should print a version number.
+    3. **Install Node.js** (route A needs its `npx` command): download the **LTS** installer from
+       [nodejs.org](https://nodejs.org) and run it. If you already use Homebrew, `brew install node` works too.
+    4. **Install a coding agent.** Claude Code is paid (it needs a Claude subscription or API account);
+       check [claude.com/claude-code](https://claude.com/claude-code) for current instructions. At the time
+       of writing:
 
-    If you already use Homebrew, `brew install uv` works too.
+        ```
+        curl -fsSL https://claude.ai/install.sh | bash
+        ```
+
+       Codex and OpenCode also work; molab shows the commands for each.
+    5. **Make a course folder**, and keep only course files in it:
+
+        ```
+        mkdir -p ~/DATA6900
+        ```
+
+    6. Close Terminal and open it again. Type `uv --version` and `npx --version`; each should print a
+       version number.
     """)
     return
 
@@ -89,13 +111,27 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 2. Make a course folder (once)
+    ## Give the agent your rules (once)
+
+    Claude Code reads a file called `CLAUDE.md` in the folder you start it from. Save this as
+    `~/DATA6900/CLAUDE.md` and make it yours; the "Going further" items in weeks 3 and 10 ask you to add your
+    grain and your citation rule. Always start the agent from inside `~/DATA6900`.
 
     ```
-    mkdir -p ~/DATA6900
-    ```
+    # DATA 6900 course folder
 
-    Keep **only course files** in this folder. Section 5 explains why.
+    ## Data rule
+    - Only public, aggregate data (CMS, CDC, the course mirror). Never PHI, patient-level data, or anything from my job.
+    - Work only inside this folder. Don't read files outside it.
+    - Never ask for, print or save API keys or passwords.
+
+    ## How to work
+    - Show me your plan before you change a notebook, and wait for me to agree.
+    - After every join, print the row counts before and after.
+    - "Not Available" and other text in a number column means missing, never zero. Say how many rows are missing.
+    - When you report a number, say which source and which reporting period it comes from.
+    - Explain what you changed in plain language, for someone who doesn't code.
+    ```
     """)
     return
 
@@ -103,7 +139,44 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 3. Download a notebook and open it
+    ## Route A: connect a coding agent to a molab notebook
+
+    1. In molab, open **your own copy** of the notebook (click **Fork**, or **Save a copy** while it runs)
+       and run it. Changes an agent makes to the read-only preview aren't saved.
+    2. Open the **☰ menu** at the top right of the notebook and choose **Connect your agent**. Pick the tab
+       for your agent (for example **Claude**).
+    3. **Step 1 in that window, once per Mac:** copy the install command into Terminal and press Return. It
+       looks like this:
+
+        ```
+        npx skills add marimo-team/marimo-pair
+        ```
+
+    4. **Step 2:** in Terminal, go to your course folder first:
+
+        ```
+        cd ~/DATA6900
+        ```
+
+       Then paste the command **copied from the window**, which starts with `claude`, and press Return. Copy
+       it from molab, not from this page: it contains your notebook's address, and it changes each time you
+       start the notebook.
+
+    5. **Step 3:** when the agent asks for a token, copy it from the window and paste it in. The token is a
+       key to your running notebook: don't share it, post it, or put it in a notebook. It only works while
+       that notebook session is running.
+    6. Ask the agent for something small first, such as *"Explain what the setup cell does,"* and watch the
+       notebook change in molab. Check its work the same way you'd check an AI chat's code.
+
+    Your work stays in your molab copy, so you submit its link as usual.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Route B: run marimo on your Mac
 
     Each course notebook is a single file. For week 1:
 
@@ -124,6 +197,11 @@ def _(mo):
     - Your changes are saved in the `.py` file in your course folder.
     - **Started in molab?** Download your notebook from molab as a `.py` file, put it in your course folder,
       and open that file instead.
+    - **To add an agent,** use **Connect your agent** in the ☰ menu, the same way as route A.
+
+    **Submitting:** deliverables are still **molab links** that a classmate can open without installing
+    anything. Upload your `.py` file to your molab workspace, check that it runs there, and submit that
+    link. Don't submit a `.py` file or an HTML export.
     """)
     return
 
@@ -131,29 +209,16 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 4. Submit from molab, like everyone else
+    ## The data rule, on your own computer
 
-    Deliverables are still **molab links** that a classmate can open without installing anything. When your
-    work is ready, upload your `.py` file to your molab workspace, check that it runs there, and submit
-    that link. Test it in a private browser window, as always. Don't submit a `.py` file or an HTML export.
-    """)
-    return
+    The rule doesn't change: **only public, aggregate data.** A coding agent adds one thing to watch. A chat
+    assistant only sees what you paste into it; an agent on your Mac can read **any file it can reach**, and
+    once it's connected to a molab notebook it can copy what it reads into that notebook, which may be shared.
 
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    ## 5. The data rule, on your own computer
-
-    The rule doesn't change: **only public, aggregate data.** On your own computer there's one more thing
-    to watch. A chat assistant only sees what you paste into it; a coding agent can read **any file it can
-    reach**.
-
-    - Work only inside your course folder, and start any agent from inside it.
+    - Work only inside your course folder, and start the agent from inside it.
     - **Don't use a work computer** for this course. Your employer's rules come first, and a work laptop is
       where patient data and work files live.
-    - Never put API keys or passwords in the course folder or in a notebook. Type them only into the tool's
-      own sign-in or a password box.
+    - Never put API keys, passwords or connection tokens in the course folder or in a notebook.
     - If you aren't sure whether a file counts, keep the agent away from it.
     """)
     return
@@ -162,50 +227,10 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 6. Optional: try a coding agent
+    ## Transcripts
 
-    With a notebook on your computer, a coding agent can read and change it for you. **Claude Code** is one
-    (paid: it needs a Claude subscription or API account); others work in a similar way. Install
-    instructions change, so check [claude.com/claude-code](https://claude.com/claude-code). At the time of
-    writing, on a Mac:
-
-    ```
-    curl -fsSL https://claude.ai/install.sh | bash
-    ```
-
-    Then open a **second** Terminal window (leave marimo running in the first) and start it in your
-    course folder:
-
-    ```
-    cd ~/DATA6900
-    claude
-    ```
-
-    marimo's [agents guide](https://docs.marimo.io/guides/editor_features/agents/) shows how to connect an
-    agent to the running notebook (marimo pair, or the agents panel in the marimo editor).
-
-    **Give the agent your rules first.** Claude Code reads a file called `CLAUDE.md` in the folder you start
-    it from. Save this as `~/DATA6900/CLAUDE.md` and make it yours; the "Going further" items in weeks 3 and
-    10 ask you to add your grain and your citation rule:
-
-    ```
-    # DATA 6900 course folder
-
-    ## Data rule
-    - Only public, aggregate data (CMS, CDC, the course mirror). Never PHI, patient-level data, or anything from my job.
-    - Work only inside this folder. Don't read files outside it.
-    - Never ask for, print or save API keys or passwords.
-
-    ## How to work
-    - Show me your plan before you change a notebook, and wait for me to agree.
-    - After every join, print the row counts before and after.
-    - "Not Available" and other text in a number column means missing, never zero. Say how many rows are missing.
-    - When you report a number, say which source and which reporting period it comes from.
-    - Explain what you changed in plain language, for someone who doesn't code.
-    ```
-
-    **Transcripts:** if this is one of your transcript weeks, Claude Code's `/export` command saves the
-    session. See the transcript guide for what to submit.
+    If this is one of your transcript weeks, Claude Code's `/export` command saves the session. See the
+    transcript guide for what to submit.
     """)
     return
 
@@ -215,9 +240,16 @@ def _(mo):
     mo.md(r"""
     ## If something goes wrong
 
-    - **`command not found: uv`**: close Terminal and open it again.
-    - **The browser didn't open**: copy the `http://localhost` link that Terminal printed into your browser.
-    - **Anything else**: use molab for that week, and ask in the class channel if you want to keep trying.
+    - **`command not found: uv` or `npx`**: close Terminal and open it again. If `npx` is still missing,
+      install Node.js (see setup).
+    - **No "Connect your agent" in the ☰ menu**: you're looking at the read-only preview. Open your own copy
+      and run it.
+    - **The agent can't reach the notebook**: the notebook session ended or restarted. Open **Connect your
+      agent** again and copy the new command and token.
+    - **The browser didn't open (route B)**: copy the `http://localhost` link that Terminal printed into your
+      browser.
+    - **Anything else**: carry on in molab with an AI chat, and ask in the class channel if you want to keep
+      trying.
     """)
     return
 

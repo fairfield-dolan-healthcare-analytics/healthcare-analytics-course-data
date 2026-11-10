@@ -146,7 +146,7 @@ def _(mo):
     - **Free tools cover all required work.**
     - **marimo is where your work runs.** Every course notebook is a marimo notebook. Run it on **molab** (marimo's free hosted service), or on your own computer if you prefer ([working locally](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py), optional). marimo can also run a notebook as an app, and that is how you'll build and share yours.
     - **Any AI assistant** (ChatGPT, Muse, Claude, or another) to write and explain code. Each brief includes ready-to-paste prompts.
-    - **Claude Code** is optional (paid). Some power-ups use it, but nothing required does. It runs on your own computer: see [working locally](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py).
+    - **Claude Code** is optional (paid). Some power-ups use it, but nothing required does. It runs on your own computer and can connect to a molab notebook: see [coding agents and working locally](https://molab.marimo.io/github/fairfield-dolan-healthcare-analytics/healthcare-analytics-course-data/blob/main/course2027/notebooks/working_locally.py).
     """)
     return
 
